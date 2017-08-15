@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"AutoFileName",
+		"ColorPicker",
+		"CSScomb",
+		"Emmet",
+		"Gist",
+		"JSHint",
+		"One Dark Color Scheme",
+		"One Dark Material - Theme",
+		"Package Control",
+		"Python 3",
+		"Sass",
+		"SublimeREPL",
+		"TrailingSpaces"
+	]
+}
