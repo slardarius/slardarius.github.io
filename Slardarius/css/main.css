@@ -1,184 +1,49 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
-/* line 22, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
+html { line-height: 1; }
 
-/* line 24, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
+ol, ul { list-style: none; }
 
-/* line 26, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 28, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
 
-/* line 30, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
 
-/* line 32, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
+a img { border: none; }
 
-/* line 116, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
-/* line 9, ../sass/main.sass */
-body {
-  font-size: 16px;
-  font-family: "RobotoRegular", sans-serif;
-  line-height: 20px;
-}
+body { font-size: 16px; font-family: "RobotoRegular", sans-serif; line-height: 20px; }
 
-/* line 13, ../sass/main.sass */
-header {
-  background-image: url(../img/header.png);
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 85vh;
-}
-/* line 14, ../sass/main.sass */
-header .menu {
-  width: 100%;
-  height: 142px;
-}
-/* line 23, ../sass/main.sass */
-header .logo {
-  font-size: 30px;
-  padding: 26px 3px;
-  font-family: "RobotoBold";
-  color: #026988;
-  cursor: pointer;
-}
-/* line 29, ../sass/main.sass */
-header nav {
-  font-family: "RobotoCondensetRegular";
-}
-/* line 32, ../sass/main.sass */
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-/* line 35, ../sass/main.sass */
-header nav ul li {
-  padding: 29px 0 0 0;
-  text-transform: uppercase;
-}
-/* line 38, ../sass/main.sass */
-header nav ul li a {
-  color: #111d2c;
-}
-/* line 40, ../sass/main.sass */
-header nav ul li:hover {
-  list-style-image: url(../img/point.png);
-}
+.header { margin: 0 0 222px 0; background-image: url(../img/header.png); background-position: top center; background-size: cover; background-attachment: fixed; width: 100%; height: 85vh; }
+.header .menu { width: 100%; height: 142px; }
+.header .logo { font-size: 30px; padding: 26px 3px; font-family: "RobotoBold"; color: #026988; cursor: pointer; }
+.header nav { font-family: "RobotoCondensetRegular"; }
+.header nav ul { display: flex; justify-content: space-around; }
+.header nav ul li { padding: 29px 0 0 0; text-transform: uppercase; }
+.header nav ul li a { color: #111d2c; }
+.header nav ul li:hover { list-style-image: url(../img/point.png); }
 
-/* line 42, ../sass/main.sass */
-.why_me {
-  font-family: "RobotoLight";
-  font-size: 50px;
-  color: #029688;
-  width: 100%;
-  height: 101px;
-}
+.why_me { font-family: "RobotoLight"; font-size: 50px; color: #029688; width: 100%; height: 101px; }
 
-/* line 48, ../sass/main.sass */
-.ads {
-  font-size: 25px;
-  line-height: 37.5px;
-}
+.ads { font-size: 25px; line-height: 37.5px; }
 
-/* line 51, ../sass/main.sass */
-.next {
-  font-size: 25px;
-  font-family: "RobotoLight";
-  color: #026988;
-  height: 82px;
-  width: 100%;
-}
-/* line 57, ../sass/main.sass */
-.next .buttons {
-  width: 179px;
-  height: 32px;
-  border-radius: 5px;
-  background-color: #2687a4;
-  cursor: pointer;
-  padding: 0px 50px;
-  color: #fff;
-  font-size: 20px;
-  padding: 0px 45px;
-  text-transform: uppercase;
-  border-right: 16px solid #ff9000;
-  -webkit-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  transition: all 0.25s linear;
-  line-height: 34px;
-  font-family: "RobotoBold";
-}
-/* line 72, ../sass/main.sass */
-.next .buttons:hover {
-  background-color: #ff9000;
-  -webkit-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  transition: all 0.25s linear;
-}
+.next { font-size: 25px; font-family: "RobotoLight"; color: #026988; height: 82px; width: 100%; }
+.next .buttons { width: 179px; height: 32px; border-radius: 5px; background-color: #2687a4; cursor: pointer; padding: 0px 50px; color: #fff; font-size: 20px; padding: 0px 45px; text-transform: uppercase; border-right: 16px solid #ff9000; -webkit-transition: all 0.25s linear; -moz-transition: all 0.25s linear; transition: all 0.25s linear; line-height: 34px; font-family: "RobotoBold"; }
+.next .buttons:hover { background-color: #ff9000; -webkit-transition: all 0.25s linear; -moz-transition: all 0.25s linear; transition: all 0.25s linear; }
 
-/* line 75, ../sass/main.sass */
-.nout__item {
-  margin-top: 66px;
-  background-image: url(../img/nout.png);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-}
+.nout__item { margin: 66px 0 0 0; background-image: url(../img/nout.png); background-repeat: no-repeat; width: 100%; height: 100vh; position: absolute; }
 
-/* line 81, ../sass/main.sass */
-section {
-  height: 2800px;
-}
+section { background-image: url(../img/second_section.png); background-repeat: no-repeat; background-position: top center; width: 100%; height: 100vh; }
+section .about_me { width: 100%; height: 725px; background-color: #b2eff8; margin-top: 123px; position: relative; }
+section .about_me .me { font-size: 50px; font-family: "RobotoLight"; padding: 50px 0; width: 100%; height: 100%; color: #026988; }
+section .about_me .text_about_me { font-family: "RobotoRegular"; font-size: 18px; line-height: 27px; padding: 50px 100px; }
+
+.photo { background-image: url(../img/myphoto.png); background-position: top center; background-size: 321px 321px; background-repeat: no-repeat; width: 321px; height: 321px; border: 7px solid #b2eff8; border-radius: 25em; margin: 160px 0px 66px 170px; }
+
+.iformation_next { font-size: 25px; font-family: "RobotoLight"; color: #000; }
+
+.rectangle { width: 100%; height: 100%; background-color: #b2eff8; z-index: -1; }

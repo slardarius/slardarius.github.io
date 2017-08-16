@@ -10,7 +10,8 @@ body
 	font-size: 16px
 	font-family: 'RobotoRegular', sans-serif
 	line-height: 20px
-header
+.header
+	margin: 0 0 222px 0
 	.menu
 		width: 100%
 		height: 142px
@@ -73,10 +74,54 @@ header
 			background-color: #ff9000
 			@include transition(all 0.25s linear)
 .nout__item
-	margin-top: 66px
+	margin: 66px 0 0 0
 	background-image: url(../img/nout.png)
 	background-repeat: no-repeat
 	width: 100%
 	height: 100vh
+	position: absolute
+
 section
-	height: 2800px
+	background-image: url(../img/second_section.png)
+	background-repeat: no-repeat
+	background-position: top center
+	//background-attachment: fixed
+	width: 100%
+	height: 100vh
+	.about_me
+		width: 100%
+		height: 725px
+		background-color: #b2eff8
+		margin-top: 123px
+		position: relative
+		.me
+			font-size: 50px
+			font-family: 'RobotoLight'
+			padding: 50px 0
+			width: 100%
+			height: 100%
+			color: #026988
+		.text_about_me
+			font-family: 'RobotoRegular'
+			font-size: 18px
+			line-height: 27px
+			padding: 50px 100px
+.photo
+	background-image: url(../img/myphoto.png)
+	background-position: top center
+	background-size: 321px 321px
+	background-repeat: no-repeat
+	width: 321px
+	height: 321px
+	border: 7px solid #b2eff8
+	border-radius: 25em
+	margin: 160px 0px 66px 170px
+.iformation_next
+	font-size: 25px
+	font-family: 'RobotoLight'
+	color: #000
+.rectangle
+	width: 100%
+	height: 100%
+	background-color: #b2eff8
+	z-index: -1
