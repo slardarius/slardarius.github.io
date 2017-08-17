@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-	
 	// Акардеон
 	//http://jqueryui.com/accordion/ - информация
 	$(".accordion").accordion();
@@ -20,27 +19,26 @@ $(document).ready(function() {
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
+	$("#").navigation();
 
 	//Добавляет классы дочерним блокам .block для анимации
 	//Документация: http://imakewebthings.com/jquery-waypoints/
-	$(".block").waypoint(function(direction) {
+	$("#").waypoint(function(direction) {
 		if (direction === "down") {
 			$(".class").addClass("active");
 		} else if (direction === "up") {
 			$(".class").removeClass("deactive");
 		};
-	}, {offset: 100});
+	}, {offset: 0});
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.scroll").click(function() {
-		$.scrollTo($(".div"), 800, {
-			offset: -90
+	$(".buttons").click(function() {
+		$.scrollTo($("section"), 800, {
+			offset: 1
 		});
 	});
 
-	
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
 	var owl = $(".carousel");
@@ -91,3 +89,12 @@ $(document).ready(function() {
 	});
 
 });
+
+$(window).scroll(function(){
+	var st = $(this).scrollTop();
+	$(".paralax").css({
+		"transform" : "translate(0% ," + st / 7  + "px"
+	})
+});
+
+
