@@ -1,54 +1,206 @@
  	/*==========  Desktop First Method  ==========*/
 
-@media only screen and (max-width: 1700px){
+ 	@media only screen and (max-width: 1280px){
 
-}
+ 		.second__header_bg_container{
+ 			margin-top: 100px;
+ 			width: 600px;
+ 		}
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 1132px) {
-	
-	
-}
+ 	}
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	
-}
+ 	/* Medium Devices, Desktops */
+ 	@media only screen and (max-width : 1132px) {
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-	
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
-}
+ 		.why_me{
+ 			font-size: 38px;
+ 		}
+ 		.iformation_next{
+ 			font-size: 20px;
+ 			line-height:30px;
+ 		}
+ 		header{
+ 			height: 100vh;
+ 			width: 100%;
+ 		}
 
 
-/*==========  Mobile First Method  ==========*/
+ 		.who_i_am{
+ 			font-size: 38px;
+ 			padding: 25px 0 60px 0;
+ 		}
+ 		.information_about_me{
+ 			padding: 20px 50px 100px 50px;
+ 			font-size: 15px;
+ 		}
+ 		.my_img{
+ 			width: 200px;
+ 			height: 200px;
+ 			-webkit-align-content: ;
+ 			    -ms-flex-line-pack: ;
+ 			        align-content: ;kground-size: 200px 200px;
+ 			margin-top: 200px;
+ 		}
+ 		.information_addit{
+ 			font-size: 20px;
+ 			line-height: 30px;
+ 		}
+ 	}
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+ 	/* Small Devices, Tablets */
+ 	@media only screen and (max-width : 768px) {
 
-}
+ 		header{
+ 			height: 100vh;
+ 			width: 100%;
+ 		}
+ 		.why_me{
+ 			font-size: 28px;
+ 			padding-top: 50px;
+ 			text-align: center;
+ 		}
+ 		.next{
+ 			margin-top: 70px;
+ 		}
+ 		.ads{
+ 			font-size: 20px;
+ 		}
+ 		
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+ 		.who_i_am{
+ 			font-size: 38px;
+ 			padding: 25px 0 60px 0;
+ 		}
+ 		.information_about_me{
+ 			padding: 20px 50px 100px 50px;
+ 			font-size: 15px;
+ 		}
+ 		.my_img{
+ 			width: 200px;
+ 			height: 200px;
+ 			background-size: 200px 200px;
+ 			margin-top: 200px;
+ 		}
+ 		.information_addit{
+ 			font-size: 20px;
+ 			line-height: 30px;
+ 		}
+ 	}
 
-}
+ 	/* Extra Small Devices, Phones */
+ 	@media only screen and (max-width : 480px) {
+ 		nav{
+ 			font-size: 14px;
+ 		}
+ 		.why_me{
+ 			font-size: 25px;
+ 			text-align: center;
+ 		}
+ 		.ads{
+ 			font-size: 18px;
+ 		}
+ 		.next{
+ 			margin-top: 0px;
+ 			font-size: 20px;
+ 		}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-	
-}
+ 		#first_container{
+ 			margin-top: 25px;
+ 		}
+ 		.block_information{
+ 			margin: 130px 0px 50px 0px;
+ 		}
+ 		.who_i_am{
+ 			font-size: 28px;
+ 			padding: 10px 0px;
+ 		}
+ 		.information_about_me{
+ 			font-size: 14px;
+ 			line-height: 21px;
+ 			padding: 15px 10px;
+ 		}
+ 		.my_img{
+ 			width: 150px;
+ 			height: 150px;
+ 			background-size: 150px 150px;
+ 			margin: 15px auto;
+ 		}
+ 		.information_addit{
+ 			text-align: center;
+ 			font-size: 17px;
+ 			line-height: 25,5px;
+ 			padding-top: 5px;
+ 		}
+ 		.buttons_works{
+ 			margin: 0px auto;
+ 		}
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-	
-}
+ 		.second__title{
+ 			text-align: center;
+ 		}
+ 		.second__iknow{
+ 			font-size: 35px;
+ 			text-align: center;
+ 		}
+ 		.second_callme{
+ 			padding-top: 20px;
+ 			text-align: center;
+ 			font-size: 20px;
+ 		}
+ 		.second__button{
+		margin-left: 60px;
+ 		}
+ 		.second__header_bg_container{
+ 			width: 300px;
+ 		}
+ 		.content{
+ 			width: 100px;
+ 			height: 100px;
+ 		}
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+ 	}
 
-}
+ 	/* Custom, iPhone Retina */
+ 	@media only screen and (max-width : 320px) {
+ 		nav{
+ 			font-size: 10px;
+ 		}
+ 		.why_me{
+ 			font-size: 15px;
+ 		}
+ 		.ads{
+ 			font-size: 11px;
+ 		}
+ 		.next{
+ 			font-size: 20px;
+ 			margin-top: 15px;
+ 		}
+ 	}
+
+
+ 	/*==========  Mobile First Method  ==========*/
+
+ 	/* Custom, iPhone Retina */
+ 	@media only screen and (min-width : 320px) {
+
+ 	}
+
+ 	/* Extra Small Devices, Phones */
+ 	@media only screen and (min-width : 480px) {
+
+ 	}
+
+ 	/* Small Devices, Tablets */
+ 	@media only screen and (min-width : 768px) {
+
+ 	}
+
+ 	/* Medium Devices, Desktops */
+ 	@media only screen and (min-width : 992px) {
+
+ 	}
+
+ 	/* Large Devices, Wide Screens */
+ 	@media only screen and (min-width : 1200px) {
+
+ 	}

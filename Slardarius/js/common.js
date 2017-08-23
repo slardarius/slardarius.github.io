@@ -10,11 +10,8 @@ $(document).ready(function() {
 	var austDay = new Date($(".countdown").attr("date-time"));
 	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
 
-	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
-	//<a class="fancybox"><img src="image.jpg" /></a>
-	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
+	$("#").fancybox();
 
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
@@ -31,20 +28,33 @@ $(document).ready(function() {
 		};
 	}, {offset: 0});
 
-	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	$(".buttons").click(function() {
-		$.scrollTo($("section"), 800, {
+	$(".buttons_about_me").click(function() {
+		$.scrollTo($("#first_container"), 800, {
+			offset: 1
+		});
+	});
+	$(".buttons_works").click(function() {
+		$.scrollTo($("#second_container"), 800, {
 			offset: 1
 		});
 	});
 
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
-	var owl = $(".carousel");
+	var owl = $(".second__owl-carousel");
 	owl.owlCarousel({
 		items : 1,
-		autoHeight : true
+		autoPlay : 2500,
+		stopOnHover : true,
+		autoHeight : true,
+		autoWidth: true,
+		responsive : {
+			0: {
+				items: 1,
+				nav: true
+			}
+		}
 	});
 	owl.on("mousewheel", ".owl-wrapper", function (e) {
 		if (e.deltaY > 0) {
@@ -54,10 +64,10 @@ $(document).ready(function() {
 		}
 		e.preventDefault();
 	});
-	$(".next_button").click(function() {
+	$(".next_butt").click(function() {
 		owl.trigger("owl.next");
 	});
-	$(".prev_button").click(function() {
+	$(".prev_butt").click(function() {
 		owl.trigger("owl.prev");
 	});
 
@@ -71,7 +81,7 @@ $(document).ready(function() {
 		}, 800);
 		return false;
 	});
-	
+
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
 	$("#callback").submit(function() {
@@ -90,10 +100,12 @@ $(document).ready(function() {
 
 });
 
+
+/* Папалакс */
 $(window).scroll(function(){
 	var st = $(this).scrollTop();
 	$(".paralax").css({
-		"transform" : "translate(0% ," + st / 7  + "px"
+		"transform" : "translate(0% ," + st / 10  + "px"
 	})
 });
 
