@@ -49,6 +49,7 @@ $(document).ready(function() {
 		stopOnHover : true,
 		autoHeight : true,
 		autoWidth: true,
+		transitionStyle : "fade",
 		responsive : {
 			0: {
 				items: 1,
@@ -64,10 +65,10 @@ $(document).ready(function() {
 		}
 		e.preventDefault();
 	});
-	$(".next_butt").click(function() {
+	$(".slide_next").click(function() {
 		owl.trigger("owl.next");
 	});
-	$(".prev_butt").click(function() {
+	$(".slide_prev").click(function() {
 		owl.trigger("owl.prev");
 	});
 
