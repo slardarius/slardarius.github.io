@@ -89,10 +89,7 @@
  			font-size: 15px;
  		}
  		.my_img{
- 			width: 200px;
- 			height: 200px;
- 			background-size: 200px 200px;
- 			margin-top: 350px;
+ 			margin: 20px auto;
  		}
  		.information_addit{
  			font-size: 20px;
