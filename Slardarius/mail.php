@@ -1,6 +1,6 @@
 <?php
 
-$recepient = "agragregra@ya.ru";
+$recepient = "justtalkabout2@gmail.com";
 $sitename = "УЧЕБНЫЙ АДАПТИВНЫЙ САЙТ №1";
 
 $name = trim($_GET["name"]);

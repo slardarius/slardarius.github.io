@@ -8,15 +8,15 @@ $(document).ready(function() {
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
 	var austDay = new Date($(".countdown").attr("date-time"));
-	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
+	$("#fds").countdown({until: austDay, format: 'yowdHMS'});
 
 	//Документация: http://fancybox.net/howto
-	$("#").fancybox();
+	$("#sd").fancybox();
 
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
-	$("#").navigation();
+	$("#sdf").navigation();
 
 	//Добавляет классы дочерним блокам .block для анимации
 	//Документация: http://imakewebthings.com/jquery-waypoints/
@@ -85,7 +85,7 @@ $(document).ready(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("#callback").submit(function() {
+	$("#").submit(function() {
 		$.ajax({
 			type: "GET",
 			url: "mail.php",
@@ -99,6 +99,45 @@ $(document).ready(function() {
 		return false;
 	});
 
+	/* ПРоверка на вводимые данные */
+	$('.name').on('focus',function(){
+		$(this).val('').css('border','1px solid #19d697');
+		$(this).focusout(function(){
+				$(this).css('border','1px solid #000');
+		});
+	});
+	$('.phone').on('focus',function(){
+		$(this).val('').css('border','1px solid #19d697');
+		$(this).focusout(function(){
+				$(this).css('border','1px solid #000');
+		});
+	});
+	$('.email').on('focus',function(){
+		$(this).val('').css('border','1px solid #19d697');
+		$(this).focusout(function(){
+				$(this).css('border','1px solid #000');
+		});
+	});
+	$('.callme').on('click',function(){
+		var name = $('.name').val();
+		var email = $('.email').val();
+		var phone = $('.phone').val();
+
+		if( name == '' ) {
+			$('.name').val('Вы не ввели имя.');
+			$('.name').css('border','1px solid red');
+		}
+		if( phone == '' ) {
+			$('.phone').val('Вы не ввели номер телефона.');
+			$('.phone').css('border','1px solid red');
+		}
+		if( email == '' ) {
+			$('.email').val('Вы не ввели E-mail.');
+			$('.email').css('border','1px solid red');
+		}
+
+	});
+
 });
 
 
@@ -106,7 +145,7 @@ $(document).ready(function() {
 $(window).scroll(function(){
 	var st = $(this).scrollTop();
 	$(".paralax").css({
-		"transform" : "translate(0% ," + st / 10  + "px"
+		"transform" : "translate(0% ," + st / 13  + "px"
 	})
 });
 

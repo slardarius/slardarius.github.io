@@ -4,10 +4,8 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "bourbon/bourbon"
-//@import "compass/reset"
-*
-	margin: 0px
-	padding: 0px
+@import "compass/reset"
+
 
 /* Кнопки */
 $Color_buttons_border: #ff9000
@@ -23,83 +21,9 @@ $Color_items: #b2eff8
 body
 	font-size: 16px
 	font-family: 'RobotoRegular', sans-serif
-	line-height: 20px
-
-/* First page */
-header
-	width: 100%
-	height: 100vh
-	background: #689ac8 url(../img/header.png) center center / cover
-	background-attachment: fixed
-	width: 100%
-	height: 85vh
-	nav
-		font-family: 'RobotoCondensetRegular'
-
-		ul
-			display: flex
-			justify-content: space-around
-			li
-				padding: 29px 0 0 0
-				text-transform: uppercase
-				a
-					color: #111d2c
-				&:hover
-					list-style-image: url(../img/point.png) outside
-.logo
-	font-size: 30px
-	padding: 26px 3px
-	font-family: 'RobotoBold'
-	color: $Color_headers
-	cursor: pointer
-.menu
-	width: 100%
-	height: 142px
-.why_me
-	font-family: "RobotoLight"
-	font-size: 50px
-	color: $Color_headers
-	width: 100%
-	height: 101px
-.ads
-	font-size: 25px
-	line-height: 37.5px
-	font-family: 'RobotoRegular'
-	color:  $Color_text
-.next
-	font-size: 25px
-	font-family: 'RobotoLight'
-	color: $Color_headers
-	height: 82px
-	width: 100%
-.buttons_about_me
-	margin-top: 30px
-.buttons
-	width: 179px
-	height: 32px
-	border-radius: 5px
-	cursor: pointer
-	background-color: $Color_buttons
-	cursor: pointer
-	padding: 0px 50px
-	color: #fff
-	font-size:  20px
-	padding:  0px 45px
-	text-transform: uppercase
-	border-right: 16px solid $Color_buttons_border
-	+transition(all 0.25s linear)
-	line-height: 34px
-	font-family: 'RobotoBold'
-	&:hover
-		background-color: #ff9000
-		border-right: 16px solid $Color_buttons_border_buff
-	&:active
-		background-color: $Color_buttons_active
-.nout__item
-	width: 100%
-	height: auto
-	margin-top: 70px
-	position: absolute
+	line-height: 24px
+	margin: 0
+	padding: 0
 
 /* Second section */
 #first_container
@@ -238,8 +162,8 @@ header
 	position: relative
 .third__block_information
 	margin-top: 230px
-	font-size: 18px
-	line-height: 34px
+	font-size: 20px
+	line-height: 35px
 	font-family: 'RobotoRegular'
 	color: $Color_text
 	width: 100%
@@ -272,6 +196,11 @@ header
 		height: 29px
 		border: 1px solid #000
 		border-radius: 5px
+		+transition(all .5s ease)
+		&:focus
+			width: 260px
+			height: 35px
+			border: 2px solid $Color_buttons_active
 .callme
 	margin-left: 62px
 	padding: 0px 30px
