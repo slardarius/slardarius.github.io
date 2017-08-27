@@ -46,9 +46,6 @@ $(document).ready(function() {
 	owl.owlCarousel({
 		items : 1,
 		autoPlay : 2500,
-		stopOnHover : true,
-		autoHeight : true,
-		autoWidth: true,
 		transitionStyle : "fade",
 		responsive : {
 			0: {
@@ -99,7 +96,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	/* ПРоверка на вводимые данные */
+	/* ПРоверка на вводимые данные ФОРМЫ */
 	$('.name').on('focus',function(){
 		$(this).val('').css('border','1px solid #19d697');
 		$(this).focusout(function(){

@@ -73,13 +73,18 @@
  		}
  		.next{
  			margin-top: 70px;
+ 			text-align: center;
  		}
  		.ads{
  			font-size: 20px;
+ 			text-align: left;
+ 		}
+ 		.buttons_about_me{
+ 			margin-left: 31%;
  		}
  		
  		#first_container{
- 			margin: 0px;
+ 			margin-top: 10px;
  		}
  		.who_i_am{
  			font-size: 38px;
@@ -104,9 +109,18 @@
  			line-height: 20px;
  		}
  		.buttons_works{
-			margin-left: 200px;
+			margin-left: 35%;
  		}
- 		
+
+ 		.second_callme{
+ 			padding-top: 50px;
+ 			text-align: center;
+ 		}
+ 		.second__button{
+ 			margin-left: 27%;
+ 		}
+
+
 
  		#third_section{
  			margin: 0px;
@@ -137,7 +151,7 @@
  			left: 35%
  		}
  		.callme{
- 			margin-left: 165px;
+ 			margin-left: 24%;
  		}
  	}
 
@@ -292,7 +306,7 @@
  			margin: 0px;
  		}
  		.buttons_about_me{
- 			margin:0px;
+ 			margin-left: 13%;
  		}
 
  		.second__title{
@@ -307,16 +321,17 @@
  		}
  		.second_callme{
  			font-size: 20px;
+ 			margin-top: 20%;
  		}
  		.second__iknow{
  			font-size: 30px;
  		}
  		.second__whatiknow{
- 			font-size: 18px;
+ 			font-size: 24px;
  			line-height: 24px;
  		}
  		.second__owl-carousel{
- 			padding-top: 12px;
+ 			padding-top: 25%
  		}
  		.fa-slider{
  			font-size: 10px
@@ -324,10 +339,10 @@
 
 
  		#third_section{
- 			margin-top: 45px;
+ 			margin-top: 0px;
  		}
  		.third__block_information{
- 			margin: 25px 0px;
+ 			margin: 65% 0px;
  			font-size: 14px;
  			line-height: 22px;
  		}
