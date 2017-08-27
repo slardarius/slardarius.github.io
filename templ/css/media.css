@@ -32,11 +32,16 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	/* TODO HEADER */
+	.menu ul > li {
+		font-size: 11px;
+	}
 	.header_title{
 		text-align: center;
+		font-size: 20px;
+		padding: 25px 0px;
 	}
 	.list{
-		font-size: 25px;
+		font-size: 15px;
 	}
 	.next_slide{
 		margin-top: 20px;
@@ -46,17 +51,23 @@
 		margin-left: 38%;
 	}
 	.nout_item{
-		margin-top: 5%;
+		margin-top: 10%;
 	}
 	.nout_item img {
 		width: 80%;
+	}
+	.bg_white{
+		height: 20vh;
+		background: #000;
 	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
 	.header_title{
-		padding: 50px 0px;
+		padding: 10px 0px;
+		font-size: 17px;
 	}
 	.list{
 		font-size: 19px;
@@ -74,18 +85,21 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.logo p{
+		font-size: 12px;
+	}
 	.header_title{
-		font-size: 30px;
-		padding: 50px 0px;
+		font-size: 20px;
+		padding: 15px 0px;
 	}
 	.list{
-		font-size: 15px;
+		font-size: 13px;
 	}
 	.next_slide_buttons{
 		margin-left: 19%;
 	}
 	.nout_item{
-		margin-top: 45%;
+		margin-top: 25%;
 	}
 	.nout_item img {
 		width: 100%;
