@@ -96,6 +96,13 @@ $(document).ready(function() {
 		return false;
 	});
 
+	/* Линый */
+	/* Убираем картинку, при размере 400-320px */
+	var SizeWidth = window.innerWidth;
+	if(SizeWidth <= 477){
+		$('.my_img').css('opacity','0');
+		$('.information_addit').css('fontSize','18px');
+	}
 	/* ПРоверка на вводимые данные ФОРМЫ */
 	$('.name').on('focus',function(){
 		$(this).val('').css('border','1px solid #19d697');
