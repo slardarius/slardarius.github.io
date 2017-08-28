@@ -100,8 +100,14 @@ $(document).ready(function() {
 	/* Убираем картинку, при размере 400-320px */
 	var SizeWidth = window.innerWidth;
 	if(SizeWidth <= 492){
-		$('.bg_white').css('opacity','0');
-		$('.nout_item').css('opacity','0');
+		$('.bg_white').css({
+			width: '0%',
+			overflow: '0'
+		});
+		$('.nout_item').css({
+			width: '0%',
+			overflow: '0'
+		});
 	}
 	/* ПРоверка на вводимые данные ФОРМЫ */
 	$('.name').on('focus',function(){
