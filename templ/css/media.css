@@ -66,43 +66,31 @@
 @media only screen and (max-width : 480px) {
 
 	.header_title{
-		padding: 10px 0px;
-		font-size: 30px;
+		padding: 40px 0px;
+		font-size: 40px;
 	}
 	.list{
-		font-size: 16px;
+		font-size: 23px;
 	}
 	.next_slide_buttons{
-		margin: 20% auto;
-	}
-	.nout_item{
-		margin-top: 105%;
-	}
-	.nout_item img {
-		width: 100%;
+		margin: 10% auto;
 	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 	.logo p{
-		font-size: 12px;
+		font-size: 15px;
 	}
 	.header_title{
-		font-size: 20px;
-		padding: 15px 0px;
+		font-size: 25px;
+		padding: 30px 0px;
 	}
 	.list{
-		font-size: 13px;
+		font-size: 18px;
 	}
 	.next_slide_buttons{
 		margin: 20% auto;
-	}
-	.nout_item{
-		margin-top: 25%;
-	}
-	.nout_item img {
-		width: 100%;
 	}
 }
 
