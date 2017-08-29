@@ -95,7 +95,17 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
+	var SizeWidth = window.innerWidth;
+	if(SizeWidth <= 320){
+		$('.My_img').css({
+			opacity : '0',
+			position : 'absolute',
+			left : '-9999%'
+		});
+		$('.Inf_addit').css({
+			marginLeft: '-110%'
+		})
+	}
 	/* ПРоверка на вводимые данные ФОРМЫ */
 	$('.name').on('focus',function(){
 		$(this).val('').css('border','1px solid #19d697');
