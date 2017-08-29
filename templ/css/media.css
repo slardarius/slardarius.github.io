@@ -52,6 +52,18 @@
 	.next_slide_buttons_work{
 		margin: 5% auto;
 	}
+	/* TODO: THIRD SECTION */
+	.Third_title{
+		padding: 0px;
+		text-align: center;
+	}
+	.Title_whatiknow{
+		margin-top: 6%;
+		text-align: center
+	}
+	.Inf_addit_link #_link_text{
+		text-align: center;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -93,6 +105,17 @@
 	.Inf_addit{
 		font-size: 21px;
 	}
+	/* TODO: THIRD SECTION */
+	.Inf_addit_link{
+		text-align: center;
+	}
+	.next_slide_buttons_link{
+		margin: 5% auto;
+	}
+	.background_container{
+		margin: 0% 0px;
+		height: 23vh;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -123,6 +146,16 @@
 		font-size: 18px;
 	}
 	.My_img img{
+		width: 90%;
+	}
+	/*TODO: THIRD CONTAINER */
+	.Third_whatiknow{
+		font-size: 30px;
+	}
+	.Img_slideP{
+		margin: 25% 0%;
+	}
+	.Img_slideP img{
 		width: 90%;
 	}
 }
@@ -162,6 +195,13 @@
 	}
 	.next_slide_buttons_work{
 		margin: 10% auto;
+	}
+	/* TODO: THIRD CONTAINER */
+	.Title_whatiknow{
+		font-size: 35px;
+	}
+	.iknow{
+		font-size: 20px;
 	}
 }
 

@@ -47,7 +47,7 @@ body
 		background: $Color_buttons_active
 		border-right: 15px solid $Color_buttons_border
 header
-	background: url(../img/header.png)
+	background: url(../img/header.png) no-repeat top center / cover
 	width: 100%
 	height: 100vh
 	min-height: 700px
@@ -87,7 +87,7 @@ header
 .nout_item
 	margin-top: 60px
 	img
-		width: 85%
+		width: 100%
 		height: auto
 .bg_white
 	left: 0%
@@ -97,7 +97,7 @@ header
 	position: absolute
 	bottom: 0%
 
-/* Second section */
+/* SECOND SECTION */
 #Second_section
 	width: 100%
 	height: 100vh
@@ -135,3 +135,68 @@ header
 		background: $Color_items
 .next_slide_buttons_work
 	margin-top: 5%
+
+/* THIRD SECTION */
+#Third_section
+	width: 100%
+	height: 100vh
+	position: relative
+.Third_title
+	font-size: em(50px)
+	font-family: 'RobotoLight'
+	color: $Color_headers
+	padding: 20px
+.Img_title
+	position: absolute
+	right: 0%
+	top: 0%
+	z-index: -1
+	img
+		width: 100%
+		height: auto
+.Img_background
+	position: absolute
+	left: 0%
+	padding-top: 10%
+	img
+		width: (100% / 1.25)
+		height: auto
+.Title_whatiknow
+	font-size: em(50px)
+	font-family: 'RobotoLight'
+	color: $Color_headers
+	padding: 3%
+	margin-top: 13%
+.iknow
+	font-size: em(25px)
+	font-family: 'RobotoRegular'
+	text-transform: uppercase
+	ul > li
+		list-style: square outside
+.Inf_addit_link
+	#_link_title
+		font-size: em(30px)
+		font-family: 'RobotoLight'
+		color: $Color_headers
+	#_link_text
+		font-size: em(20px)
+		font-family: 'RobotoRegular'
+		color: $Color_text
+.next_slide_buttons_link
+	margin-top: 5%
+	font-size: em(18px)
+	padding: 0px 4.5px
+.background_container
+	margin: 2% 0px
+	width: 100%
+	height: 30vh
+	background-color: $Color_headers
+.Img_slideP
+	margin: 15% 0%
+	text-align: center
+	font-size: 20px
+	font-family: 'RobotoLight'
+	color: $Color_text
+	img
+		width: 70%
+		height: auto
