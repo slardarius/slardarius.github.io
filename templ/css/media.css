@@ -203,6 +203,15 @@
 	.iknow{
 		font-size: 20px;
 	}
+	.Inf_addit_link{
+		margin-top: 25%;
+	}
+	.Img_slideP{
+		margin: 50% 0px;
+	}
+	.Img_slideP p {
+		font-size: 15px;
+	}
 }
 
 
