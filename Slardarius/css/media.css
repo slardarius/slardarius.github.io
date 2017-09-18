@@ -1,399 +1,267 @@
- 	/*==========  Desktop First Method  ==========*/
+/*==========  Desktop First Method  ==========*/
 
- 	@media only screen and (max-width: 1280px){
-
- 		.second__header_bg_container{
- 			margin-top: 100px;
- 			width: 600px;
- 		}
-
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	/* TODO HEADER */
+	.list{
+		font-size: 24px
+	}
+	.nout_item img{
+		width: 100%;
+	}
+	/* TODO SECOND SECTION */
+	.Inf_addit{
+		text-align: center;
+	}
+ 	.next_slide_buttons_work{
+ 		margin: 5% auto;
  	}
+	/* TODO: FOURTH SECTION */	
+	.Fourth_list{
+		font-size: 24px;
+	}
+}
 
- 	/* Medium Devices, Desktops */
- 	@media only screen and (max-width : 1132px) {
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	/* TODO HEADER */
+	.header_title{
+		font-size: 40px;
+		padding: 85px 0px;
+	}
+	.list{
+		font-size: 18px;
+	}
+	.next_slide{
+		font-size: 21px;
+	}
+	.nout_item{
+		margin-top: 25%;
+	}
+	/*TODO SECOND SECTION */
+	.Second_title{
+		text-align: center;
+	}
+	.Text_about_me{
+		text-align: space-around;
+	}
+	.My_img img {
+		width: 60%;
+		margin: 20% auto;
+	}
+	.Inf_addit{
+		margin-top: 30%;
+		text-align: left;
+	}
+	.next_slide_buttons_work{
+		margin: 5% auto;
+	}
+	/* TODO: THIRD SECTION */
+	.Third_title{
+		padding: 0px;
+		text-align: center;
+	}
+	.Title_whatiknow{
+		margin-top: 6%;
+		text-align: center
+	}
+	.Inf_addit_link #_link_text{
+		text-align: center;
+	}
+	/* TODO: FOURTH SECTION */
+	.Fourth_list{
+		font-size: 16px;
+	}
+}
 
- 		.why_me{
- 			font-size: 38px;
- 		}
- 		.iformation_next{
- 			font-size: 20px;
- 			line-height:30px;
- 		}
- 		.next{
- 			margin-top: 100px;
- 		}
- 		header{
- 			height: 100vh;
- 			width: 100%;
- 		}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	/* TODO HEADER */
+	.menu ul > li {
+		font-size: 11px;
+	}
+	.header_title{
+		text-align: center;
+		font-size: 40px;
+		padding: 40px 0px;
+	}
+	.list{
+		font-size: 23px;
+	}
+	.next_slide{
+		margin-top: 20px;
+		text-align: center;
+	}
+	.next_slide_buttons{
+		margin: 30% auto; q
+	}
+	/*TODO: SECOND SECTION */
+	.wrapp{
+		padding: 20px 0px;
+		width: 90%;
+		height: 45vh;
+		margin: 0px auto;
+	}
+	.Text_about_me{
+		margin-top: 5%;
+		font-size: 16px;
+	}
+	.My_img img {
+		width: 60%;
+		margin: 20% auto;
+	}
+	.Inf_addit{
+		font-size: 21px;
+	}
+	/* TODO: THIRD SECTION */
+	.Inf_addit_link{
+		text-align: center;
+	}
+	.next_slide_buttons_link{
+		margin: 5% auto;
+	}
+	.background_container{
+		margin: 0% 0px;
+		height: 23vh;
+	}
+	/*TODO: FOURTH SECTION */
+	.Fourth_list{
+		margin-top: 10%;
+		font-size: 25px;
+	}
+	.callback{
+		margin-top: 10%;
+		padding: 75px 30px;
+	}
+}
 
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	/* TODO HEADER */
+	.header_title{
+		padding: 40px 0px;
+		font-size: 40px;
+	}
+	.list{
+		font-size: 23px;
+	}
+	.next_slide_buttons{
+		margin: 10% auto;
+	}
+	/* TODO: SECOND CONTAINER */
+	#Second_section{
+		padding: 80px 0px;
+	}
+	.Second_title{
+		font-size: 35px;
+	}
+	.Text_about_me{
+		margin-top: 5%;
+		font-size: 15px;
+	}
+	.Inf_addit{
+		font-size: 18px;
+	}
+	.My_img img{
+		width: 90%;
+	}
+	/*TODO: THIRD CONTAINER */
+	.Third_whatiknow{
+		font-size: 30px;
+	}
+	.Img_slideP{
+		margin: 25% 0%;
+	}
+	.Img_slideP img{
+		width: 90%;
+	}
+	/*TODO: FOURTH CONTAINER */
+	.Fourth_title{
+		font-size: 30px;
+	}
+	.Fourth_list{
+		font-size: 18px;
+	}
+}
 
- 		.who_i_am{
- 			font-size: 38px;
- 			padding: 25px 0 60px 0;
- 		}
- 		.block_information{
- 			margin-top: 250px;
- 		}
- 		.information_about_me{
- 			padding: 20px 50px 100px 50px;
- 			font-size: 15px;
- 		}
- 		.my_img{
- 			margin-top: 350px;
- 		}
- 		.my_img img {
- 			width: 40%;
- 			height: auto;
- 		}
- 		.information_addit{
- 			font-size: 20px;
- 			line-height: 30px;
- 		}
-
- 		#first_container{
- 			margin: 0;
- 		}
- 		.second_callme{
- 			text-align: right;
- 		}
- 	}
-
- 	/* Small Devices, Tablets */
- 	@media only screen and (max-width : 768px) {
-
- 		header{
- 			height: 100vh;
- 			width: 100%;
- 		}
- 		.why_me{
- 			font-size: 30px;
- 			padding-top: 20px;
- 			text-align: center;
- 		}
- 		.next{
- 			margin-top: 70px;
- 			text-align: center;
- 		}
- 		.ads{
- 			font-size: 20px;
- 			text-align: left;
- 		}
- 		.buttons_about_me{
- 			margin-left: 31%;
- 		}
- 		
- 		#first_container{
- 			margin-top: 10px;
- 		}
- 		.who_i_am{
- 			font-size: 38px;
- 			padding: 25px 0 60px 0;
- 		}
- 		.information_about_me{
- 			padding: 20px 10px 70px 30px;
- 			font-size: 15px;
- 		}
- 		.my_img{
- 			margin: 20px auto;
- 			text-align: center;
- 		}
- 		.my_img img {
- 			width: 40%;
- 			height: auto;
- 		}
- 		.information_addit{
- 			text-align: center;
- 			padding: 0;
- 			font-size: 20px;
- 			line-height: 20px;
- 		}
- 		.buttons_works{
-			margin-left: 35%;
- 		}
-
- 		.second_callme{
- 			padding-top: 50px;
- 			text-align: center;
- 		}
- 		.second__button{
- 			margin-left: 27%;
- 		}
-
-
-
- 		#third_section{
- 			margin: 0px;
- 		}
- 		.third__block_information{
- 			margin: 65px 0px;
- 			font-size: 25px;
- 			line-height: 37,5px;
- 		}
- 		.form{
- 			margin-top: 150px;
- 			width: 100%;
- 			height: 100%;
- 			border-radius: 10px;
- 			padding: 30px 0px;
- 			text-align: center;
- 			position: relative;
- 		}
- 		.form .img_photo{
- 			top: -25%;
- 			left: 40%;
- 			width: 120px;
- 			height: 120px;
- 		}
- 		.form .img_photo .fa-user{
- 			font-size: 45px;
- 			top: 28%;
- 			left: 35%
- 		}
- 		.callme{
- 			margin-left: 24%;
- 		}
- 	}
-
- 	/* Extra Small Devices, Phones */
- 	@media only screen and (max-width : 480px) {
- 		nav{
- 			font-size: 14px;
- 		}
- 		.why_me{
- 			font-size: 25px;
- 			text-align: center;
- 		}
- 		.ads{
- 			font-size: 15px;
- 		}
- 		.next{
- 			margin-top: 0px;
- 			font-size: 20px;
- 		}
-
- 		#first_container{
- 			margin-top: 25px;
- 		}
- 		.block_information{
- 			margin: 110px 0px 50px 0px;
- 		}
- 		.who_i_am{
- 			font-size: 28px;
- 			padding: 10px 0px;
- 		}
- 		.information_about_me{
- 			font-size: 14px;
- 			line-height: 21px;
- 			padding: 15px 10px;
- 		}
- 		.my_img{
- 			margin: 10px auto;
- 		}
- 		.my_img img {
- 			width: 10%;
- 			height: auto;
- 		}
- 		.information_addit{
- 			text-align: center;
- 			font-size: 17px;
- 			line-height: 25,5px;
- 			padding-top: 2px;
- 		}
- 		.buttons_works{
- 			margin: 0px auto;
- 		}
-
- 		.second__title{
- 			text-align: center;
- 		}
- 		.second__iknow{
- 			font-size: 35px;
- 			text-align: center;
- 		}
- 		.second_callme{
- 			padding-top: 20px;
- 			text-align: center;
- 			font-size: 20px;
- 		}
- 		.second__button{
- 			margin-left: 60px;
- 		}
- 		.second__header_bg_container{
- 			width: 300px;
- 		}
- 		.second__title{
- 			padding-top: 70px;
- 		}
- 		.content{
- 			width: 100%;
- 			height: auto;
- 		}
-
- 		.second__header_bg_container{
- 			top: 10%;
- 		}
- 		.second__iknow{
- 			font-size: 30px;
- 		}
- 		.second__whatiknow{
- 			font-size: 18px;
- 			line-height: 24px;
- 		}
- 		.second__title{
- 			padding: 75px 0 70px 0;
- 		}
- 		.second__owl-carousel{
- 			padding-top: 62px;
- 		}
- 		.slide_prev,.slide_next{
- 			top: 0%;
- 			padding: 10px;
- 		}
- 		.fa-slider{
- 			font-size: 10px
- 		}
- 		.bg_carousel{
- 			bottom: 4%;
- 		}
-
- 		#third_section{
- 			margin-top: 45px;
- 		}
- 		.third__block_information{
- 			margin: 55px 0px;
- 			font-size: 17px;
- 			line-height: 22px;
- 		}
- 		.form{
- 			margin-top: 75px;
- 			width: 100%;
- 			height: 100%;
- 			border-radius: 10px;
- 			padding: 30px 0px;
- 			text-align: center;
- 			position: relative;
- 		}
- 		.form .img_photo{
- 			top: -15%;
- 			left: 34%;
- 			width: 90px;
- 			height: 90px;
- 		}
- 		.form .img_photo .fa-user{
- 			font-size: 25px;
- 			top: 38%;
- 			left: 38%
- 		}
- 	}
-
- 	/* Custom, iPhone Retina */
- 	@media only screen and (max-width : 320px) {
- 		nav{
- 			font-size: 10px;
- 		}
- 		.why_me{
- 			padding: 0px;
- 			margin: 0px;
- 			font-size: 25px;
- 		}
- 		.ads{
- 			margin: 0px;
- 			font-size: 14px;
- 		}
- 		.next{
- 			font-size: 20px;
- 			margin: 0px;
- 		}
- 		.buttons_about_me{
- 			margin-left: 13%;
- 		}
-
- 		.second__title{
- 			font-size: 40px;
- 			padding: 45px 0 45px 0
- 		}
- 		.second__header__img{
- 			top: 0%;
- 		}
- 		.second__header_bg_container{
- 			top: 0%;
- 		}
- 		.second_callme{
- 			font-size: 20px;
- 			margin-top: 20%;
- 		}
- 		.second__iknow{
- 			font-size: 30px;
- 		}
- 		.second__whatiknow{
- 			font-size: 24px;
- 			line-height: 24px;
- 		}
- 		.second__owl-carousel{
- 			padding-top: 25%
- 		}
- 		.fa-slider{
- 			font-size: 10px
- 		}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/* TODO HEADER */
+	.logo p{
+		font-size: 15px;
+	}
+	.header_title{
+		font-size: 25px;
+		padding: 30px 0px;
+	}
+	.list{
+		font-size: 18px;
+	}
+	.next_slide_buttons{
+		margin: 20% auto;
+	}
+	/* TODO: SECOND CONTAINER */
+	#Second_section{
+		padding: 50px 0px;
+	}
+	.Second_title{
+		font-size: 25px;
+	}
+	.Text_about_me{
+		margin-top: 5%;
+		font-size: 14px;
+	}
+	.Inf_addit{
+		font-size: 14px;
+	}
+	.My_img img{
+		width: 90%;
+	}
+	.next_slide_buttons_work{
+		margin: 10% auto;
+	}
+	/* TODO: THIRD CONTAINER */
+	.Title_whatiknow{
+		font-size: 35px;
+	}
+	.iknow{
+		font-size: 20px;
+	}
+	.Inf_addit_link{
+		margin-top: 25%;
+	}
+	.Img_slideP{
+		margin: 50% 0px;
+	}
+	.Img_slideP p {
+		font-size: 15px;
+	}
+}
 
 
- 		#third_section{
- 			margin-top: 0px;
- 		}
- 		.third__block_information{
- 			margin: 65% 0px;
- 			font-size: 14px;
- 			line-height: 22px;
- 		}
- 		.form{
- 			margin-top: 50px;
- 			width: 100%;
- 			height: 100%;
- 			border-radius: 10px;
- 			padding: 30px 0px;
- 			text-align: center;
- 			position: relative;
- 		}
- 		.form .img_photo{
- 			top: -15%;
- 			left: 34%;
- 			width: 90px;
- 			height: 90px;
- 		}
- 		.form .img_photo .fa-user{
- 			font-size: 25px;
- 			top: 38%;
- 			left: 38%
- 		}
- 	}
+/*==========  Mobile First Method  ==========*/
 
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
 
- 	/*==========  Mobile First Method  ==========*/
+}
 
- 	/* Custom, iPhone Retina */
- 	@media only screen and (min-width : 320px) {
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
 
- 	}
+}
 
- 	/* Extra Small Devices, Phones */
- 	@media only screen and (min-width : 480px) {
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
 
- 	}
+}
 
- 	/* Small Devices, Tablets */
- 	@media only screen and (min-width : 768px) {
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
 
- 	}
+}
 
- 	/* Medium Devices, Desktops */
- 	@media only screen and (min-width : 992px) {
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
 
- 	}
-
- 	/* Large Devices, Wide Screens */
- 	@media only screen and (min-width : 1200px) {
-
- 	}
-
- 	}
+}}}

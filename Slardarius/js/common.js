@@ -95,52 +95,26 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
-	/* Линый */
-	/* Убираем картинку, при размере 400-320px */
+	/* Удаление фото, на Width 320px */
 	var SizeWidth = window.innerWidth;
-	if(SizeWidth <= 477){
-		$('.my_img').css('opacity','0');
-		$('.information_addit').css('fontSize','18px');
+	if(SizeWidth < 415){
+		hideOn('My_img', function(){
+			var select = document.querySelector('.My_img');
+			select.style.display = 'none';
+			select.style.transition = 'all .5s leaner';
+		});
+		document.getElementById('col-xs-12').classList = 'col-xs-12';
+		document.getElementById('col-xs-12').style.textAlign = 'center';
+		document.querySelector('.next_slide_buttons_work').style.margin = '10px 50%';
 	}
-	/* ПРоверка на вводимые данные ФОРМЫ */
-	$('.name').on('focus',function(){
-		$(this).val('').css('border','1px solid #19d697');
-		$(this).focusout(function(){
-				$(this).css('border','1px solid #000');
-		});
-	});
-	$('.phone').on('focus',function(){
-		$(this).val('').css('border','1px solid #19d697');
-		$(this).focusout(function(){
-				$(this).css('border','1px solid #000');
-		});
-	});
-	$('.email').on('focus',function(){
-		$(this).val('').css('border','1px solid #19d697');
-		$(this).focusout(function(){
-				$(this).css('border','1px solid #000');
-		});
-	});
-	$('.callme').on('click',function(){
-		var name = $('.name').val();
-		var email = $('.email').val();
-		var phone = $('.phone').val();
-
-		if( name == '' ) {
-			$('.name').val('Вы не ввели имя.');
-			$('.name').css('border','1px solid red');
-		}
-		if( phone == '' ) {
-			$('.phone').val('Вы не ввели номер телефона.');
-			$('.phone').css('border','1px solid red');
-		}
-		if( email == '' ) {
-			$('.email').val('Вы не ввели E-mail.');
-			$('.email').css('border','1px solid red');
-		}
-
-	});
+	function hideOn(name,callback){
+		var select = document.querySelector('.' + name);
+		select.style.opacity = '0';
+		select.style.transition = 'all .5s ease';
+	 	setInterval(function(){
+	 		callback();
+	 	},600);
+	}
 
 });
 

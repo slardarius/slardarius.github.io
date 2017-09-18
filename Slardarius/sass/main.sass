@@ -21,264 +21,266 @@ $Color_items: #b2eff8
 body
 	font-size: 16px
 	font-family: 'RobotoRegular', sans-serif
-	line-height: 24px
-	margin: 0
-	padding: 0
-/* First page */
-header
-	width: 100%
-	height: 85vh
-	min-height: 700px
-	background: #689ac8 url(../img/header.png) center center / cover
-	background-attachment: fixed
-	nav
-		font-family: 'RobotoCondensetRegular'
-
-		ul
-			display: flex
-			justify-content: space-around
-			li
-				padding: 29px 0 0 0
-				text-transform: uppercase
-				list-style-type: none
-				a
-					color: #111d2c
-				&:hover
-					padding-bottom: 10px
-					border-bottom: 2px solid $Color_buttons_border
-.logo
-	font-size: 30px
-	padding: 26px 3px
-	font-family: 'RobotoBold'
-	color: $Color_headers
+	line-height: 1.5
+	overflow-x: hidden
+	min-width: 320px
+	overflow-x: hidden
 	cursor: pointer
-.menu
-	width: 100%
-	height: 142px
-.why_me
-	font-family: "RobotoLight"
-	font-size: 50px
-	color: $Color_headers
-	width: 100%
-	height: 101px
-.ads
-	font-size: 25px
-	line-height: 37.5px
-	font-family: 'RobotoRegular'
-	color:  $Color_text
-.next
-	font-size: 25px
-	font-family: 'RobotoLight'
-	color: $Color_headers
-	height: 82px
-	width: 100%
-.buttons_about_me
-	margin-top: 30px
-.buttons
-	width: 179px
-	height: 32px
+.active_list li:hover
+	color: $Color_buttons_border
+	& a
+		color: $Color_buttons_active
+
+.button
+	width: 180px
+	height: 30px
+	background: $Color_headers
+	border-right: 15px solid $Color_buttons_border
 	border-radius: 5px
-	cursor: pointer
-	background-color: $Color_buttons
-	cursor: pointer
-	padding: 0px 50px
-	color: #fff
-	font-size:  20px
-	padding:  0px 45px
 	text-transform: uppercase
-	border-right: 16px solid $Color_buttons_border
-	+transition(all 0.25s linear)
-	line-height: 34px
 	font-family: 'RobotoBold'
+	font-size: em(18px)
+	color: #fff
+	text-align: center
+	line-height: 1.7
+	padding: 0px 48px
+	z-index: 1
+	cursor: pointer
+	+transition(all .5s ease)
 	&:hover
-		background-color: #ff9000
-		border-right: 16px solid $Color_buttons_border_buff
+		background: $Color_buttons_border
+		border-right: 10px solid $Color_headers
 	&:active
-		background-color: $Color_buttons_active
-.nout__item
-	width: 100%
-	height: auto
-	margin-top: 70px
-	position: absolute
-
-/* Second section */
-#first_container
+		background: $Color_buttons_active
+		border-right: 15px solid $Color_buttons_border
+header
+	background: url(../img/header.png) no-repeat top center / cover
 	width: 100%
 	height: 100vh
-	background: #bddedd url(../img/second_section.png) top center / cover
-	min-height: 1080px
-	margin-top: 220px
+	min-height: 700px
 	position: relative
-.block_information
-	background: $Color_items
-	width: 100%
-	height: 100%
-	margin-top: 125px
-.who_i_am
-	font-size: 50px
+.top_line
+	padding: 25px 0px
+	.logo
+		font-size: 30px
+		font-family: 'RobotoBold'
+	.menu ul
+		display: flex
+		justify-content: space-around
+		font-size: em(15px)
+		li
+			cursor: pointer
+			padding-top: 20px
+			text-transform: uppercase
+			border-bottom: 1px solid transparent
+			&:hover
+				border-bottom: 1px solid $Color_buttons_border
+.header_title
+	font-size: em(50px)
 	font-family: 'RobotoLight'
-	padding: 36px 0 107px 0
+	padding: 50px 0px
 	color: $Color_headers
-.information_about_me
-	padding: 30px 100px 170px 100px
-	font-size: 18px
-	font-family: 'RobotoRegular'
-	line-height: 27px
+.list
 	color: $Color_text
-.my_img
-	margin: 210px 0px 0px 0px
+	font-size: em(25px)
+	font-family: 'RobotoRegular'
+.next_slide
+	font-size: 25px
+	font-family: 'RobotoLight'
+	color: $Color_headers
+	text-transform: uppercase
+.next_slide_buttons
+	margin-top: 30px
+.nout_item
+	margin-top: 30px
 	img
-		width: 45%
+		width: 95%
+		height: auto
+.bg_white
+	left: 0%
+	width: 100%
+	height: 12vh
+	background: #fff
+	position: absolute
+	bottom: 0%
+
+/* SECOND SECTION */
+#Second_section
+	width: 100%
+	height: 100vh
+	background: url(../img/second_section.png) no-repeat top center / cover
+	position: relative
+	padding: 130px 0px
+.wrapp
+	width: 100%
+	height: 50vh
+	background: darken($Color_items,20%)
+	padding: 10px 30px 30px 20px
+.Second_title
+	font-size: em(50px)
+	color: $Color_headers
+	font-family: 'RobotoLight'
+.Text_about_me
+	margin-top: 10%
+	width: 90%
+	font-size: em(18px)
+	color: $Color_text
+	font-family: 'RobotoRegular'
+.My_img
+	text-align: center
+	img
+		width: 80%
 		height: auto
 		border: 5px solid $Color_items
 		border-radius: 50%
-.information_addit
+.Inf_addit
+	margin-top: 10%
 	font-size: 25px
 	font-family: 'RobotoLight'
-	padding-top: 50px
 	color: $Color_text
-	margin-bottom: 50px
-	.colorfull
+	.Colorful
 		background: $Color_items
+.next_slide_buttons_work
+	margin-top: 5%
 
-
-/* Third section */
-
-#second_container
+/* THIRD SECTION */
+#Third_section
 	width: 100%
 	height: 100vh
 	position: relative
-.second__header__img
-	img
-		width: 100%
-		height: auto
+.Third_title
+	font-size: em(50px)
+	font-family: 'RobotoLight'
+	color: $Color_headers
+	padding: 20px
+.Img_title
 	position: absolute
-	margin-top: 34px
-	top: 0%
 	right: 0%
-.second__title
-	text-transform: uppercase
-	font-size: 50px
-	font-family: 'RobotoLight'
-	color: $Color_headers
-	padding: 75px 0 150px 0
-.second__header_bg_container
-	width: 20%
-	img
-		width: 100%
-		height: auto
-	position: absolute
-	top: 25%
-	left: 0%
-.second__iknow
-	font-size: 50px
-	font-family: 'RobotoLight'
-	color: $Color_headers
-.second__whatiknow
-	padding-top: 31px
-	font-size: 25px
-	font-family: 'RobotoRegular'
-	line-height: 37px
-	text-transform: uppercase
-	cursor: pointer
-	ul > li
-		list-style: square outside
-		&:hover
-			color: $Color_buttons_border
-.second_callme
-	font-size: 20px
-	font-family: 'RobotoRegular'
-	.imp
-		font-size: 30px
-		font-family: 'RobotoLight'
-		color: $Color_headers
-		padding-bottom: 15px
-.second__button
-	margin-top: 15px
-	padding: 0px 4px
-	font-size: 18px
-.bg_carousel
-	overflow: hidden
-	width: 100%
-	height: auto
-	img
-		width: 100%
-		height: auto
-	position: absolute
-	left: 0%
-.container_owl
-	position: relative
-	.slide_prev,.slide_next
-		position: absolute
-		top: 50%
-		padding: 15px
-		z-index: 1
-	.fa-slider
-		color: $Color_buttons_border
-		font-size: 100px
-	.slide_prev
-		left: 10%
-	.slide_next
-		right: 10%
-.second__owl-carousel
-	padding-top: 75px
-.content
-	text-align: center
+	top: 0%
 	z-index: -1
 	img
-		text-align: center
-		width: 50%
+		width: 100%
 		height: auto
-		display: inline-block
+.Img_background
+	position: absolute
+	left: 0%
+	padding-top: 10%
+	img
+		width: (100% / 1.25)
+		height: auto
+.Title_whatiknow
+	font-size: em(50px)
+	font-family: 'RobotoLight'
+	color: $Color_headers
+	padding: 3%
+	margin-top: 13%
+.iknow
+	font-size: em(25px)
+	font-family: 'RobotoRegular'
+	text-transform: uppercase
+	ul > li
+		list-style: square outside
+.Inf_addit_link
+	#_link_title
+		font-size: em(30px)
+		font-family: 'RobotoLight'
+		color: $Color_headers
+	#_link_text
+		font-size: em(20px)
+		font-family: 'RobotoRegular'
+		color: $Color_text
+.next_slide_buttons_link
+	margin-top: 5%
+	font-size: em(18px)
+	padding: 0px 4.5px
+.background_container
+	margin: 2% 0px
+	width: 100%
+	height: 30vh
+	background-color: $Color_headers
+.Img_slideP
+	text-align: center
+	p
+		padding: 10px
+	img
+		border: 1px solid $Color_items
 
-#third_section
+/* FFOURTH SECTION */
+#Fourth_section
 	width: 100%
 	height: 100vh
-	background: url(../img/bg_third.png) no-repeat center center / cover
 	position: relative
-.third__block_information
-	margin-top: 230px
-	font-size: 20px
-	line-height: 35px
+.Img_title_fourth
+	position: absolute
+	top: 0%
+	left: 0%
+.Fourth_title
+	font-size: em(50px)
+	text-transform: uppercase
+	font-family: 'Robotolight'
+	padding: 20px
+	color: $Color_headers
+.Fourth_wrapp_content
+	margin-top: 1%
+	background: url(../img/bg_third.png) no-repeat center center / cover
+	width: 100%
+	height: 86vh
+.Fourth_list
+	margin-top: 50%
+	font-size: em(25px)
 	font-family: 'RobotoRegular'
 	color: $Color_text
-	width: 100%
-	ol li:hover
-		color: $Color_buttons_border
-.form
-	width: 100%
-	height: 100%
-	background: $Color_items
-	border-radius: 10px
-	padding: 100px 0px
+.callback
 	text-align: center
+	margin-top: 30%
+	padding: 150px 60px 70px 60px
 	position: relative
-	.img_photo
-		position: absolute
-		top: -13%
-		left: 32%
-		border: 5px solid $Color_items
-		border-radius: 50%
-		width: 120px
-		height: 120px
-		background-color: #666
-		.fa-user
-			position: absolute
-			font-size: 50px
-			color: #fff
-			top: 25%
-			left: 32%
-	input
-		margin: 20px 0px
-		width: 240px
-		height: 29px
-		border: 1px solid #000
+	background: $Color_items
+	border-radius: 5px
+	+transition(all 0.5s ease)
+	form > input
+		margin: 5%
+		border: 5px solid trasparent
 		border-radius: 5px
-		+transition(all .5s ease)
-		&:focus
-			width: 260px
-			height: 35px
-			border: 2px solid $Color_buttons_active
-.callme
-	margin-left: 62px
+		width: 250px
+		height: 35px
+form input[type = 'text']:hover, input[type ='tel']:hover, input[type='email']:hover
+	width: 250px
+	height: 35px
+	+transition(all 0.5s ease)
+	border: 0px solid transparent
+	border-left: 10px solid $Color_buttons_active
+	font-family: 'RobotoLight'
+.button_call_me
+	margin: 5% auto
 	padding: 0px 30px
+.social_menu
+	background: $Color_buttons_border
+	width: 60%
+	border-radius: 5px
+	margin: 15% auto
+	a .fa
+		font-size: em(25px)
+		color: $Color_text
+		&:hover
+			color: $Color_buttons_active
+	ul
+		padding: 5px
+		display: flex
+		justify-content: space-around
+footer
+	background-color: lighten($Color_headers,5%)
+	ul
+		display: flex
+		justify-content: space-around
+		padding: 20px 0px
+		a
+			color: $Color_text
+			text-transform: uppercase
+			font-family: 'RobotoRegular'
+.text_title
+	font-size: 25px
+	padding: 12px 0px
+	text-align: center
+	font-family: 'RobotoBold'
+	color: $Color_text
