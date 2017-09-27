@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "segoe-ex";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff2") format("woff2"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.svg#segoe-ex") format("svg"); }
+
+@font-face {
+  font-family: "segoeBold-ex";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff2") format("woff2"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype"), url("../fonts/SegoeUIBold/SegoeUIBold.svg#segoeBold-ex") format("svg"); }
+
+@font-face {
+  font-family: "RobotoLight";
+  font-style: normal;
+  font-weight: light;
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#RobotoLight") format("svg"); }
+
+body {
+  font-size: 16px;
+  font-family: "segoe-ex", sans-serif;
+  position: relative;
+  opacity: 1;
+  line-height: 1.75;
+  min-width: 320px; }
+
+/* INVIS DISPLAY */
+.show {
+  display: none !important;
+  opacity: 0; }
+
+header {
+  background-color: #262626;
+  padding: 10px 0px 0px 0px; }
+
+.top-menu {
+  cursor: pointer; }
+  .top-menu__menu {
+    font-size: 0.8125em; }
+    .top-menu__menu ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      list-style: none;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'segoeBold-ex'; }
+      .top-menu__menu ul a {
+        color: #fff; }
+      .top-menu__menu ul a:hover {
+        color: #f17f42;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/background.png") center/cover;
+  background-attachment: fixed; }
+  .content__button {
+    width: 180px;
+    height: 30px;
+    background: #1a1616;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'segoeBold-ex';
+    border: 1px solid transparent;
+    margin: 5% auto;
+    text-align: center;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    cursor: pointer; }
+    .content__button:hover {
+      background-color: #f17f42;
+      color: #fff;
+      border: 1px solid #f51856;
+      -webkit-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear; }
+    .content__button:active {
+      background-color: #f51856; }
+  .content__title {
+    font-size: 30px;
+    font-family: 'RobotoLight'; }
+  .content__items {
+    -webkit-box-shadow: 4px 6px 6px 2px rgba(0, 0, 0, 0.17);
+            box-shadow: 4px 6px 6px 2px rgba(0, 0, 0, 0.17);
+    margin-top: 3%;
+    padding: 5% 0%;
+    background: rgba(246, 246, 247, 0.55);
+    position: relative;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    cursor: pointer; }
+    .content__items__img {
+      margin-top: 5%; }
+    .content__items img {
+      width: 80%;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: 1px solid #f17f42;
+      height: auto;
+      margin: 0px auto; }
+    .content__items__title {
+      margin-top: 5%;
+      font-size: 1.875em;
+      text-align: center;
+      font-family: 'segoeBold-ex'; }
+    .content__items__information {
+      margin-top: 5%;
+      font-size: 1em;
+      font-family: 'segoe-ex';
+      text-align: center; }
+    .content__items__button {
+      width: 180px;
+      height: 30px;
+      text-align: center;
+      margin: 5% auto;
+      text-transform: uppercase;
+      border: 1px solid #f17f42;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      font-family: 'segoeBold-ex'; }
+      .content__items__button:hover {
+        background-color: #f17f42;
+        color: #fff;
+        border: 1px solid #f51856;
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear; }
+      .content__items__button:active {
+        background-color: #f51856; }
