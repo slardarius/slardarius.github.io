@@ -9,8 +9,6 @@
     }
     window.onclick = function(e){
         var elem = e.target;
-        elem.text = 'sd';
         blocks[elem.id].classList.toggle('show');
-        
     }
 })();
