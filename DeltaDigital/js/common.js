@@ -12,3 +12,12 @@
         blocks[elem.id].classList.toggle('show');
     }
 })();
+
+$(document).ready(function(){
+    $('img').each(function() { $(this).wrap("<a href=" + $(this).attr('src') + "></a>"); });
+    $('img').fancybox({
+        'overlayShow' : true,
+        'autoDimensions': false
+
+    });
+})
