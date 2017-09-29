@@ -24,6 +24,38 @@ body {
   line-height: 1.75;
   min-width: 320px; }
 
+/* TODO: BURGER MENU */
+.top-menu__menu-burger {
+  width: 100%;
+  height: 400px;
+  position: relatives; }
+
+.span {
+  width: 30px;
+  height: 20px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-top: 1%;
+  position: relative;
+  margin-bottom: 2%;
+  left: 132%;
+  z-index: 1; }
+
+.span_center {
+  border-top: 2px solid #fff;
+  position: absolute;
+  top: 42%;
+  width: 30px; }
+
+.wrapper__items {
+  text-align: center;
+  padding: 10px 0px;
+  margin-bottom: 2% 0px;
+  text-transform: uppercase;
+  color: #fff; }
+
 /* INVIS DISPLAY */
 .show {
   display: none !important;
@@ -31,7 +63,8 @@ body {
 
 header {
   background-color: #262626;
-  padding: 10px 0px 0px 0px; }
+  padding: 10px 0px 0px 0px;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5); }
 
 .top-menu {
   cursor: pointer; }

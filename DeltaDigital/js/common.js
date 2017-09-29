@@ -11,13 +11,13 @@
         var elem = e.target;
         blocks[elem.id].classList.toggle('show');
     }
+    
+    var gamburger = document.getElementById('important');
+    gamburger.onclick = function(){
+    var menu = document.getElementsByClassName('wrapper__items');
+    for(var i = 0; i < menu.length; i++){
+      menu[i].classList.toggle('show');
+    }
+}
+
 })();
-
-$(document).ready(function(){
-    $('img').each(function() { $(this).wrap("<a href=" + $(this).attr('src') + "></a>"); });
-    $('img').fancybox({
-        'overlayShow' : true,
-        'autoDimensions': false
-
-    });
-})
