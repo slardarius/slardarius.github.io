@@ -25,6 +25,26 @@ body {
   min-width: 320px; }
 
 /* TODO: BURGER MENU */
+/* SPECIAL CLASS */
+@-webkit-keyframes Burger__left {
+  25% {
+    left: 0%; }
+  50% {
+    left: 25%; }
+  75% {
+    left: 75%; }
+  100% {
+    left: 100%; } }
+@keyframes Burger__left {
+  25% {
+    left: 0%; }
+  50% {
+    left: 25%; }
+  75% {
+    left: 75%; }
+  100% {
+    left: 100%; } }
+
 .top-menu__menu-burger {
   width: 100%;
   height: 400px;
@@ -35,8 +55,6 @@ body {
   height: 20px;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
   margin-top: 1%;
   position: relative;
   margin-bottom: 2%;
@@ -45,9 +63,19 @@ body {
 
 .span_center {
   border-top: 2px solid #fff;
+  left: 0%;
   position: absolute;
   top: 45%;
-  width: 30px; }
+  width: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.left {
+  -webkit-animation: Burger__left .2s linear;
+          animation: Burger__left .2s linear;
+  left: 400%;
+  opacity: 0; }
 
 .span_first {
   -webkit-transform: rotate(45deg);
@@ -76,6 +104,15 @@ body {
     color: #f17f42; }
   .wrapper__items:active {
     color: #f51856; }
+
+.main_span {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border: 2px solid transparent; }
 
 .switch {
   border: 2px solid transparent; }

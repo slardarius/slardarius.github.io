@@ -29,12 +29,25 @@
         menu[i].classList.toggle('show');
     }
     /*TODO: CHANGE GAMURGER ON EXT */
-    span_center[0].classList.toggle('switch');
-    gamburger.classList.toggle('switch');
-    gamburger.style.transition = 'all .5s ease 0.3s';
-    for(var i=0; i < ext.length; i++){
-        ext[i].classList.toggle('switch');
+    span_center[0].classList.toggle('left');
+   
+    setTimeout(function(){
+        gamburger.classList.toggle('main_span');
+        if(gamburger.classList.contains('main_span')){
+        setTimeout(function(){
+            for(var i=0; i < ext.length; i++){
+                ext[i].classList.toggle('switch');
+            }
+        },600);
     }
+    else {
+        setTimeout(function(){
+            for(var i=0; i < ext.length; i++){
+                ext[i].classList.toggle('switch');
+            }
+        },0);
+    }
+    },500);
 }
 
 })();
