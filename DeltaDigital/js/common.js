@@ -19,35 +19,22 @@
     }
 
     /* TOOD: WORK WIDTH BURGER */
-    var gamburger = document.getElementById('important');
-    var span_center = document.getElementsByClassName('span_center');
-    var menu = document.getElementsByClassName('wrapper__items');
-    var ext = document.getElementsByClassName('ext');
-    gamburger.onclick = function(){
-    /* TODO: SWOH MENU */
-        for(var i = 0; i < menu.length; i++){
-        menu[i].classList.toggle('show');
-    }
-    /*TODO: CHANGE GAMURGER ON EXT */
-    span_center[0].classList.toggle('left');
-   
-    setTimeout(function(){
-        gamburger.classList.toggle('main_span');
-        if(gamburger.classList.contains('main_span')){
-        setTimeout(function(){
-            for(var i=0; i < ext.length; i++){
-                ext[i].classList.toggle('switch');
-            }
-        },600);
-    }
-    else {
-        setTimeout(function(){
-            for(var i=0; i < ext.length; i++){
-                ext[i].classList.toggle('switch');
-            }
-        },0);
-    }
-    },500);
-}
+    var Click_on_buttom = document.getElementsByClassName('top-menu__menu--burger');
+    /* TODO: ELEMENTS INTERFACE */
+    var Element_top     = document.getElementsByClassName('burger__item--top');
+    var Elemet_center   = document.getElementsByClassName('burger__item--center');
+    var Element_bottom  = document.getElementsByClassName('burger__item--bottom');
+    /* TODO: ELEMENTS MENU */
+    var Element_menu_items = document.getElementsByClassName('wrapper__items');
+
+    Click_on_buttom[0].onclick = function(){
+        Element_top[0].classList.toggle('click_top');
+        Element_bottom[0].classList.toggle('click_bottom');
+        Elemet_center[0].classList.toggle('show');
+        for(var i = 0; i < Element_menu_items.length; i++ ){
+            Element_menu_items[i].classList.toggle('show');
+        }
+
+    };
 
 })();
