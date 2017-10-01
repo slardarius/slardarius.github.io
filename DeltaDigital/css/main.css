@@ -147,26 +147,20 @@ body {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg); } }
 
-.top-menu__menu--burger:hover .burger__item {
-  -webkit-animation: FIRST__ANIMATION .5s linear;
-          animation: FIRST__ANIMATION .5s linear;
-  top: 45.5%; }
-
+/*.top-menu__menu--burger:hover .burger__item
+	animation: FIRST__ANIMATION .5s linear
+	top: 45.5% */
 .click_top {
-  -webkit-animation: SECOND_ANIMATION_START .5s linear;
-          animation: SECOND_ANIMATION_START .5s linear;
-  top: 45.5%;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
-
-.click_bottom {
-  -webkit-animation: SECOND_ANIMATION_END .5s linear;
-          animation: SECOND_ANIMATION_END .5s linear;
   top: 45.5%;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
+
+.click_bottom {
+  top: 45.5%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
 /* TODO: INVIS DISPLAY */
 .show {

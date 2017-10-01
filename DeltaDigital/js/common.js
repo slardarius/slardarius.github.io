@@ -26,14 +26,58 @@
     var Element_bottom  = document.getElementsByClassName('burger__item--bottom');
     /* TODO: ELEMENTS MENU */
     var Element_menu_items = document.getElementsByClassName('wrapper__items');
+    /* TODO: ANIMATION VARS */
+    var fps = 1;
+    var pixels = 1;
 
     Click_on_buttom[0].onclick = function(){
-        Element_top[0].classList.toggle('click_top');
-        Element_bottom[0].classList.toggle('click_bottom');
-        Elemet_center[0].classList.toggle('show');
-        for(var i = 0; i < Element_menu_items.length; i++ ){
-            Element_menu_items[i].classList.toggle('show');
+        
+        Click_on_buttom[0].classList.toggle('FadeIn');
+        
+        if(!Click_on_buttom[0].classList.contains('FadeIn')){
+           console.log('Назад');
+           for(var i =0; i < 11; i++){
+            setTimeout(function(){
+                var tempPositionTop = Element_top[0].offsetTop;
+                var tempPositionBottom = Element_bottom[0].offsetTop;
+                Element_top[0].style.top = tempPositionTop - pixels + 'px';
+                Element_bottom[0].style.top = tempPositionBottom + pixels + 'px';
+            },(40*i));
+            setTimeout(function(){
+                Element_top[0].classList.toggle('click_top');
+                Element_bottom[0].classList.toggle('click_bottom');
+                Elemet_center[0].classList.toggle('show');            
+            },1);
+            setTimeout(function(){
+                for(var i = 0; i < Element_menu_items.length; i++ ){
+                    Element_menu_items[i].classList.toggle('show');
+                }
+            },500);
+           
         }
+        }
+        if(Click_on_buttom[0].classList.contains('FadeIn')){
+            console.log('Вперед');
+            for(var i =0; i < 11; i++){
+                setTimeout(function(){
+                    var tempPositionTop = Element_top[0].offsetTop;
+                    var tempPositionBottom = Element_bottom[0].offsetTop;
+                    Element_top[0].style.top = tempPositionTop + pixels + 'px';
+                    Element_bottom[0].style.top = tempPositionBottom - pixels + 'px';
+                },(25*i));
+                setTimeout(function(){
+                    Element_top[0].classList.toggle('click_top');
+                    Element_bottom[0].classList.toggle('click_bottom');
+                    Elemet_center[0].classList.toggle('show');            
+                },450);
+            }
+            setTimeout(function(){
+                for(var i = 0; i < Element_menu_items.length; i++ ){
+                    Element_menu_items[i].classList.toggle('show');
+                }
+            },600);
+        }
+        
 
     };
 
