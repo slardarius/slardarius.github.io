@@ -29,7 +29,8 @@ body {
   position: relative;
   width: 40px;
   height: 25px;
-  left: 130%; }
+  left: 130%;
+  margin-top: -2px; }
 
 .menu__border {
   border-top: 2px solid #fff; }
