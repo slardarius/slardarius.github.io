@@ -45,9 +45,9 @@ header {
   background-color: rgba(255, 255, 255, 0.95);
   position: relative; }
   .header__top_line__logo {
+    height: auto;
     position: absolute;
-    top: 50%;
-    padding: 30px 0px; }
+    padding: 5px 0px; }
   .header__top_line__button_number {
     padding: 8px 10px;
     color: #fff;
@@ -122,6 +122,7 @@ nav ul {
   .header__content_center__image img {
     margin: 1% auto; }
   .header__content_center__ads {
+    line-height: 1.5;
     text-align: center;
     font-size: 3.125em;
     font-family: 'RobotoBold';
@@ -133,17 +134,143 @@ nav ul {
 
 .About {
   width: 100%;
-  min-height: 50vh;
-  background: #000 url(../img/1section.jpg) bottom center/cover; }
+  min-height: 100vh;
+  background: #000 url(../img/1section.jpg) top center/cover;
+  background-attachment: fixed; }
   .About__title {
     font-size: 3.125em;
     font-family: 'RobotoLight';
     text-transform: uppercase;
     text-align: center;
-    margin-top: 10%; }
+    margin-top: 5%; }
   .About__inform {
-    text-align: center;
+    text-align: left;
+    font-size: 1.0625em; }
+
+.Menu {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff url(../img/2section.jpg) center center/cover; }
+  .Menu__title {
+    font-size: 3.125em;
+    font-family: 'RobotoBold';
+    margin-top: 3%; }
+  .Menu__MineMenu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .Menu__MineMenu__items {
+      background-color: rgba(248, 248, 247, 0.8);
+      -webkit-box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.75);
+              box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.75);
+      text-transform: uppercase;
+      border-top: 5px solid transparent;
+      -webkit-border-radius: 8px;
+              border-radius: 8px;
+      margin: 7% 9% 7% 0%;
+      padding: 10% 0%;
+      -webkit-transition: all 0.45s linear;
+      -o-transition: all 0.45s linear;
+      transition: all 0.45s linear; }
+      .Menu__MineMenu__items:hover {
+        border-top: 5px solid #df405a; }
+      .Menu__MineMenu__items__title {
+        font-size: 1.25em;
+        font-family: 'RobotoBold';
+        text-align: center; }
+      .Menu__MineMenu__items__ingredients {
+        font-size: 1.125em;
+        font-family: 'RobotoRegular';
+        padding-left: 20%; }
+      .Menu__MineMenu__items__cast {
+        background: #e3e0e1;
+        text-align: center;
+        color: #df405a;
+        padding: 10px 0px;
+        font-size: 1.125em;
+        font-family: 'RobotoBold'; }
+      .Menu__MineMenu__items__buttons {
+        width: 180px;
+        margin: 4% auto;
+        border: 1px solid #df405a; }
+  .Menu__days ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: 'RobotoLight';
+    cursor: pointer;
     font-size: 1.125em; }
+    .Menu__days ul li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: 1%;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      padding: 5px 10px;
+      -webkit-transition: all 0.45s linear;
+      -o-transition: all 0.45s linear;
+      transition: all 0.45s linear; }
+      .Menu__days ul li:hover {
+        background-color: #df405a;
+        color: #fff; }
+      .Menu__days ul li:active {
+        background-color: #1cb87f;
+        color: #fff; }
+
+.next_slide, .prev_slide {
+  font-size: 70px;
+  position: absolute;
+  color: #df405a; }
+
+.next_slide {
+  top: 30%;
+  left: 99%; }
+
+.prev_slide {
+  top: 30%;
+  right: 100%; }
+
+.Reviews {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff; }
+  .Reviews__title {
+    margin-top: 3%;
+    color: #df405a;
+    font-size: 3.125em; }
+
+.Reviews__carusel__items__img {
+  width: 20%;
+  height: auto;
+  border: 3px solid #df405a;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: 0px auto;
+  margin-top: 6%; }
+
+.Reviews__carusel__items__text {
+  margin: 0px auto;
+  width: 45%;
+  font-size: 1.0625em;
+  font-family: 'RobotoRegular';
+  margin-top: 2%;
+  text-align: center; }
+  .Reviews__carusel__items__text span {
+    font-size: 35px;
+    color: #df405a; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -170,7 +297,12 @@ nav ul {
     font-size: 1.875em; }
   .About__inform {
     margin-top: 10%;
-    font-size: 1em; } }
+    font-size: 0.8125em; }
+  .Menu__days {
+    font-size: 0.8125em; }
+  .Reviews__carusel__items__text {
+    width: 100%;
+    font-size: 0.8125em; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
