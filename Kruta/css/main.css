@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff2") format("woff2"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#RobotoRegular") format("svg"); }
+
+@font-face {
+  font-family: "RobotoLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#RobotoLight") format("svg"); }
+
+@font-face {
+  font-family: "RobotoBold";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff2") format("woff2"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.svg#RobotoBold") format("svg"); }
+
+body {
+  font-size: 16px;
+  font-family: "RobotoRegular", sans-serif;
+  position: relative;
+  opacity: 1;
+  line-height: 1.75;
+  min-width: 320px; }
+
+header {
+  width: 100%;
+  min-height: 80vh;
+  background: rgba(0, 0, 0, 0.7) url(../img/header.jpg) top center/cover;
+  position: relative; }
+  header:before {
+    background-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.header__top_line {
+  width: 100%;
+  padding: 1% 0%;
+  height: 16%;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: relative; }
+  .header__top_line__logo {
+    position: absolute;
+    top: 50%;
+    padding: 30px 0px; }
+  .header__top_line__button_number {
+    padding: 8px 10px;
+    color: #fff;
+    text-align: center;
+    background: #e9405a;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    margin: 0px auto;
+    text-transform: uppercase;
+    font-family: 'RobotoBold';
+    cursor: pointer; }
+    .header__top_line__button_number:active {
+      background-color: #1cb87f;
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+  .header__top_line__number {
+    font-size: 25px;
+    font-family: 'RobotoBold';
+    line-height: 2.1;
+    text-align: center; }
+
+nav {
+  position: absolute;
+  margin: 4% 0%;
+  width: 100%; }
+
+nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  nav ul li a {
+    color: #000;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    nav ul li a:hover {
+      color: #df405a; }
+    nav ul li a:active {
+      color: #1cb87f; }
+
+.button {
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  margin-top: 21%; }
+  .button:hover {
+    background-color: #df405a; }
+  .button:active {
+    background-color: #1cb87f; }
+
+.header__content_center {
+  color: #fff;
+  text-transform: uppercase; }
+  .header__content_center__title {
+    font-size: 2.5em;
+    font-size: 'RobotoRegular';
+    text-align: center;
+    margin-top: 7%; }
+  .header__content_center__image img {
+    margin: 1% auto; }
+  .header__content_center__ads {
+    text-align: center;
+    font-size: 3.125em;
+    font-family: 'RobotoBold';
+    padding: 0px 30px; }
+  .header__content_center_buttons__about {
+    border: 3px solid #df405a; }
+  .header__content_center_buttons__want {
+    background-color: #df405a; }
+
+.About {
+  width: 100%;
+  min-height: 50vh;
+  background: #000 url(../img/1section.jpg) bottom center/cover; }
+  .About__title {
+    font-size: 3.125em;
+    font-family: 'RobotoLight';
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%; }
+  .About__inform {
+    text-align: center;
+    font-size: 1.125em; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .header__content_center__ads {
+    font-size: 40px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header__content_center__title {
+    font-size: 1.875em;
+    font-size: center; }
+  .header__content_center__ads {
+    font-size: 2.1875em; }
+  .About__title {
+    font-size: 1.875em; }
+  .About__inform {
+    margin-top: 10%;
+    font-size: 1em; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
