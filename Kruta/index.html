@@ -34,26 +34,31 @@
 				<div class="col-md-7 hidden-sm hidden-xs">
 					<nav>
 						<ul>
-							<li><a href="#"> меню</a></li>
-							<li><a href="#"> о нас </a></li>
-							<li><a href="#"> отзывы </a></li>
-							<li><a href="#"> доставка и оплата </a> </li>
+							<li><a href="#" id = 'Menu'> меню</a></li>
+							<li><a href="#" id = 'AboutUs' > о нас </a></li>
+							<li><a href="#" id = 'Reviews' > отзывы </a></li>
+							<li><a href="#" id = 'Pay' > доставка и оплата </a> </li>
 						</ul>
 					</nav>
 				</div>
-				<div class="col-md-4 col-sm-12">
+				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="header__top_line__number">
 						+7(99)66 39-12-23
 					</div>
 				</div>
 			</div>
 			<div class = 'row'>
-				<div class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-3 col-xs-6 col-xs-push-3">
+				<div class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-3 hidden-xs">
 					<div class="header__top_line__button_number hidden-sm hidden-xs">
 						хочу, что бы мне перезвонили!
 					</div>
-					<div class="header__top_line__button_number hidden-md hidden-xl hidden-lg">
-						перезвоните!
+				</div>
+				<div class="header__top_line__button_number col-xs-5 hidden-md hidden-xl hidden-lg">
+					перезвоните!
+				</div>
+				<div class="col-xs-7">
+					<div class="header__top_line__burger hidden-sm hidden-md hidden-lg hidden-xl">
+						<i class="fa fa-bars" aria-hidden="true"></i>
 					</div>
 				</div>
 			</div>
@@ -138,28 +143,30 @@
 			<div class="col-md-12 col-sm-12 col-xs-11">
 				<div class="Menu__days">
 					<ul class = 'hidden-xs'>
-						<li>понедельник</li>
-						<li>вторник</li>
-						<li>среда</li>
-						<li>четверг</li>
-						<li>пятница</li>
+						<li id = 'Monday' 	 class = 'day ACTIVE'>понедельник</li>
+						<li id = 'Tuesday' 	 class = 'day' >вторник</li>
+						<li id = 'Wednesday' class = 'day' >среда</li>
+						<li id = 'Thursday'  class = 'day' >четверг</li>
+						<li id = 'Saturday'  class = 'day' >пятница</li>
 					</ul>
 					<ul class = 'hidden-sm hidden-md hidden-xl hidden-lg'>
-						<li>Понедельник</li>
-						<li>Вторник</li>
+						<li id = 'Monday' class = 'day ACTIVE'>Понедельник</li>
+						<li id = 'Tuesday' class = 'day '>Вторник</li>
 					</ul>
 					<ul class = 'hidden-sm hidden-md hidden-xl hidden-lg'>
-						<li>Среда</li>
-						<li>Четверг</li>
-						<li>Пятница</li>
+						<li id = 'Wednesday' class = 'day '>Среда</li>
+						<li id = 'Thursday' class = 'day '>Четверг</li>
+						<li id = 'Saturday' class = 'day '>Пятница</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- ПОНЕДЕЛЬНИК -->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 Monday">
 
 				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
 				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
@@ -178,7 +185,7 @@
 						<div class="Menu__MineMenu__items__cast">
 							50 руб.
 						</div>
-						<div class="Menu__MineMenu__items__buttons button">
+						<div id = 'tovar' value = 'Суп на курином бульоне' class="Menu__MineMenu__items__buttons button tovar">
 							заказать
 						</div>
 					</div>
@@ -195,7 +202,7 @@
 						<div class="Menu__MineMenu__items__cast">
 							40 руб.
 						</div>
-						<div class="Menu__MineMenu__items__buttons button">
+						<div id = 'tovar' value = 'Салат «Витаминный»' class="Menu__MineMenu__items__buttons button tovar">
 							заказать
 						</div> 
 					</div>
@@ -214,34 +221,871 @@
 						<div class="Menu__MineMenu__items__cast">
 							50 руб.
 						</div>
-						<div class="Menu__MineMenu__items__buttons button">
+						<div id = 'tovar' value = 'Салат «Крабовый»' class="Menu__MineMenu__items__buttons button tovar">
 							заказать
 						</div> 
 					</div>
 
 					<div class = 'Menu__MineMenu__items' > 
-						<div class="Menu__MineMenu__items__title">Суп на курином бульоне</div>
+						<div class="Menu__MineMenu__items__title">Греча рассыпчатая</div>
 						<ul class = 'Menu__MineMenu__items__ingredients'>
-							<li>Куриный бульон</li>
-							<li>лук</li>
-							<li>морковь</li>
-							<li>лапша</li>
-							<li>лапша</li>
+							<li>Греча</li>
+							<li>вода</li>
+							<li>Соль</li>
 						</ul>
 						<div class="Menu__MineMenu__items__cast">
-							50 руб.
+							30 руб.
 						</div> 
-						<div class="Menu__MineMenu__items__buttons button">
+						<div id = 'tovar' value = 'Греча рассыпчатая' class="Menu__MineMenu__items__buttons button tovar">
 							заказать
 						</div>
 					</div>
 
-					<div class = 'Menu__MineMenu__items' > Your Content </div>
-					<div class = 'Menu__MineMenu__items' > Your Content </div>
-					<div class = 'Menu__MineMenu__items' > Your Content </div>
-					<div class = 'Menu__MineMenu__items' > Your Content </div>
-					<div class = 'Menu__MineMenu__items' > Your Content </div>
+					<div class = 'Menu__MineMenu__items' > 
+						<div class="Menu__MineMenu__items__title">Капуста цветная запеченая</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Капуста</li>
+							<li>масло</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div id = 'tovar' value = 'Капуста цветная запеченая' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Куриное филе в сливочном соусе</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Куриное филе</li>
+							<li>масло сливочное</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>свливки</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div id = 'tovar' value = 'Куриное филе в сливочном соусе' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Шницель» натуральный, рубленный</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Свинина</li>
+							<li>лук</li>
+							<li>яйцо куриное</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div id = 'tovar' value = '«Шницель» натуральный, рубленный' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Помидоры фаршированные</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Помидоры</li>
+							<li>фарш(лук,морковь,
+							рис,грибы)</li>
+							<li>масло ростительное</li>
+							<li>специи</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div> 
+						<div id = 'tovar' value = 'Помидоры фаршированные' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div id = 'tovar' value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div id = 'tovar' value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
 				</div>
+			</div>
+
+
+			<!-- ВТОРНИК ---->
+			<div class="col-md-12 Tuesday HIDE">
+
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+
+				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Суп-пюре из цветной капусты</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Овощьной бульён</li>
+							<li>цветная капуста</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>вливки</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div>
+						<div  value = 'Суп-пюре из цветной капусты' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Салат «Весенний»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Капуста молодая</li>
+							<li>огурци</li>
+							<li>редиска</li>
+							<li>масло ростительное</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div>
+						<div  value = 'Салат «Весенний»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Салат «Столичный»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Филе курсиное</li>
+							<li>лук</li>
+							<li>Картофель</li>
+							<li>огурец маринованый</li>
+							<li>зеленый горошек</li>
+							<li>майонез</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div>
+						<div  value = 'Салат «Столичный»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Рис  рассыпчатый</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>рис</li>
+							<li>вода</li>
+							<li>масло растительное</li>
+							<li>соль</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							30 руб.
+						</div>
+						<div  value = 'Рис  рассыпчатый' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Фасоль стручковая на пару</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>фасоль</li>
+							<li>масло сливочное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div>
+						<div  value = 'Фасоль стручковая на пару' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">«Биточки» куриные</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Куриное филе</li>
+							<li>лук</li>
+							<li>яйцо куриное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div>
+						<div  value = '«Биточки» куриные' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">«Гуляш» из свинины</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>свинина</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>томат</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div>
+						<div  value = '«Гуляш» из свинины' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Картофель запечённый с грибами и луком</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Картофель</li>
+							<li>Шампиньоны</li>
+							<li>лук</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div>
+						<div  value = 'Картофель запечённый с грибами и луком' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div  value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 Wednesday HIDE">
+
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+
+				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+					<!-- СРЕДА -->
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Суп «Щи» из свежей капусты</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>куриный бульйон</li>
+							<li>капуста</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>картофель</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Суп «Щи» из свежей капусты' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат «Овощное ассорти»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>огурци</li>
+							<li>помидоры</li>
+							<li>перец болгарский</li>
+							<li>масло растительное</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Салат «Овощное ассорти»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат из свеклы с сыром</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>свекла</li>
+							<li>сыр</li>
+							<li>майонез</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Салат из свеклы с сыром' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Спагетти»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>спагетти</li>
+							<li>вода</li>
+							<li>масло ростительное</li>
+							<li>соль</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							30 руб.
+						</div> 
+						<div  value = '«Спагетти»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Овощное рагу</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>фасоль</li>
+							<li>капуста цветная</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>картофель</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Овощное рагу' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Филе индейки с грибами в сливочном соусе</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>филе индейки</li>
+							<li>лук</li>
+							<li>шапиньоны</li>
+							<li>сливки</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div  value = 'Филе индейки с грибами в сливочном соусе' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Жаркое по-домашнему</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Свинина</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>томат</li>
+							<li>картофель</li>
+							<li>чеснок</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							100 руб.
+						</div> 
+						<div  value = 'Жаркое по-домашнему' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Перец болгарский фаршированный</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>перец</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>рис</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div> 
+						<div  value = 'Перец болгарский фаршированный' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div  value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 Thursday HIDE">
+
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+
+				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+					<!-- ЧЕТВЕРГ -->
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Суп «Уха»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>рыбный бульйон</li>
+							<li>мясо рыбы ( треска или горуша )</li>
+							<li>лук</li>
+							<li>картофель</li>
+							<li>специи</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Суп «Уха»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат «Оливье»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>огурец свежий</li>
+							<li>картофель</li>
+							<li>марковь</li>
+							<li>яйцо куриное</li>
+							<li>зеленый горошек</li>
+							<li>филе ципленка</li>
+							<li>майонез</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Салат «Оливье»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат «Мимоза»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Консервированная сайра</li>
+							<li>сайра</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>картофель</li>
+							<li>Яйцо куриное</li>
+							<li>майонез</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Салат «Мимоза»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Картофельное пюре</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Картофель</li>
+							<li>вода</li>
+							<li>масло сливочное</li>
+							<li>соль</li>
+							<li>сливки</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Салат «Мимоза»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Капуста тушеная</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Капуста</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							30 руб.
+						</div> 
+						<div  value = 'Капуста тушеная' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Сосиски, сардельки</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Сосиски или сардельки</li>
+							<li>вода</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div  value = 'Сосиски, сардельки' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Шницель» рыбный, рубленный с овощами</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>горбуша или теска</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div  value = '«Шницель» рыбный, рубленный с овощами' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Соте» из овощей</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>перец</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>фасоль стручковая</li>
+							<li>капуста цветная</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div> 
+						<div  value = '«Соте» из овощей' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div  value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 Saturday HIDE">
+
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+
+				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+					<!-- ПЯТНИЦА -->
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Суп-пюре из шампиньонов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>шампиньйоны</li>
+							<li>сливки</li>
+							<li>специи</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Суп-пюре из шампиньонов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Винегрет»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Свёкла</li>
+							<li>картофель</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>зеленый горошек</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = '«Винегрет»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат «Находка»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>пеинская капуста</li>
+							<li>кукуруза</li>
+							<li>свежий огурец</li>
+							<li>яйцо куриное</li>
+							<li>майонез</li>
+							<li>сыр</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Салат «Находка»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Макароны</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>макароны</li>
+							<li>вода</li>
+							<li>масло сливочное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							30 руб.
+						</div> 
+						<div value = 'Макароны' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Картофель отварной с зеленью</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Картофель</li>
+							<li>вода</li>
+							<li>масло сливочное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Картофель отварной с зеленью' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Бефстроганов»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Говядина</li>
+							<li>лук</li>
+							<li>масло ( сливочное,растительное)</li>
+							<li>мука</li>
+							<li>томат</li>
+							<li>метана</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							100 руб.
+						</div> 
+						<div value = '«Бефстроганов»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Печень куриная с грибами в сливочном соусе</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>печень</li>
+							<li>лук</li>
+							<li>шампиньоны</li>
+							<li>масло(растительное, сливочное)</li>
+							<li>сливки</li>
+							<li>специи</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							100 руб.
+						</div> 
+						<div  value = 'Печень куриная с грибами в сливочном соусе' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Биточки» картофельные с грибами </div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>картофель</li>
+							<li>грибы</li>
+							<li>мука</li>
+							<li>сухари</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div> 
+						<div value = '«Биточки» картофельные с грибами ' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -254,12 +1098,12 @@
 				<div class ="Reviews__title">Отзывы</div>
 			</div>
 			<div class="col-md-12">
-				
+
 				<div class="next_slide next_slide_reviews"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
 				<div class="prev_slide prev_slide_reviews"> <i class="fa fa-angle-left"  aria-hidden="true"></i> </div>
-				
+
 				<div class=" owl-carousel Reviews__carusel" id="Carusel_Reviews">
-					
+
 					<div class="Reviews__carusel__items">
 						<div class="Reviews__carusel__items__img">
 							<img  src="img/girl.png" alt="">
@@ -304,7 +1148,7 @@
 							<p>С нами можно связаться ежедневно 
 								с понедельника по пятницу (включительно) 
 								<strong>с 09:00 до 18:00 </strong> по номеру: <strong>+7(99)66 39-12-23</strong></p>
-								
+
 								<p>
 									<i class="fa fa-vk" aria-hidden="true"></i>
 									<i class="fa fa-instagram" aria-hidden="true"></i>
@@ -314,57 +1158,61 @@
 						</div>
 					</div>
 					<div class="col-md-5 col-md-push-2 col-sm-5 col-xs-12">
-							<div class = 'Callback__forma'>
-								<form action="">
-									<table>
-										<tr>
-											<td>Название комании:		</td>
-											<td><input type="text" name = 'company'> </td>
-										</tr>
-										<tr>
-											<td>Ваше имя:						</td>
-											<td><input type="text" name = 'Name'>	</td>
-										</tr>
-										<tr>
-											<td>Адрес доставки:			</td>
-											<td><input type="text" name = 'adress'>	</td>
-										</tr>
-										<tr>
-											<td>Дата доставки:</td>
-											<td><input type="date" name = 'calendar'></td>
-										</tr>
-										<tr>
-											<td>Время:</td>
-											<td>
-												<select name="time" id="">
-													<option value="до 9:00"> до 9:00</option>
-													<option value="c 9:00 до 11:00"> c 9:00 до 11:00</option>
-													<option value="c 11:00 до 13:00">c 11:00 до 13:00</option>
-													<option value="c 13:00 до 15:00">c 13:00 до 15:00</option>
-													<option value="c 15:00 до 17:00">c 15:00 до 17:00</option>
-													<option value="после 17:00">после 17:00</option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<td>Количество людей:</td>
-											<td><select name="people" id="">
-												<option value="1">  1 человек 	</option>
-												<option value="5"> 	>5 человек	</option>
-												<option value="10"> >10 человек	</option>
-												<option value="20"> >20 человек	</option>
-												<option value="50">	>50 человек	</option>
-												<option value="100">>100 человек</option>
-											</select></td>
-										</tr>
-										<tr>
-											<td>Ваш номер телефона:		</td>
-											<td><input type="tel" name = 'phone'> </td>
-										</tr>
-										<tr>
-											<td>Способ оплаты:</td>
-											<td><p><input type="radio" name = 'money'> Наличным при оплате  </p>
-													<p><input type="radio" name = 'money'> Безналичный расчёт 	</p></td>
+						<div class = 'Callback__forma'>
+							<form action="">
+								<table>
+									<tr>
+										<td>Название комании:		</td>
+										<td><input type="text" name = 'company' placeholder = 'ОО Компания'> </td>
+									</tr>
+									<tr>
+										<td>Ваше имя:						</td>
+										<td><input type="text" name = 'Name' id = 'name' placeholder = 'Шутюк Валерий'>	</td>
+									</tr>
+									<tr>
+										<td>Адрес доставки:			</td>
+										<td><input type="text" name = 'adress' placeholder = 'мкр-н Северное Чертаново, д. 1а, корп. 1'>	</td>
+									</tr>
+									<tr>
+										<td>Заказ:			</td>
+										<td><input type="text" name = 'zakaz' id = 'zakaz' placeholder = 'Гороховый суп'>	</td>
+									</tr>
+									<tr>
+										<td>Дата доставки:</td>
+										<td><input type="date" name = 'calendar'></td>
+									</tr>
+									<tr>
+										<td>Время:</td>
+										<td>
+											<select name="time" id="">
+												<option value="до 9:00"> до 9:00</option>
+												<option value="c 9:00 до 11:00"> c 9:00 до 11:00</option>
+												<option value="c 11:00 до 13:00">c 11:00 до 13:00</option>
+												<option value="c 13:00 до 15:00">c 13:00 до 15:00</option>
+												<option value="c 15:00 до 17:00">c 15:00 до 17:00</option>
+												<option value="после 17:00">после 17:00</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Количество людей:</td>
+										<td><select name="people" id="">
+											<option value="1">  1 человек 	</option>
+											<option value="5"> 	>5 человек	</option>
+											<option value="10"> >10 человек	</option>
+											<option value="20"> >20 человек	</option>
+											<option value="50">	>50 человек	</option>
+											<option value="100">>100 человек</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td>Ваш номер телефона:		</td>
+										<td><input type="tel" name = 'phone' placeholder = '+7(967) 77-77-777'> </td>
+									</tr>
+									<tr>
+										<td>Способ оплаты:</td>
+										<td><p><input type="radio" name = 'money'> Наличным при оплате  </p>
+											<p><input type="radio" name = 'money'> Безналичный расчёт 	</p></td>
 										</tr>
 									</table>
 									<input type="submit" value = 'ХОЧУ ПОЛУЧИТЬ ОБЕД СО СКИДКОЙ!'>
@@ -372,31 +1220,31 @@
 							</div>
 						</div>
 
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer class = 'footer' >
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-12">
-					<div class="footer__menu">
-						<ul>
-							<li><a href="#"> меню</a></li>
-							<li><a href="#"> о нас </a></li>
-							<li><a href="#"> отзывы </a></li>
-							<li><a href="#"> доставка и оплата </a> </li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3 col-md-push-3 col-sm-3 col-xs-12">
-					<div class="footer__webstudio">
-						(с) Дни Турбиных 2017г.
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</section>
+		<footer class = 'footer' >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="footer__menu">
+							<ul>
+								<li><a href="#"> меню</a></li>
+								<li><a href="#"> о нас </a></li>
+								<li><a href="#"> отзывы </a></li>
+								<li><a href="#"> доставка и оплата </a> </li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-push-3 col-sm-3 col-xs-12">
+						<div class="footer__webstudio">
+							(с) Дни Турбиных 2017г.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	<!--[if lt IE 9]>
 			<script src="libs/html5shiv/es5-shim.min.js"></script>
 			<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -406,6 +1254,7 @@
 		<!-- Just jquery -->
 		<link rel="stylesheet" href="css/main.css">
 		<script type = 'text/javascript' src = 'libs/jquery/jquery-3.2.1.min.js'></script>
+		<script type = 'text/javascript' src = 'libs/scrollTo/jquery.scrollTo.min.js'></script>
 		<script type = 'text/javascript' src = 'js/common.js'></script>
 		<script type = 'text/javascript' src = 'js/libs.min.js'></script>
 		<script type = 'text/javascript' src = 'libs/ovl carusel/owl.carousel.min.js'></script>

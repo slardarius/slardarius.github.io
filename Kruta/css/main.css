@@ -48,6 +48,10 @@ header {
   height: 16%;
   background-color: rgba(255, 255, 255, 0.95);
   position: relative; }
+  .header__top_line__burger {
+    font-size: 2.1875em;
+    line-height: 1;
+    text-align: right; }
   .header__top_line__logo {
     height: auto;
     position: absolute;
@@ -173,6 +177,7 @@ nav ul {
       border-top: 5px solid transparent;
       -webkit-border-radius: 8px;
               border-radius: 8px;
+      position: relative;
       margin: 7% 9% 7% 0%;
       padding: 10% 0%;
       -webkit-transition: all 0.45s linear;
@@ -241,26 +246,26 @@ nav ul {
 .next_slide {
   top: 30%;
   left: 99%;
-  -webkit-transition: all 2.2s ease;
-  -o-transition: all 2.2s ease;
-  transition: all 2.2s ease;
+  -webkit-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
   z-index: 2;
   padding: 10px; }
   .next_slide:hover {
-    -webkit-animation: ARROW 2.2s linear infinite;
-            animation: ARROW 2.2s linear infinite; }
+    -webkit-animation: ARROW 1.5s linear infinite;
+            animation: ARROW 1.5s linear infinite; }
 
 .prev_slide {
   top: 30%;
   right: 100%;
-  -webkit-transition: all 2.2s ease;
-  -o-transition: all 2.2s ease;
-  transition: all 2.2s ease;
+  -webkit-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
   z-index: 2;
   padding: 10px; }
   .prev_slide:hover {
-    -webkit-animation: ARROW 2.2s linear infinite;
-            animation: ARROW 2.2s linear infinite; }
+    -webkit-animation: ARROW 1.5s linear infinite;
+            animation: ARROW 1.5s linear infinite; }
 
 .Reviews {
   width: 100%;
@@ -386,9 +391,19 @@ nav ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: 14%;
+  height: 13%;
   background-color: #fff;
   z-index: 2; }
+
+/* TODO: HIDE */
+.HIDE {
+  display: none;
+  opacity: 0;
+  position: absolute; }
+
+.ACTIVE {
+  background-color: #df405a;
+  color: #fff; }
 
 /* TODO: ANIMATION */
 @-webkit-keyframes ARROW {
@@ -446,6 +461,11 @@ nav ul {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .header__top_line__number {
+    font-size: 0.9375em; }
+  .header__top_line__button_number {
+    font-size: 0.9375em;
+    padding: 5px; }
   .header__content_center__title {
     font-size: 1.875em;
     font-size: center; }
@@ -487,7 +507,7 @@ nav ul {
       font-family: 'RobotoBold';
       margin: 0% 0% 6% 8%; }
   .fixed {
-    height: 17%; } }
+    height: 10%; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

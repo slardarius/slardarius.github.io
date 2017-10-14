@@ -1,6 +1,60 @@
 
 $(document).ready(function(){
 
+   var tovar = $('.tovar');
+   var zakaz = '';
+    tovar.on('click',function(){
+        zakaz += $(this).attr('value') + ';' ;
+        $('#zakaz').val('' + zakaz);
+        alert('Вы можете так-же выбрать еще блюда.');
+        
+    });
+    tovar.click(function() {
+        $.scrollTo($(".Callback__forma"), 800, {
+            offset: -100
+        });
+    });
+
+    /* КАРТОЧКИ */
+    var days = ['Monday','Tuesday','Wednesday','Thursday','Saturday'];
+
+    $('.day').on('click',function(){
+        for(var i =0; i < days.length; i++){
+            if($(this).attr('id') == days[i]){
+                
+                for(var j =0; j < days.length;j++){
+                   
+                    $('.' + days[j]).addClass('HIDE');
+                    $('.day').removeClass('ACTIVE');
+                }
+                $(this).addClass('ACTIVE');
+                $('.' + days[i]).removeClass('HIDE').attr('id','Carusel_Menu');
+            }    
+        }
+    });
+    
+
+    /* МЕНЮ */
+    $("#Menu").click(function() {
+		$.scrollTo($(".Menu"), 800, {
+			offset: -100
+		});
+    });
+    $("#AboutUs").click(function() {
+		$.scrollTo($(".About"), 800, {
+			offset: -60
+		});
+    });
+    $("#Reviews").click(function() {
+		$.scrollTo($(".Reviews"), 800, {
+			offset: -100
+		});
+    });
+    $("#Pay").click(function() {
+		$.scrollTo($(".Callback"), 800, {
+			offset: -100
+		});
+	});
     var menu = $(".header__top_line");
     
            $(window).scroll(function(){
@@ -10,8 +64,9 @@ $(document).ready(function(){
                    menu.removeClass("fixed").addClass("default");
                }
            });
-
-    var owl_menu = $("#Carusel_Menu");
+    
+    /* СЛАЙДЕР'Ы */
+    var owl_menu = $(".owl-carousel");
     var owl_reviews = $('#Carusel_Reviews');
     owl_reviews.owlCarousel({
         center:true,
@@ -23,7 +78,7 @@ $(document).ready(function(){
     $('.prev_slide_reviews').click(function() {
         owl_reviews.trigger('prev.owl.carousel', [300]);
     })
-    owl_menu.owlCarousel({
+        owl_menu.owlCarousel({
         responsiveClass:true,
         nav: false,
         responsive:{
