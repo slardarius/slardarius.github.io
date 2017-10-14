@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Start shablon</title>
+	<title>FRESH FOOD</title>
 	<meta name="description" content="###" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
 </head>
 <body>
 	<header>
-		<div class="header__top_line">
+		<div class="header__top_line default">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-1 col-sm-1">
@@ -37,8 +37,7 @@
 							<li><a href="#"> меню</a></li>
 							<li><a href="#"> о нас </a></li>
 							<li><a href="#"> отзывы </a></li>
-							<li><a href="#"> доставка и оплата </a></li>
-							<li><a href="#"> контакты </a> </li>
+							<li><a href="#"> доставка и оплата </a> </li>
 						</ul>
 					</nav>
 				</div>
@@ -162,10 +161,11 @@
 		<div class="row">
 			<div class="col-md-12">
 
-				<div class="next_slide next_slide_menu"><i class="fa fa-angle-right"></i></div>
-				<div class="prev_slide prev_slide_menu"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
 
 				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+					
 					<div class = 'Menu__MineMenu__items' >
 						<div class="Menu__MineMenu__items__title">Суп на курином бульоне</div>
 						<ul class = 'Menu__MineMenu__items__ingredients'>
@@ -263,26 +263,140 @@
 					<div class="Reviews__carusel__items">
 						<div class="Reviews__carusel__items__img">
 							<img  src="img/girl.png" alt="">
+						</div>
+						<div class="Reviews__carusel__items__text">
+							<span>"</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum vero voluptatem aperiam perferendis expedita possimus, earum unde at provident beatae ut voluptate assumenda sit maiores illo. Nesciunt, quaerat, autem.
+						</div>
 					</div>
-					<div class="Reviews__carusel__items__text">
-						<span>"</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum vero voluptatem aperiam perferendis expedita possimus, earum unde at provident beatae ut voluptate assumenda sit maiores illo. Nesciunt, quaerat, autem.
-					</div>
-				</div>
-				
-				<div class="Reviews__carusel__items">
+
+					<div class="Reviews__carusel__items">
 						<div class="Reviews__carusel__items__img">
 							<img  src="img/girl.png" alt="">
+						</div>
+						<div class="Reviews__carusel__items__text">
+							<span>"</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum vero voluptatem aperiam perferendis expedita possimus, earum unde at provident beatae ut voluptate assumenda sit maiores illo. Nesciunt, quaerat, autem.
+						</div>
 					</div>
-					<div class="Reviews__carusel__items__text">
-						<span>"</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum vero voluptatem aperiam perferendis expedita possimus, earum unde at provident beatae ut voluptate assumenda sit maiores illo. Nesciunt, quaerat, autem.
-					</div>
-				</div>
 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </section>
+<section class="Callback">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="Callback__title">
+					Обратная связь и доставка
+				</div>
+			</div>
+			<div class="Callback__wrapper">
+
+				<div class="col-md-5 col-sm-5 col-xs-12">
+					<div class="Callback__text">
+						<div class="Callback__items">
+							<p> <strong>Доставка пробного обеда со скидкой 25% </strong></p>
+							<p>	<strong>На первый пробный заказ мы предоставляем Вам скидку 25% на все меню!</strong></p>
+							<p> Чтобы вы могли оценить и убедиться в качестве наших услуг.</p>
+						</div>
+						<div class="Callback__items">
+							<p>С нами можно связаться ежедневно 
+								с понедельника по пятницу (включительно) 
+								<strong>с 09:00 до 18:00 </strong> по номеру: <strong>+7(99)66 39-12-23</strong></p>
+								
+								<p>
+									<i class="fa fa-vk" aria-hidden="true"></i>
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-md-push-2 col-sm-5 col-xs-12">
+							<div class = 'Callback__forma'>
+								<form action="">
+									<table>
+										<tr>
+											<td>Название комании:		</td>
+											<td><input type="text" name = 'company'> </td>
+										</tr>
+										<tr>
+											<td>Ваше имя:						</td>
+											<td><input type="text" name = 'Name'>	</td>
+										</tr>
+										<tr>
+											<td>Адрес доставки:			</td>
+											<td><input type="text" name = 'adress'>	</td>
+										</tr>
+										<tr>
+											<td>Дата доставки:</td>
+											<td><input type="date" name = 'calendar'></td>
+										</tr>
+										<tr>
+											<td>Время:</td>
+											<td>
+												<select name="time" id="">
+													<option value="до 9:00"> до 9:00</option>
+													<option value="c 9:00 до 11:00"> c 9:00 до 11:00</option>
+													<option value="c 11:00 до 13:00">c 11:00 до 13:00</option>
+													<option value="c 13:00 до 15:00">c 13:00 до 15:00</option>
+													<option value="c 15:00 до 17:00">c 15:00 до 17:00</option>
+													<option value="после 17:00">после 17:00</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td>Количество людей:</td>
+											<td><select name="people" id="">
+												<option value="1">  1 человек 	</option>
+												<option value="5"> 	>5 человек	</option>
+												<option value="10"> >10 человек	</option>
+												<option value="20"> >20 человек	</option>
+												<option value="50">	>50 человек	</option>
+												<option value="100">>100 человек</option>
+											</select></td>
+										</tr>
+										<tr>
+											<td>Ваш номер телефона:		</td>
+											<td><input type="tel" name = 'phone'> </td>
+										</tr>
+										<tr>
+											<td>Способ оплаты:</td>
+											<td><p><input type="radio" name = 'money'> Наличным при оплате  </p>
+													<p><input type="radio" name = 'money'> Безналичный расчёт 	</p></td>
+										</tr>
+									</table>
+									<input type="submit" value = 'ХОЧУ ПОЛУЧИТЬ ОБЕД СО СКИДКОЙ!'>
+								</form>
+							</div>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class = 'footer' >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="footer__menu">
+						<ul>
+							<li><a href="#"> меню</a></li>
+							<li><a href="#"> о нас </a></li>
+							<li><a href="#"> отзывы </a></li>
+							<li><a href="#"> доставка и оплата </a> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-md-push-3 col-sm-3 col-xs-12">
+					<div class="footer__webstudio">
+						(с) Дни Турбиных 2017г.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<!--[if lt IE 9]>
 			<script src="libs/html5shiv/es5-shim.min.js"></script>
 			<script src="libs/html5shiv/html5shiv.min.js"></script>

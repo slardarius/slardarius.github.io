@@ -1,4 +1,15 @@
+
 $(document).ready(function(){
+
+    var menu = $(".header__top_line");
+    
+           $(window).scroll(function(){
+               if ( $(this).scrollTop() > 140 && menu.hasClass("default") ){
+                   menu.removeClass("default").addClass("fixed");
+               } else if($(this).scrollTop() <= 140 && menu.hasClass("fixed")) {
+                   menu.removeClass("fixed").addClass("default");
+               }
+           });
 
     var owl_menu = $("#Carusel_Menu");
     var owl_reviews = $('#Carusel_Reviews');
