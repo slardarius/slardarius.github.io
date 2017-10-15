@@ -178,7 +178,7 @@ nav ul {
   .About__inform {
     text-align: left;
     font-size: 1.0625em;
-    padding: 40px 0px;
+    padding: 80px 0px;
     color: #23c869; }
 
 .Menu {
@@ -422,7 +422,7 @@ nav ul {
   z-index: 3; }
 
 .FIXEDED {
-  height: 37% !important; }
+  height: 39% !important; }
 
 /* TODO: HIDE */
 .HIDE {
