@@ -1,6 +1,47 @@
 
 $(document).ready(function(){
 
+    $("#form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form").trigger("reset");
+		});
+		return false;
+	});
+    
+    
+    
+    if($('.header__top_line__burger__items').hasClass('default')){
+        alert('1');
+        $('.header__top_line__burger__items').removeClass('FIXEDED');
+        $('.header__top_line__burger__items').addClass('HIDE');
+        
+    }
+    if($('.header__top_line').hasClass('fixed') &&  $('.header__top_line__burger__items').hasClass('HIDE') == false){
+        alert('1'); 
+        $('.header__top_line').toggleClass('FIXEDED');
+        $('.header__top_line__burger__items').removeClass('HIDE');
+    }
+    
+    $('.header__top_line__burger').on('click',function(){
+    
+        $('.fa-bars').toggleClass('HIDE');
+        $('.fa-times').toggleClass('HIDE');
+
+       setTimeout(function(){
+        $('.header__top_line__burger__items').toggleClass('HIDE');
+        $('.fixed').toggleClass('FIXEDED');
+       },250);
+   
+});
+   
+   
+   /* РАБОТА С КАРТОЧКАМИ */
    var tovar = $('.tovar');
    var zakaz = '';
     tovar.on('click',function(){
@@ -35,22 +76,22 @@ $(document).ready(function(){
     
 
     /* МЕНЮ */
-    $("#Menu").click(function() {
+    $(".MenuLI").click(function() {
 		$.scrollTo($(".Menu"), 800, {
 			offset: -100
 		});
     });
-    $("#AboutUs").click(function() {
+    $(".AboutUsLI").click(function() {
 		$.scrollTo($(".About"), 800, {
 			offset: -60
 		});
     });
-    $("#Reviews").click(function() {
+    $(".ReviewsLI").click(function() {
 		$.scrollTo($(".Reviews"), 800, {
 			offset: -100
 		});
     });
-    $("#Pay").click(function() {
+    $(".PayLI").click(function() {
 		$.scrollTo($(".Callback"), 800, {
 			offset: -100
 		});
