@@ -13,20 +13,8 @@ $(document).ready(function(){
 		});
 		return false;
 	});
-    
-    
-    
-    if($('.header__top_line__burger__items').hasClass('default')){
-        alert('1');
-        $('.header__top_line__burger__items').removeClass('FIXEDED');
-        $('.header__top_line__burger__items').addClass('HIDE');
-        
-    }
-    if($('.header__top_line').hasClass('fixed') &&  $('.header__top_line__burger__items').hasClass('HIDE') == false){
-        alert('1'); 
-        $('.header__top_line').toggleClass('FIXEDED');
-        $('.header__top_line__burger__items').removeClass('HIDE');
-    }
+     
+    /* HEADER TOP_LINE */
     
     $('.header__top_line__burger').on('click',function(){
     
@@ -99,6 +87,12 @@ $(document).ready(function(){
     var menu = $(".header__top_line");
     
            $(window).scroll(function(){
+
+            $('.header__top_line__burger__items').addClass('HIDE');
+            $('.fixed').removeClass('FIXEDED');
+            $('.fa-times').addClass('HIDE');
+            $('.fa-bars').removeClass('HIDE');
+
                if ( $(this).scrollTop() > 140 && menu.hasClass("default") ){
                    menu.removeClass("default").addClass("fixed");
                } else if($(this).scrollTop() <= 140 && menu.hasClass("fixed")) {
