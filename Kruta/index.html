@@ -34,10 +34,10 @@
 				<div class="col-md-7 hidden-sm hidden-xs">
 					<nav>
 						<ul>
-							<li><a href="#" id = 'MenuLI'> меню</a></li>
-							<li><a href="#" id = 'AboutUsLI' > о нас </a></li>
-							<li><a href="#" id = 'ReviewsLI' > отзывы </a></li>
-							<li><a href="#" id = 'PayLI' > доставка и оплата </a> </li>
+							<li><a href="#" class = 'MenuLI'> меню</a></li>
+							<li><a href="#" class = 'AboutUsLI' > о нас </a></li>
+							<li><a href="#" class = 'ReviewsLI' > отзывы </a></li>
+							<li><a href="#" class = 'PayLI' > доставка и оплата </a> </li>
 						</ul>
 					</nav>
 				</div>
@@ -1260,6 +1260,26 @@
 				</div>
 			</div>
 		</footer>
+
+		<div id="modal_form"><!-- Сaмo oкнo --> 
+			<span id="modal_close"><i class="fa fa-window-close-o" aria-hidden="true"></i></span> <!-- Кнoпкa зaкрыть --> 
+			<form action="POST">
+				<table>
+					<tr>
+						<td>Ваше имя: </td>
+						<td><input type="text" required placeholder = 'Валерий Шутюк' ></td>
+					</tr>
+					<tr>
+						<td>Ваш телефон:</td>
+						<td><input type="tel" required placeholder = '+7 988 723 43 45' ></td>
+					</tr>
+					<tr>
+						<td><button id = 'modal__call'>перезвонить!</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="overlay"></div><!-- Пoдлoжкa -->
 	<!--[if lt IE 9]>
 			<script src="libs/html5shiv/es5-shim.min.js"></script>
 			<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -1268,9 +1288,9 @@
 		<![endif]-->
 		<!-- Just jquery -->
 		<!-- HelloPreload http://hello-site.ru/preloader/ -->
-<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #2ECC71 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:41px;}</style>
-<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru"></a></p></div>
-<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+		<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #2ECC71 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:41px;}</style>
+		<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru"></a></p></div>
+		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
 
 		<link rel="stylesheet" href="css/main.css">
 		<script type = 'text/javascript' src = 'libs/jquery/jquery-3.2.1.min.js'></script>

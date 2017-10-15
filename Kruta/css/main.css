@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "RobotoRegular";
   font-style: normal;
@@ -178,8 +179,7 @@ nav ul {
   .About__inform {
     text-align: left;
     font-size: 1.0625em;
-    padding: 80px 0px;
-    color: #23c869; }
+    padding: 80px 0px; }
 
 .Menu {
   width: 100%;
@@ -473,6 +473,66 @@ nav ul {
     font-size: 4.0625em; }
   80% {
     font-size: 4.375em; } }
+
+/* МОДАЛЬНОЕ ОКНО */
+#modal_form {
+  width: 500px;
+  height: 270px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 3px #23c869 solid;
+  background: #fff;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 20px 10px;
+  font-size: 1em;
+  font-family: 'RobotoBold'; }
+  #modal_form .fa {
+    font-size: 1.5625em;
+    color: #23c869; }
+  #modal_form table {
+    margin: 10% auto; }
+    #modal_form table td {
+      padding: 5px; }
+
+#modal__call {
+  padding: 5px 30px;
+  background: #23c869;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'RobotoRegular'; }
+  #modal__call:active {
+    background-color: #1cb87f; }
+
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block; }
+
+/* Пoдлoжкa */
+#overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
