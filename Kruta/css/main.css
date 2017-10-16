@@ -14,8 +14,14 @@
 @font-face {
   font-family: "RobotoBold";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 800;
   src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff2") format("woff2"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.svg#RobotoBold") format("svg"); }
+
+@font-face {
+  font-family: "PTbold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/PTSerif/PT_Serif-Web-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSerif/PT_Serif-Web-Bold.woff2") format("woff2"), url("../fonts/PTSerif/PT_Serif-Web-Bold.woff") format("woff"), url("../fonts/PTSerif/PT_Serif-Web-Bold.ttf") format("truetype"), url("../fonts/PTSerif/PT_Serif-Web-Bold.svg#PTbold") format("svg"); }
 
 body {
   font-size: 16px;
@@ -148,12 +154,13 @@ nav ul {
   text-transform: uppercase; }
   .header__content_center__title {
     font-size: 2.5em;
-    font-size: 'RobotoRegular';
+    font-family: 'PTbold';
     text-align: center;
-    margin-top: 7%; }
-  .header__content_center__image img {
-    margin: 1% auto; }
+    margin-top: 7%;
+    padding: 1%; }
   .header__content_center__ads {
+    padding: 0%;
+    border-top: 2px solid #fff;
     line-height: 1.5;
     text-align: center;
     font-size: 3.125em;
