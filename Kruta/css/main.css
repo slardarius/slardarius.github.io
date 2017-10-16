@@ -72,7 +72,7 @@ header {
   width: 100%;
   padding: 1% 0%;
   height: 16%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: white;
   position: relative; }
   .header__top_line__burger {
     font-size: 2.1875em;
@@ -175,7 +175,7 @@ nav ul {
 .About {
   width: 100%;
   min-height: 100vh;
-  background: #000 url(../img/1section.jpg) top center/cover;
+  background: #fff  top center / cover;
   background-attachment: fixed; }
   .About__title {
     font-size: 3.125em;
