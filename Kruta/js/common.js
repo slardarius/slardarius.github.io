@@ -57,7 +57,7 @@ $(document).ready(function(){
                     $('.day').removeClass('ACTIVE');
                 }
                 $(this).addClass('ACTIVE');
-                $('.' + days[i]).removeClass('HIDE').attr('id','Carusel_Menu');
+                $('.' + days[i]).removeClass('HIDE');
             }    
         }
     });

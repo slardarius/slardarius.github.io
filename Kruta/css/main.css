@@ -173,22 +173,6 @@ nav ul {
   .header__content_center_buttons__want {
     background-color: #23c869; }
 
-.About {
-  width: 100%;
-  min-height: 100vh;
-  background: #fff  top center / cover;
-  background-attachment: fixed; }
-  .About__title {
-    font-size: 3.125em;
-    font-family: 'RobotoLight';
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 5%; }
-  .About__inform {
-    text-align: left;
-    font-size: 1.0625em;
-    padding: 80px 0px; }
-
 .Menu {
   width: 100%;
   min-height: 100vh;
@@ -211,7 +195,8 @@ nav ul {
       -webkit-border-radius: 8px;
               border-radius: 8px;
       position: relative;
-      margin: 7% 9% 7% 0%;
+      margin-right: 2%;
+      margin-top: 5%;
       padding: 10% 0%;
       -webkit-transition: all 0.45s linear;
       -o-transition: all 0.45s linear;
@@ -219,11 +204,11 @@ nav ul {
       .Menu__MineMenu__items:hover {
         border-top: 5px solid #23c869; }
       .Menu__MineMenu__items__title {
-        font-size: 1.25em;
+        font-size: 1.125em;
         font-family: 'RobotoBold';
         text-align: center; }
       .Menu__MineMenu__items__ingredients {
-        font-size: 1.125em;
+        font-size: 0.9375em;
         font-family: 'RobotoRegular';
         padding-left: 20%; }
       .Menu__MineMenu__items__cast {

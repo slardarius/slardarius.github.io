@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FRESH FOOD</title>
+	<meta name="description" content="###" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+
+	<link rel="stylesheet" href="css/normolize.libs.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.libs.min.css">
+	<link rel="stylesheet" href="libs/ovl carusel/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/ovl carusel/owl.theme.default.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style> body { opacity: 0; overflow-x: hidden; } html { background-color:#000;} </style>
+</head>
+<body>
+	<header>
+		<div class="header__top_line default">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1 col-sm-1">
+						<div class="header__top_line__logo hidden-xs">
+							<svg
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="190px" height="100px">
+							<image  x="0px" y="0px" width="190px" height="100"  xlink:href="data:img/png;base64,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" />
+						</svg>
+					</div>
+				</div>
+				<div class="col-md-7 hidden-sm hidden-xs">
+					<nav>
+						<ul>
+							<li><a href="#Menu" class = 'MenuLI'> меню</a></li>
+							<li><a href="#About" class = 'AboutUsLI' > о нас </a></li>
+							<li><a href="#Reviews" class = 'ReviewsLI' > отзывы </a></li>
+							<li><a href="#Callback" class = 'PayLI' > доставка и оплата </a> </li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="header__top_line__number">
+						+7(99)66 39-12-23
+					</div>
+				</div>
+			</div>
+			<div class = 'row'>
+				<div class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-3 hidden-xs">
+					<div class="header__top_line__button_number hidden-sm hidden-xs">
+						хочу, что бы мне перезвонили!
+					</div>
+				</div>
+				<div class="header__top_line__button_number col-xs-5 hidden-md hidden-xl hidden-lg">
+					перезвоните!
+				</div>
+				<div class="col-xs-7">
+					<div class="header__top_line__burger hidden-sm hidden-md hidden-lg hidden-xl">
+						
+						<i class="fa fa-bars" ></i>
+						<i class="fa fa-times HIDE" ></i>
+
+						<div class="header__top_line__burger__items HIDE">
+							<a href="#"  class = 'MenuLI'> меню</a>
+						</div>
+						<div class="header__top_line__burger__items HIDE">
+							<a href="#"  class = 'AboutUsLI'> о нас</a>
+						</div>
+						<div class="header__top_line__burger__items HIDE">
+							<a href="#"  class = 'ReviewsLI'> отзывы</a>
+						</div>
+						<div class="header__top_line__burger__items HIDE">
+							<a href="#"  class = 'PayLI'> доставка и оплата</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__content_center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="header__content_center__title">
+						доставка обедов
+					</div>
+				</div>
+				
+				<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+					<div class="header__content_center__ads">
+						хотите скидку 25% и бесплатную доставку?
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				
+				<div class="col-md-3 col-md-push-4 col-sm-4 col-sm-push-3 col-xs-6">
+					<div class="header__content_center_buttons__want button hidden-sm hidden-xs">
+						конечно хочу!
+					</div>
+					<div class="header__content_center_buttons__want button hidden-md hidden-xl hidden-lg">
+						заказать!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<section id = 'About' class="About">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="About__title">Fresh-food</div>
+			</div>
+			<div class=" col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="About__inform">Если ежедневные размышления о том, где и как пообедать, постоянно отвлекают вас и ваших сотрудников от ваших дел, тогда мы идем к вам!
+					Для каждой компании меню по доставке обедов подбирается индивидуально, исходя из ваших предпочтений. Служба доставки обедов «Fresh-food» имеет всю разрешительную документацию и сертификаты.
+					<p><strong>Важно! Наши клиенты – это:</strong></p>
+					<ul>
+						<li>Те, кому надоело бегать по кафешкам и ресторанам в поисках оптимального соотношения цены и качества, перекусывать шаурмой и прочими фаст – фудами;</li>
+						<li>Те, кто ценят себя и свое время;</li>
+						<li>Настоящие ценители мяса и истинные вегетарианцы;</li>
+						<li>Приверженцы здорового образа жизни;</li>
+						<li>Трудоголики и любители с удовольствием провести свой обеденный перерыв;</li>
+						<li>Руководители – стратеги.</li>
+					</ul>
+					<p><strong>Особенности службы доставки обедов «Fresh-food»:</strong></p>
+					<ul>
+						<li>Мы осуществляем бесплатную доставку обедов к точно назначенному вами времени;</li>
+						<li>Наши повара настоящие профессионалы;</li>
+						<li>Мы готовы прислушаться к любому вашему желанию и реализовать его;</li>
+						<li>Мы подберем идеальное соотношение цены и качества обедов в офис именно для каждого клиента;</li>
+						<li>Мы не экономим на продуктах, а также услугах поваров и услугах экспедитора для того, чтобы на ваш стол точно в срок попадала только полезная и вкусная еда.</li>
+					</ul>
+					<p>Служба доставки обедов «Fresh-food» к вашим услугам!</p>
+					<p>Бесплатная доставка обедов по Тюмени – это «Fresh-food»!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id = '#Menu' class="Menu">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="Menu__title">Меню</div>
+			</div>
+			<div class="col-md-12 col-sm-12 col-xs-11">
+				<div class="Menu__days">
+					<ul class = 'hidden-xs'>
+						<li id = 'Monday' 	 class = 'day ACTIVE'>понедельник</li>
+						<li id = 'Tuesday' 	 class = 'day' >вторник</li>
+						<li id = 'Wednesday' class = 'day' >среда</li>
+						<li id = 'Thursday'  class = 'day' >четверг</li>
+						<li id = 'Saturday'  class = 'day' >пятница</li>
+					</ul>
+					<ul class = 'hidden-sm hidden-md hidden-xl hidden-lg'>
+						<li id = 'Monday' class = 'day ACTIVE'>Понедельник</li>
+						<li id = 'Tuesday' class = 'day '>Вторник</li>
+					</ul>
+					<ul class = 'hidden-sm hidden-md hidden-xl hidden-lg'>
+						<li id = 'Wednesday' class = 'day '>Среда</li>
+						<li id = 'Thursday' class = 'day '>Четверг</li>
+						<li id = 'Saturday' class = 'day '>Пятница</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ПОНЕДЕЛЬНИК -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 Monday">
+
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+
+				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+					
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Суп на курином бульоне</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Куриный бульон</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>лапша</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div>
+						<div id = 'tovar' value = 'Суп на курином бульоне' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'> 
+						<div class="Menu__MineMenu__items__title">Салат «Витаминный»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Капуста свежая </li>
+							<li>морковь</li>
+							<li>перец болгарский</li>
+							<li>масло растительное</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div>
+						<div id = 'tovar' value = 'Салат «Витаминный»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div> 
+					</div>
+
+					<div class = 'Menu__MineMenu__items' > 
+						<div class="Menu__MineMenu__items__title">Салат «Крабовый»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Крабовые палочки</li>
+							<li>лук</li>
+							<li>кукуруза</li>
+							<li>яйцо</li>
+							<li>рис</li>
+							<li>майонез</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div>
+						<div id = 'tovar' value = 'Салат «Крабовый»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div> 
+					</div>
+
+					<div class = 'Menu__MineMenu__items' > 
+						<div class="Menu__MineMenu__items__title">Греча рассыпчатая</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Греча</li>
+							<li>вода</li>
+							<li>Соль</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							30 руб.
+						</div> 
+						<div id = 'tovar' value = 'Греча рассыпчатая' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' > 
+						<div class="Menu__MineMenu__items__title">Капуста цветная запеченая</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Капуста</li>
+							<li>масло</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div id = 'tovar' value = 'Капуста цветная запеченая' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Куриное филе в сливочном соусе</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Куриное филе</li>
+							<li>масло сливочное</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>свливки</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div id = 'tovar' value = 'Куриное филе в сливочном соусе' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Шницель» натуральный, рубленный</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Свинина</li>
+							<li>лук</li>
+							<li>яйцо куриное</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div id = 'tovar' value = '«Шницель» натуральный, рубленный' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Помидоры фаршированные</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Помидоры</li>
+							<li>фарш(лук,морковь,
+							рис,грибы)</li>
+							<li>масло ростительное</li>
+							<li>специи</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div> 
+						<div id = 'tovar' value = 'Помидоры фаршированные' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div id = 'tovar' value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div id = 'tovar' value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- ВТОРНИК ---->
+			<div class="col-md-12 Tuesday HIDE">
+
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+
+				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Суп-пюре из цветной капусты</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Овощьной бульён</li>
+							<li>цветная капуста</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>вливки</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div>
+						<div  value = 'Суп-пюре из цветной капусты' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Салат «Весенний»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Капуста молодая</li>
+							<li>огурци</li>
+							<li>редиска</li>
+							<li>масло ростительное</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div>
+						<div  value = 'Салат «Весенний»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Салат «Столичный»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Филе курсиное</li>
+							<li>лук</li>
+							<li>Картофель</li>
+							<li>огурец маринованый</li>
+							<li>зеленый горошек</li>
+							<li>майонез</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div>
+						<div  value = 'Салат «Столичный»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Рис  рассыпчатый</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>рис</li>
+							<li>вода</li>
+							<li>масло растительное</li>
+							<li>соль</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							30 руб.
+						</div>
+						<div  value = 'Рис  рассыпчатый' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Фасоль стручковая на пару</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>фасоль</li>
+							<li>масло сливочное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div>
+						<div  value = 'Фасоль стручковая на пару' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">«Биточки» куриные</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Куриное филе</li>
+							<li>лук</li>
+							<li>яйцо куриное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div>
+						<div  value = '«Биточки» куриные' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">«Гуляш» из свинины</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>свинина</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>томат</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div>
+						<div  value = '«Гуляш» из свинины' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items' >
+						<div class="Menu__MineMenu__items__title">Картофель запечённый с грибами и луком</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Картофель</li>
+							<li>Шампиньоны</li>
+							<li>лук</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div>
+						<div  value = 'Картофель запечённый с грибами и луком' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div  value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 Wednesday HIDE">
+
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+
+				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+					<!-- СРЕДА -->
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Суп «Щи» из свежей капусты</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>куриный бульйон</li>
+							<li>капуста</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>картофель</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Суп «Щи» из свежей капусты' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат «Овощное ассорти»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>огурци</li>
+							<li>помидоры</li>
+							<li>перец болгарский</li>
+							<li>масло растительное</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Салат «Овощное ассорти»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат из свеклы с сыром</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>свекла</li>
+							<li>сыр</li>
+							<li>майонез</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Салат из свеклы с сыром' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Спагетти»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>спагетти</li>
+							<li>вода</li>
+							<li>масло ростительное</li>
+							<li>соль</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							30 руб.
+						</div> 
+						<div  value = '«Спагетти»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Овощное рагу</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>фасоль</li>
+							<li>капуста цветная</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>картофель</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Овощное рагу' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Филе индейки с грибами в сливочном соусе</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>филе индейки</li>
+							<li>лук</li>
+							<li>шапиньоны</li>
+							<li>сливки</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div  value = 'Филе индейки с грибами в сливочном соусе' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Жаркое по-домашнему</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Свинина</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>томат</li>
+							<li>картофель</li>
+							<li>чеснок</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							100 руб.
+						</div> 
+						<div  value = 'Жаркое по-домашнему' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Перец болгарский фаршированный</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>перец</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>рис</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div> 
+						<div  value = 'Перец болгарский фаршированный' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div  value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 Thursday HIDE">
+
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+
+				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+					<!-- ЧЕТВЕРГ -->
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Суп «Уха»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>рыбный бульйон</li>
+							<li>мясо рыбы ( треска или горуша )</li>
+							<li>лук</li>
+							<li>картофель</li>
+							<li>специи</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Суп «Уха»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат «Оливье»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>огурец свежий</li>
+							<li>картофель</li>
+							<li>марковь</li>
+							<li>яйцо куриное</li>
+							<li>зеленый горошек</li>
+							<li>филе ципленка</li>
+							<li>майонез</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Салат «Оливье»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат «Мимоза»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Консервированная сайра</li>
+							<li>сайра</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>картофель</li>
+							<li>Яйцо куриное</li>
+							<li>майонез</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Салат «Мимоза»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Картофельное пюре</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Картофель</li>
+							<li>вода</li>
+							<li>масло сливочное</li>
+							<li>соль</li>
+							<li>сливки</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Салат «Мимоза»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Капуста тушеная</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Капуста</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							30 руб.
+						</div> 
+						<div  value = 'Капуста тушеная' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Сосиски, сардельки</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Сосиски или сардельки</li>
+							<li>вода</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div  value = 'Сосиски, сардельки' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Шницель» рыбный, рубленный с овощами</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>горбуша или теска</li>
+							<li>лук</li>
+							<li>морковь</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							80 руб.
+						</div> 
+						<div  value = '«Шницель» рыбный, рубленный с овощами' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Соте» из овощей</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>перец</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>фасоль стручковая</li>
+							<li>капуста цветная</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div> 
+						<div  value = '«Соте» из овощей' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div  value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 Saturday HIDE">
+
+				<div class="next_slide next_slide_menu hidden-xs"><i class="fa fa-angle-right"></i></div>
+				<div class="prev_slide prev_slide_menu hidden-xs"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+
+				<div id = 'Carusel_Menu' class="owl-carousel Menu__MineMenu">
+					<!-- ПЯТНИЦА -->
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Суп-пюре из шампиньонов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>шампиньйоны</li>
+							<li>сливки</li>
+							<li>специи</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div  value = 'Суп-пюре из шампиньонов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Винегрет»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Свёкла</li>
+							<li>картофель</li>
+							<li>морковь</li>
+							<li>лук</li>
+							<li>зеленый горошек</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = '«Винегрет»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Салат «Находка»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>пеинская капуста</li>
+							<li>кукуруза</li>
+							<li>свежий огурец</li>
+							<li>яйцо куриное</li>
+							<li>майонез</li>
+							<li>сыр</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Салат «Находка»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Макароны</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>макароны</li>
+							<li>вода</li>
+							<li>масло сливочное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							30 руб.
+						</div> 
+						<div value = 'Макароны' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Картофель отварной с зеленью</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Картофель</li>
+							<li>вода</li>
+							<li>масло сливочное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							40 руб.
+						</div> 
+						<div  value = 'Картофель отварной с зеленью' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Бефстроганов»</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Говядина</li>
+							<li>лук</li>
+							<li>масло ( сливочное,растительное)</li>
+							<li>мука</li>
+							<li>томат</li>
+							<li>метана</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							100 руб.
+						</div> 
+						<div value = '«Бефстроганов»' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Печень куриная с грибами в сливочном соусе</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>печень</li>
+							<li>лук</li>
+							<li>шампиньоны</li>
+							<li>масло(растительное, сливочное)</li>
+							<li>сливки</li>
+							<li>специи</li>
+							<li>зелень</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							100 руб.
+						</div> 
+						<div  value = 'Печень куриная с грибами в сливочном соусе' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">«Биточки» картофельные с грибами </div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>картофель</li>
+							<li>грибы</li>
+							<li>мука</li>
+							<li>сухари</li>
+							<li>масло растительное</li>
+							<li>специи</li>
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							120 руб.
+						</div> 
+						<div value = '«Биточки» картофельные с грибами ' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Багет пшеничный, ржаной</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>Мука(пшеничная 
+							или ржаная)</li>
+							<li>вода</li>
+							<li>яйцо</li>
+							<li>дрожжи пекарские</li>
+							<li>соль</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							10 руб.
+						</div> 
+						<div value = 'Багет пшеничный, ржаной' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+					<div class = 'Menu__MineMenu__items'>
+						<div class="Menu__MineMenu__items__title">Напиток из свежезамороженных ягод, сухофруктов</div>
+						<ul class = 'Menu__MineMenu__items__ingredients'>
+							<li>ягоды или сухофрукт</li>
+							<li>вода</li>
+							<li>сахар</li>
+
+						</ul>
+						<div class="Menu__MineMenu__items__cast">
+							50 руб.
+						</div> 
+						<div value = 'Напиток из свежезамороженных ягод, сухофруктов' class="Menu__MineMenu__items__buttons button tovar">
+							заказать
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id = 'Reviews' class="Reviews">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class ="Reviews__title">Отзывы</div>
+			</div>
+			<div class="col-md-12">
+
+				<div class="next_slide next_slide_reviews"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+				<div class="prev_slide prev_slide_reviews"> <i class="fa fa-angle-left"  aria-hidden="true"></i> </div>
+
+				<div class=" owl-carousel Reviews__carusel" id="Carusel_Reviews">
+
+					<div class="Reviews__carusel__items">
+						<div class="Reviews__carusel__items__img">
+							<img  src="img/girl.png" alt="">
+						</div>
+						<div class="Reviews__carusel__items__text">
+							<span>"</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum vero voluptatem aperiam perferendis expedita possimus, earum unde at provident beatae ut voluptate assumenda sit maiores illo. Nesciunt, quaerat, autem.
+						</div>
+					</div>
+
+					<div class="Reviews__carusel__items">
+						<div class="Reviews__carusel__items__img">
+							<img  src="img/girl.png" alt="">
+						</div>
+						<div class="Reviews__carusel__items__text">
+							<span>"</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum vero voluptatem aperiam perferendis expedita possimus, earum unde at provident beatae ut voluptate assumenda sit maiores illo. Nesciunt, quaerat, autem.
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id = 'Callback' class="Callback">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="Callback__title">
+					Обратная связь и доставка
+				</div>
+			</div>
+			<div class="Callback__wrapper">
+
+				<div class="col-md-5 col-sm-5 col-xs-12">
+					<div class="Callback__text">
+						<div class="Callback__items">
+							<p> <strong>Доставка пробного обеда со скидкой 25% </strong></p>
+							<p>	<strong>На первый пробный заказ мы предоставляем Вам скидку 25% на все меню!</strong></p>
+							<p> Чтобы вы могли оценить и убедиться в качестве наших услуг.</p>
+						</div>
+						<div class="Callback__items">
+							<p>С нами можно связаться ежедневно 
+								с понедельника по пятницу (включительно) 
+								<strong>с 09:00 до 18:00 </strong> по номеру: <strong>+7(99)66 39-12-23</strong></p>
+
+								<p>
+									<i class="fa fa-vk" aria-hidden="true"></i>
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-md-push-2 col-sm-5 col-xs-12">
+						<div class = 'Callback__forma'>
+							<form id = "form" action="POST">
+								<table>
+									<tr>
+										<td>Название комании:		</td>
+										<td><input type="text" name = 'company' placeholder = 'ОО Компания' required> </td>
+									</tr>
+									<tr>
+										<td>Ваше имя:						</td>
+										<td><input type="text" name = 'Name' id = 'name' placeholder = 'Шутюк Валерий' required>	</td>
+									</tr>
+									<tr>
+										<td>Адрес доставки:			</td>
+										<td><input type="text" name = 'adres' placeholder = 'мкр-н Северное Чертаново, д. 1а, корп. 1'>	</td>
+									</tr>
+									<tr>
+										<td>Заказ:			</td>
+										<td><input type="text" name = 'zakaz' id = 'zakaz' placeholder = 'Гороховый суп' required>	</td>
+									</tr>
+									<tr>
+										<td>Дата доставки:</td>
+										<td><input type="date" name = 'calendar'></td>
+									</tr>
+									<tr>
+										<td>Время:</td>
+										<td>
+											<select name="time">
+												<option value="до 9:00"> до 9:00</option>
+												<option value="c 9:00 до 11:00"> c 9:00 до 11:00</option>
+												<option value="c 11:00 до 13:00">c 11:00 до 13:00</option>
+												<option value="c 13:00 до 15:00">c 13:00 до 15:00</option>
+												<option value="c 15:00 до 17:00">c 15:00 до 17:00</option>
+												<option value="после 17:00">после 17:00</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Количество людей:</td>
+										<td><select name="people" id="">
+											<option value="1">  1 человек 	</option>
+											<option value="5"> 	>5 человек	</option>
+											<option value="10"> >10 человек	</option>
+											<option value="20"> >20 человек	</option>
+											<option value="50">	>50 человек	</option>
+											<option value="100">>100 человек</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td>Ваш номер телефона:		</td>
+										<td><input type="tel" name = 'phone' placeholder = '+7(967) 77-77-777'> </td>
+									</tr>
+									<tr>
+										<td>Способ оплаты:</td>
+										<td><p><input type="radio" name = 'money'> Наличным при оплате  </p>
+											<p><input type="radio" name = 'money'> Безналичный расчёт 	</p></td>
+										</tr>
+									</table>
+									<input type="submit" value = 'ХОЧУ ПОЛУЧИТЬ ОБЕД СО СКИДКОЙ!'>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class = 'footer' >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="footer__menu">
+							<ul>
+								<li><a href="#Menu"> меню</a></li>
+								<li><a href="#About"> о нас </a></li>
+								<li><a href="#Reviews"> отзывы </a></li>
+								<li><a href="#Callback"> доставка и оплата </a> </li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-push-3 col-sm-3 col-xs-12">
+						<div class="footer__webstudio">
+							(с) Дни Турбиных 2017г.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div id="modal_form"><!-- Сaмo oкнo --> 
+			<span id="modal_close"><i class="fa fa-window-close-o" aria-hidden="true"></i></span> <!-- Кнoпкa зaкрыть --> 
+			<form action="POST">
+				<table>
+					<tr>
+						<td>Ваше имя: </td>
+						<td><input type="text" required placeholder = 'Валерий Шутюк' ></td>
+					</tr>
+					<tr>
+						<td>Ваш телефон:</td>
+						<td><input type="tel" required placeholder = '+7 988 723 43 45' ></td>
+					</tr>
+					<tr>
+						<td><button id = 'modal__call'>перезвонить!</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="overlay"></div><!-- Пoдлoжкa -->
+	<!--[if lt IE 9]>
+			<script src="libs/html5shiv/es5-shim.min.js"></script>
+			<script src="libs/html5shiv/html5shiv.min.js"></script>
+			<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+			<script src="libs/respond/respond.min.js"></script>
+		<![endif]-->
+		<!-- Just jquery -->
+		<!-- HelloPreload http://hello-site.ru/preloader/ -->
+		<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #2ECC71 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:41px;}</style>
+		<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru"></a></p></div>
+		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+
+		<link rel="stylesheet" href="css/main.css">
+		<script type = 'text/javascript' src = 'libs/jquery/jquery-3.2.1.min.js'></script>
+		<script type = 'text/javascript' src = 'libs/scrollTo/jquery.scrollTo.min.js'></script>
+		<script type = 'text/javascript' src = 'js/common.js'></script>
+		<script type = 'text/javascript' src = 'js/libs.min.js'></script>
+		<script type = 'text/javascript' src = 'libs/ovl carusel/owl.carousel.min.js'></script>
+	</body>
+	</html>
