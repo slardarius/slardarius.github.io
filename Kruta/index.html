@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="libs/ovl carusel/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/ovl carusel/owl.theme.default.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="css/remodal.css">
+	<link rel="stylesheet" href="css/remodal-default-theme.css">
 	<style> body { opacity: 0; overflow-x: hidden; } html { background-color:#000;} </style>
 </head>
 <body>
@@ -95,7 +96,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3 col-md-push-4 col-sm-4 col-sm-push-3 col-xs-6">
+				<div class="col-md-$ col-md-push-4 col-sm-4 col-sm-push-3 col-xs-6">
 					<div class="header__content_center_buttons__want button hidden-sm hidden-xs">
 						конечно хочу!
 					</div>
@@ -171,7 +172,7 @@
 						40 руб.
 					</div>
 					<div id = 'tovar' value = 'Салат «Витаминный»' class="Menu__MineMenu__items__buttons button tovar">
-						заказать
+						<a href="#modal"> заказать </a>
 					</div> 
 				</div>
 
@@ -1240,11 +1241,77 @@
 		<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru"></a></p></div>
 		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
 
+		<div class="remodal" data-remodal-id="modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  	<div class = 'Callback__forma'>
+							<form id = "form" action="POST">
+								<table>
+									<tr>
+										<td>Название комании:		</td>
+										<td><input type="text" name = 'company' placeholder = 'ОО Компания' required> </td>
+									</tr>
+									<tr>
+										<td>Ваше имя:						</td>
+										<td><input type="text" name = 'Name' id = 'name' placeholder = 'Шутюк Валерий' required>	</td>
+									</tr>
+									<tr>
+										<td>Адрес доставки:			</td>
+										<td><input type="text" name = 'adres' placeholder = 'мкр-н Северное Чертаново, д. 1а, корп. 1'>	</td>
+									</tr>
+									<tr>
+										<td>Заказ:			</td>
+										<td><input type="text" name = 'zakaz' id = 'zakaz' placeholder = 'Гороховый суп' required>	</td>
+									</tr>
+									<tr>
+										<td>Дата доставки:</td>
+										<td><input type="date" name = 'calendar'></td>
+									</tr>
+									<tr>
+										<td>Время:</td>
+										<td>
+											<select name="time">
+												<option value="до 9:00"> до 9:00</option>
+												<option value="c 9:00 до 11:00"> c 9:00 до 11:00</option>
+												<option value="c 11:00 до 13:00">c 11:00 до 13:00</option>
+												<option value="c 13:00 до 15:00">c 13:00 до 15:00</option>
+												<option value="c 15:00 до 17:00">c 15:00 до 17:00</option>
+												<option value="после 17:00">после 17:00</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Количество людей:</td>
+										<td><select name="people" id="">
+											<option value="1">  1 человек 	</option>
+											<option value="5"> 	>5 человек	</option>
+											<option value="10"> >10 человек	</option>
+											<option value="20"> >20 человек	</option>
+											<option value="50">	>50 человек	</option>
+											<option value="100">>100 человек</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td>Ваш номер телефона:		</td>
+										<td><input type="tel" name = 'phone' placeholder = '+7(967) 77-77-777'> </td>
+									</tr>
+									<tr>
+										<td>Способ оплаты:</td>
+										<td><p><input type="radio" name = 'money'> Наличным при оплате  </p>
+											<p><input type="radio" name = 'money'> Безналичный расчёт 	</p></td>
+										</tr>
+									</table>
+									<input type="submit" value = 'ХОЧУ ПОЛУЧИТЬ ОБЕД СО СКИДКОЙ!'>
+								</form>
+							</div>
+  <br>
+  <button data-remodal-action="cancel" class="remodal-cancel">ОТМЕНИТЬ ЗАКАЗ</button>
+</div>
 		<link rel="stylesheet" href="css/main.css">
 		<script type = 'text/javascript' src = 'libs/jquery/jquery-3.2.1.min.js'></script>
 		<script type = 'text/javascript' src = 'libs/scrollTo/jquery.scrollTo.min.js'></script>
 		<script type = 'text/javascript' src = 'js/common.js'></script>
 		<script type = 'text/javascript' src = 'js/libs.min.js'></script>
 		<script type = 'text/javascript' src = 'libs/ovl carusel/owl.carousel.min.js'></script>
+		<script type = 'text/javascript' src = 'js/remodal.min.js'>	</script>
 	</body>
 	</html>

@@ -135,7 +135,7 @@ nav ul {
       color: #1cb87f; }
 
 .button {
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-align: center;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -197,7 +197,8 @@ nav ul {
       position: relative;
       margin-right: 2%;
       margin-top: 5%;
-      padding: 10% 0%;
+      margin-left: 2%;
+      padding: 2% 0.5%;
       -webkit-transition: all 0.45s linear;
       -o-transition: all 0.45s linear;
       transition: all 0.45s linear; }
@@ -526,6 +527,21 @@ nav ul {
   left: 0;
   cursor: pointer;
   display: none; }
+
+.remodal {
+  background-color: #efeceb;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border-right: 5px solid #23c869;
+  -webkit-box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.75); }
+  .remodal .Callback__forma {
+    background-color: #efeceb;
+    border: 0;
+    -webkit-box-shadow: 0px 0px 0px 0px;
+            box-shadow: 0px 0px 0px 0px; }
+    .remodal .Callback__forma input[type='submit'] {
+      margin: 0px auto; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

@@ -35,15 +35,7 @@ $(document).ready(function(){
     tovar.on('click',function(){
         zakaz += $(this).attr('value') + ';' ;
         $('#zakaz').val('' + zakaz);
-        alert('Вы можете так-же выбрать еще блюда.');
-        
     });
-    tovar.click(function() {
-        $.scrollTo($(".Callback__forma"), 800, {
-            offset: -100
-        });
-    });
-
     /* КАРТОЧКИ */
     var days = ['Monday','Tuesday','Wednesday','Thursday','Saturday'];
 
@@ -106,8 +98,12 @@ $(document).ready(function(){
 
                if ( $(this).scrollTop() > 140 && menu.hasClass("default") ){
                    menu.removeClass("default").addClass("fixed");
+                   $('.header__content_center__title').css('marginTop','15%');
+                   $('header').css('min-height','70vh');
                } else if($(this).scrollTop() <= 140 && menu.hasClass("fixed")) {
                    menu.removeClass("fixed").addClass("default");
+                   $('.header__content_center__title').css('marginTop','7%');
+                    $('header').css('min-height','100vh');
                }
            });
     
