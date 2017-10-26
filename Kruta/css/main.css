@@ -173,10 +173,20 @@ nav ul {
   .header__content_center_buttons__want {
     background-color: #23c869; }
 
+.About {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2% 0%; }
+  .About__title {
+    font-size: 3.125em;
+    font-family: 'RobotoBold';
+    margin-bottom: 1%; }
+
 .Menu {
   width: 100%;
   min-height: 100vh;
-  background: #fff url(../img/2section.jpg) center center/cover; }
+  background: #fff;
+  padding: 1%; }
   .Menu__title {
     font-size: 3.125em;
     font-family: 'RobotoBold';
@@ -202,12 +212,21 @@ nav ul {
       -webkit-transition: all 0.45s linear;
       -o-transition: all 0.45s linear;
       transition: all 0.45s linear; }
+      .Menu__MineMenu__items a {
+        color: #000; }
       .Menu__MineMenu__items:hover {
         border-top: 5px solid #23c869; }
       .Menu__MineMenu__items__title {
         font-size: 1.125em;
         font-family: 'RobotoBold';
         text-align: center; }
+      .Menu__MineMenu__items .img {
+        width: 60%;
+        height: auto;
+        margin: 10px auto; }
+        .Menu__MineMenu__items .img img {
+          width: 100%;
+          height: auto; }
       .Menu__MineMenu__items__ingredients {
         font-size: 0.9375em;
         font-family: 'RobotoRegular';
@@ -242,14 +261,20 @@ nav ul {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      margin-right: 1%;
-      border: 1px solid rgba(0, 0, 0, 0.5);
-      -webkit-border-radius: 5px;
-              border-radius: 5px;
+      border-top: 1px solid rgba(0, 0, 0, 0.5);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
       padding: 5px 10px;
       -webkit-transition: all 0.45s linear;
       -o-transition: all 0.45s linear;
       transition: all 0.45s linear; }
+      .Menu__days ul li:last-child {
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        -webkit-border-radius: 5px;
+                border-radius: 5px; }
+      .Menu__days ul li:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.5);
+        -webkit-border-radius: 5px;
+                border-radius: 5px; }
       .Menu__days ul li:hover {
         background-color: #23c869;
         color: #fff; }
@@ -320,7 +345,7 @@ nav ul {
 .Callback {
   width: 100%;
   min-height: 100vh;
-  background: #000 url(../img/4section.jpg) center/cover; }
+  background: #fff; }
   .Callback__title {
     margin-top: 2%;
     font-size: 3.125em;
@@ -356,7 +381,8 @@ nav ul {
     .Callback__forma table {
       margin: 0 auto; }
       .Callback__forma table tr td {
-        padding: 10px; }
+        padding: 10px;
+        text-align: left; }
     .Callback__forma input {
       -webkit-border-radius: 3px;
               border-radius: 3px; }
