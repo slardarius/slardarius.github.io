@@ -20,22 +20,22 @@
 			<a href="#" class="top-line__logo">
 				<img width ="30px" heigth = "50px" src="img/logo-color-ua.png" alt="" class="top-line__image">
 				<p class = "top-line__text" >
-				Кафедра 
-				информационных 
-				систем
-			</p>
+					Кафедра 
+					информационных 
+					систем
+				</p>
 			</a>
 			<div class = "top-line__wrapper">
-			<div class="top-line__social-bar">
-				<a href="#">
-					<i class="fa fa-youtube-play" aria-hidden="true"></i>
-				</a>
+				<div class="top-line__social-bar">
+					<a href="#">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					</a>
+				</div>
+				<ul class="top-line__list">
+					<li class="top-line__item">Головна</li>
+					<li class="top-line__item">Контакты</li>
+				</ul>
 			</div>
-			<ul class="top-line__list">
-				<li class="top-line__item">Головна</li>
-				<li class="top-line__item">Контакты</li>
-			</ul>
-		</div>
 		</div>
 
 		<nav class="page-nav">
@@ -43,11 +43,11 @@
 				<i class="fa fa-align-justify" aria-hidden="true"></i>
 			</div>
 			<ul  hidden class="page-nav__list">
-				<li class="page-nav__item">головна</li>
-				<li class="page-nav__item">абітурієнтам</li>
-				<li class="page-nav__item">студентам</li>
-				<li class="page-nav__item">кафедри</li>
-				<li class="page-nav__item">наукова діяльність</li>
+				<li class="page-nav__item"><a href="#">головна</a></li>
+				<li class="page-nav__item"><a href="#">абітурієнтам</a></li>
+				<li class="page-nav__item"><a href="#">студентам</a></li>
+				<li class="page-nav__item"><a href="#">кафедри</a></li>
+				<li class="page-nav__item"><a href="#">наукова діяльність</a></li>
 			</ul>
 		</nav>
 
@@ -56,11 +56,11 @@
 			<h1 class="page-header__title">Інформаційних систем</h1>
 			<div class="page-header__information button-items">
 				<div class="button-items__learn-more">
-						<a href="#">Дізнатись більше</a>
+					<a href="#">Дізнатись більше</a>
 				</div>
 				<div class="button-items__open">
 					<a href="#">Кафедра</a>
-			</div>
+				</div>
 			</div>
 		</div>
 
@@ -70,19 +70,22 @@
 
 		<section class="specialties">
 			<header class="specialties__header">
-				<h1 class="specialties__title">Спеціальності які ми пропонуємо</h1>
+				<h2 class="specialties__title">Спеціальності які ми пропонуємо</h2>
 				<h2 class="visually-hidden">Специальности на кафедре "Информационых систем"</h2>
 			</header>
 			<div class="specialties__course">
-				<img width = "5%" heigth = "5%" src="img/logo-color-ua.png" alt="" class="specialties__image">
-				<div class="specialties__buttons mobail-version visually-hidden">
-					<div class="mobail-version__course-1">1</div>
-					<div class="mobail-version__course-2">1</div>
-					<div class="mobail-version__course-3">1</div>
-					<div class="mobail-version__course-4">1</div>
+				
+				<img width = "5%" heigth = "5%" src="img/logo-color-ua.png" alt="" class="specialties__image visually-hidden">
+				
+				<div class="specialties__buttons mobail-version">
+					<div class="mobail-version__course">1 курс</div>
+					<div class="mobail-version__course">2 курс</div>
+					<div class="mobail-version__course">3 курс</div>
+					<div class="mobail-version__course">4 курс</div>
 				</div>
 			</div>
 			<div class="specialties__video our-video">
+
 				<h2 class="visually-hidden">Видео с лекциями</h2>
 				<h2 class="our-video__title">Наші лекції</h2>
 				<iframe class = "our-video__youtube" width="560" height="315" src="https://www.youtube.com/embed/tGKlj-g6dWY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -118,18 +121,18 @@
 				<h2 class="visually-hidden">Наши преподаватели</h2>
 			</header>
 			<div class="teachers__wrapper carusel">
-					<div class="carusel__item">
-						<img src="#" alt="" class="carusel__image">
-						<article class="carusel__information">Lorem ipsum dolor sit.</article>
-					</div>
-					<div class="carusel__item">
-						<img src="#" alt="" class="carusel__image">
-						<article class="carusel__information">Obcaecati tenetur facilis tempore.</article>
-					</div>
-					<div class="carusel__item">
-						<img src="#" alt="" class="carusel__image">
-						<article class="carusel__information">Quae vitae suscipit quod!</article>
-					</div>
+				<div class="carusel__item">
+					<img src="#" alt="" class="carusel__image">
+					<article class="carusel__information">Lorem ipsum dolor sit.</article>
+				</div>
+				<div class="carusel__item">
+					<img src="#" alt="" class="carusel__image">
+					<article class="carusel__information">Obcaecati tenetur facilis tempore.</article>
+				</div>
+				<div class="carusel__item">
+					<img src="#" alt="" class="carusel__image">
+					<article class="carusel__information">Quae vitae suscipit quod!</article>
+				</div>
 			</div>
 		</section>
 
@@ -166,8 +169,9 @@
 			<div class="contacts__map"></div>
 			<div class="contacts__information">Lorem ipsum dolor sit amet.</div>
 		</section>
+
 	</main>
-	<footer class="page-footer">
+	<!-- <footer class="page-footer">
 		<ul class="page-footer__list">
 			<li class="page-list__item">Головна</li>
 			<li class="page-list__item">Абітуріентам</li>
@@ -178,7 +182,7 @@
 		<h3 class="page-footer__who-make">
 			Slardarius (c) 2018
 		</h3>
-	</footer>
+	</footer> -->
 
 
 
