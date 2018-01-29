@@ -28,3 +28,17 @@
     });
 
 })();
+
+(function () {
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            center: true,
+            nav: true,
+            dots: false,
+            loop: true,
+            autoplay: true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
+        });
+      });
+})();
