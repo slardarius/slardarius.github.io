@@ -1,0 +1,81 @@
+.partners {
+  width: 100%;
+  height: 80vh;
+  background-color: #97d7f2; }
+  .partners h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 30px; }
+
+@media (min-width: 319px) {
+  .partners {
+    padding: 2% 10% 5% 10%;
+    width: 100%;
+    height: 100%; }
+    .partners__wrapper {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .partners h2 {
+      text-align: center; }
+  .agilie {
+    margin-top: 50px; }
+    .agilie__image {
+      width: 10%; }
+    .agilie__title {
+      padding: 0;
+      margin: 0;
+      font-size: 22px; } }
+
+@media (min-width: 768px) {
+  .partners h2 {
+    text-align: right;
+    padding-bottom: 20px; }
+  .partners__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+
+@media (min-width: 1200px) {
+  .partners {
+    height: 55vh; } }
+
+.hero-gradient {
+  position: relative;
+  width: 100%;
+  padding: 0px 12px 100px;
+  background: #97d7f2;
+  height: 140px; }
+
+#wave {
+  position: absolute;
+  height: 600px;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+svg path {
+  fill: #deded6; }
+
+@media screen and (min-width: 1024px) {
+  svg {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+        transform: scale(1.2); } }
