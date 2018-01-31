@@ -57,7 +57,7 @@
 
 @media (min-width: 319px) {
   .wave {
-    top: -1.5%; }
+    display: none; }
   .turn {
     background-attachment: fixed; }
     .turn__wrapper {
@@ -80,6 +80,8 @@
       border-bottom: 2px solid #d80b4a; } }
 
 @media (min-width: 768px) {
+  .turn .wave {
+    display: none; }
   .turn__is-item {
     text-align: center; }
   .turn__sks-item {
