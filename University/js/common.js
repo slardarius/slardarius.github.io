@@ -38,7 +38,20 @@
             dots: false,
             loop: true,
             autoplay: true,
-            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            autoplaySpeed: 2500
+        });
+      });
+})();
+
+(function () {
+    $(document).ready(function(){
+        $(".owl-carousel-two").owlCarousel({
+            items: 1,
+            nav : false,
+            center : true,
+            dots : false,
+            autoplaySpeed : 2500
         });
       });
 })();

@@ -258,11 +258,13 @@
 
 .page-header {
   width: 100%;
-  height: 100vh;
-  background-image: url(../img/cup.jpg);
-  background-position: +83% +0%;
-  background-color: #000;
-  background-repeat: no-repeat; }
+  height: 100vh; }
+  .page-header__wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    background-image: url(../img/cup.jpg);
+    background-position: top top; }
   .page-header h1 {
     margin: 0;
     padding: 0;
@@ -281,7 +283,6 @@
   .page-header__about-site {
     width: 100%;
     height: 70%;
-    margin: 2% 0%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -320,7 +321,7 @@
 
 @media (min-width: 768px) {
   .page-header__about-site {
-    margin: 3% 0%; }
+    padding: 3% 0%; }
   .page-header__descript {
     font-size: 55px; }
   .page-header__title {
@@ -332,7 +333,7 @@
             background-size: cover;
     height: 90vh; }
     .page-header__about-site {
-      margin: 5% 0% 0% 0%;
+      padding: 5% 0% 0%;
       height: auto; }
     .page-header__descript {
       font-size: 60px; }
@@ -578,24 +579,26 @@
 @media (min-width: 319px) {
   .wave {
     top: -1.5%; }
-  .turn__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .turn__is-title {
-    text-align: center; }
-  .turn__sks-title {
-    text-align: center; }
-  .turn h2 {
-    font-size: 30px;
-    margin-top: 5%;
-    text-align: center;
-    line-height: 1.4; }
-  .turn__is-list {
-    padding-bottom: 40px;
-    border-bottom: 2px solid #d80b4a; } }
+  .turn {
+    background-attachment: fixed; }
+    .turn__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .turn__is-title {
+      text-align: center; }
+    .turn__sks-title {
+      text-align: center; }
+    .turn h2 {
+      font-size: 30px;
+      margin-top: 5%;
+      text-align: center;
+      line-height: 1.4; }
+    .turn__is-list {
+      padding-bottom: 40px;
+      border-bottom: 2px solid #d80b4a; } }
 
 @media (min-width: 768px) {
   .turn__is-item {
@@ -734,9 +737,12 @@
   background-image: url(../img/light.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: scroll;
   padding: 1% 10% 3% 10%;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  -webkit-box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.75); }
   .teachers h2 {
     padding: 0;
     font-size: 30px; }
@@ -754,7 +760,9 @@
     height: 60vh;
     background-position: top top;
     -webkit-background-size: contain;
-            background-size: contain; } }
+            background-size: contain; }
+    .teachers h2 {
+      font-size: 55px; } }
 
 .partners {
   width: 100%;
@@ -838,6 +846,143 @@ svg path {
     -ms-transform: scale(1.2);
         transform: scale(1.2); } }
 
+.students {
+  padding: 3% 10% 5%;
+  background-color: #ddddd5;
+  background-image: url(../img/rectangle-students.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: inset 0px 10px 40px -15px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 10px 40px -15px rgba(0, 0, 0, 0.75); }
+  .students h2 {
+    margin: 0;
+    padding: 0; }
+  .students__wrapper {
+    width: 100%; }
+  .students .fa {
+    font-size: 60px; }
+  .students .fa:hover {
+    color: #d80b4a;
+    -webkit-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out; }
+  .students .owl-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+
+@media (min-width: 319px) {
+  .students {
+    background-position: center lefts; }
+    .students h2 {
+      margin: 2% 0% 5%;
+      text-align: center;
+      font-size: 30px; }
+    .students__photo {
+      margin: 0 auto;
+      width: 60% !important;
+      height: auto; }
+    .students__name {
+      font-size: 20px;
+      text-align: center; }
+    .students__comments {
+      text-align: center; } }
+
+@media (min-width: 768px) {
+  .students {
+    background-position: left bottom; }
+    .students h2 {
+      margin: 5% 0%;
+      text-align: left;
+      font-size: 55px; }
+    .students__wrapper {
+      width: 100%; }
+    .students__photo {
+      width: 30% !important; }
+    .students__comments {
+      width: 60%;
+      margin: 0 auto;
+      text-align: center; } }
+
+@media (min-width: 1200px) {
+  .students {
+    padding: 1% 10% 3%;
+    position: relative; }
+    .students h2 {
+      margin: 2% 0%; }
+    .students__photo {
+      width: 17% !important; }
+    .students__comments {
+      width: 40%; }
+    .students .owl-nav {
+      position: absolute;
+      top: 40%; } }
+
+.contacts {
+  padding: 3% 10% 5%;
+  background-color: #262626; }
+  .contacts h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff; }
+  .contacts__map {
+    border: 3px solid #d80b4a; }
+  .contacts__information {
+    color: #fff; }
+
+@media (min-width: 319px) {
+  .contacts h2 {
+    margin-bottom: 5%;
+    font-size: 30px;
+    text-align: center; }
+  .contacts__map {
+    width: 100%;
+    height: 100%; }
+  .contacts__google {
+    width: 100%;
+    height: 25	0px; }
+  .contacts__information {
+    margin-top: 5%;
+    text-align: center; } }
+
+@media (min-width: 768px) {
+  .contacts__information {
+    width: 50%;
+    margin: 5% auto 0%; } }
+
+@media (min-width: 1200px) {
+  .contacts h2 {
+    text-align: right;
+    font-size: 55px; }
+  .contacts__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .contacts__information {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 20px;
+    width: 30%; }
+  .contacts__map {
+    width: 50%; }
+  .contacts__google {
+    margin: 0;
+    padding: 0; } }
+
 .page-main {
   padding: 0;
   background-color: red;
@@ -852,7 +997,8 @@ body {
   position: relative;
   opacity: 1;
   line-height: 1.75;
-  min-width: 320px; }
+  min-width: 320px;
+  overflowX: hidden; }
 
 a {
   text-decoration: none;

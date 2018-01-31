@@ -100,9 +100,12 @@
   background-image: url(../img/light.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: scroll;
   padding: 1% 10% 3% 10%;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  -webkit-box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.75); }
   .teachers h2 {
     padding: 0;
     font-size: 30px; }
@@ -120,4 +123,6 @@
     height: 60vh;
     background-position: top top;
     -webkit-background-size: contain;
-            background-size: contain; } }
+            background-size: contain; }
+    .teachers h2 {
+      font-size: 55px; } }
