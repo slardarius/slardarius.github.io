@@ -998,7 +998,7 @@ body {
   opacity: 1;
   line-height: 1.75;
   min-width: 320px;
-  overflowX: hidden; }
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
