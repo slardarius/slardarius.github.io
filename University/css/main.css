@@ -427,7 +427,23 @@
       width: 70%;
       height: 450px; } }
 
+.specialties:hover .specialties__course {
+  -webkit-box-shadow: 5px 7px 22px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 7px 22px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+.specialties:hover {
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  background-position: 0% 60%; }
+
 .specialties {
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   margin: 0;
   padding: 1% 10% 5%;
   width: 100%;
@@ -439,7 +455,15 @@
     height: auto; }
   .specialties h2 {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 5%; }
+  .specialties__course {
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    padding: 0% 2%; }
+  .specialties svg {
+    margin: 0 auto; }
 
 @media (min-width: 319px) {
   .specialties svg {
