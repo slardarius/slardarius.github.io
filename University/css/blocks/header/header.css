@@ -5,7 +5,7 @@
   display: -ms-flexbox;
   display: flex; }
   .top-line__logo {
-    width: 20%;
+    width: 10%;
     height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -14,8 +14,7 @@
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
-            justify-content: flex-start;
-    border-right: 1px solid #000; }
+            justify-content: flex-start; }
   .top-line__image {
     width: 50px;
     height: 100px;
@@ -41,7 +40,7 @@
 
 @media (min-width: 319px) {
   .top-line__logo {
-    width: 215px;
+    width: 232px;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center; }
@@ -54,6 +53,8 @@
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center; }
+  .top-line__line {
+    margin-left: 40%; }
   .top-line__wrapper {
     width: 90%;
     display: -webkit-box;
@@ -110,31 +111,42 @@
     font-size: 16px; } }
 
 .page-nav {
-  background-color: #1c1c1c;
-  z-index: -9999; }
+  background-color: #1c1c1c; }
   .page-nav__list {
+    width: 100%;
+    min-height: 0px;
+    z-index: 9999;
+    background-color: #1c1c1c;
     margin: 0;
     padding: 0;
     color: #fff;
-    z-index: -9999;
-    list-style: none; }
+    list-style: none;
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .page-nav__item {
-    padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    text-align: center;
     text-transform: uppercase;
-    cursor: pointer; }
-    .page-nav__item a {
-      color: #fff;
-      -webkit-transition: color .4s ease-in-out,background-color .2s ease-in-out;
-      -o-transition: color .4s ease-in-out,background-color .2s ease-in-out;
-      transition: color .4s ease-in-out,background-color .2s ease-in-out; }
-    .page-nav__item:hover {
-      background-color: #212121; }
-      .page-nav__item:hover a {
-        color: #e6740c; }
-    .page-nav__item:first-child {
-      border-top: 1px solid rgba(255, 255, 255, 0.2); }
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .page-nav__item:hover {
+    background-color: #4f4f4f;
+    color: #d80b4a;
+    -webkit-transition: background .6s ease-in-out, color .4s ease-in-out;
+    -o-transition: background .6s ease-in-out, color .4s ease-in-out;
+    transition: background .6s ease-in-out, color .4s ease-in-out; }
+  .page-nav__item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.6); }
   .page-nav__burger {
     font-size: 30px;
     text-align: center;
@@ -146,23 +158,46 @@
     .page-nav__burger {
       display: none; }
     .page-nav__list {
+      position: relative;
+      width: 100%;
+      height: 50px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
     .page-nav__item {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      padding: 0;
+      width: 30%;
+      font-size: 12px;
+      position: relative;
       display: block;
       border-bottom: 1px solid transparent; }
     .page-nav__item:first-child {
       border-top: 1px solid transparent; } }
 
 @media (min-width: 1200px) {
-  .page-nav__item {
-    padding: 10px 30px; } }
+  .page-nav {
+    padding: 0% 10%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-nav__item {
+      width: 15%;
+      padding: 5px;
+      font-size: 16px; } }
 
 .button-items {
   width: 100%;

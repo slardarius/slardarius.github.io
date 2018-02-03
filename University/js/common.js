@@ -2,7 +2,7 @@
 
     var elements = {
         block : document.querySelector('.page-nav__burger'),
-        list : document.querySelector('.page-nav__list')
+        list : document.querySelectorAll('.page-nav__item')
     }    
    var exit = 'fa-times';
    var open = 'fa-align-justify';
@@ -12,7 +12,9 @@
             elements.block.children[0].classList.remove(''+ open);
             elements.block.children[0].classList.add('' + exit);
             setTimeout(() => {
-                elements.list.hidden = false;
+                for(var i =0; i < elements.list.length;i++){
+                    elements.list[i].hidden = false;
+                }
             }, 500);
             
             
@@ -22,7 +24,9 @@
             elements.block.children[0].classList.remove(''+ exit);
             elements.block.children[0].classList.add('' + open);
             setTimeout(() => {
-                elements.list.hidden = true;
+                for(var i =0; i < elements.list.length;i++){
+                    elements.list[i].hidden = true;
+                }
             }, 500);
         }
     });
