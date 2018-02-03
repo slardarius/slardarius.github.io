@@ -85,20 +85,6 @@
       width: 70%;
       height: 450px; } }
 
-.specialties:hover .specialties__course {
-  background-color: rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
-
-.specialties:hover {
-  -webkit-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  background-position: 0% -1000%; }
-
 .specialties {
   -webkit-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
@@ -132,6 +118,18 @@
     font-size: 30px; } }
 
 @media (min-width: 1200px) {
+  .specialties:hover .specialties__course {
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+  .specialties:hover {
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background-position: 0% -200%; }
   .specialties h2 {
     font-size: 55px;
     text-align: left; }
@@ -672,9 +670,10 @@ svg path {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .contacts__information {
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    text-align: right;
     font-size: 20px;
     width: 30%; }
   .contacts__map {
@@ -685,7 +684,7 @@ svg path {
 
 .page-main {
   padding: 0;
-  background-color: red;
+  background-color: #ddddd5;
   margin: 0;
   width: 100%;
   height: auto; }

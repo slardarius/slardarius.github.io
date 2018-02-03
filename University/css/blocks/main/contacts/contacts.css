@@ -44,9 +44,10 @@
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .contacts__information {
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    text-align: right;
     font-size: 20px;
     width: 30%; }
   .contacts__map {

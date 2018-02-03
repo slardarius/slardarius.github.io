@@ -283,6 +283,7 @@
 
 @media (min-width: 1700px) {
   .button-items {
+    margin-top: 2%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -295,7 +296,6 @@
   .page-header__wrapper {
     width: 100%;
     height: 100%;
-    background-color: red;
     background-image: url(../img/cup.jpg);
     background-position: top top; }
   .page-header h1 {
