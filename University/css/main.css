@@ -704,8 +704,7 @@
   .specialties__course {
     background-color: rgba(255, 255, 255, 0);
     -webkit-border-radius: 10px;
-            border-radius: 10px;
-    padding: 0% 2%; }
+            border-radius: 10px; }
   .specialties svg {
     margin: 0 auto; }
 
@@ -717,18 +716,19 @@
     font-size: 30px; } }
 
 @media (min-width: 1200px) {
-  .specialties:hover .specialties__course {
+  .specialties:hover .specialties__wrapper {
+    padding: 0% 5%;
     background-color: rgba(255, 255, 255, 0.3);
     -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
             box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out; }
+    -webkit-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out; }
   .specialties:hover {
     -webkit-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    background-position: 0% -200%; }
+    background-position: 0% -900%; }
   .specialties h2 {
     font-size: 55px;
     text-align: left; }
@@ -748,7 +748,10 @@
             flex-direction: row;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around; } }
+            justify-content: space-around;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; } }
 
 @font-face {
   font-family: 'RobotoLight';
