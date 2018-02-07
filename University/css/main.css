@@ -1336,6 +1336,10 @@ svg path {
     font-family: "RobotoRegular"; }
   .students__wrapper {
     width: 100%; }
+  .students__photo {
+    border: 3px solid #d80b4a;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
   .students .fa {
     font-size: 60px; }
   .students .fa:hover {
