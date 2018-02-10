@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?iefix") format("eot"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#webfont") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?iefix") format("eot"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.svg#webfont") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?iefix") format("eot"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#webfont") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+.contacts {
+  padding: 3% 10% 5%;
+  background-color: #262626; }
+  .contacts h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "RobotoBold"; }
+  .contacts__map {
+    border: 3px solid #d80b4a; }
+  .contacts__information {
+    color: #fff;
+    font-family: "RobotoRegular"; }
+
+@media (min-width: 319px) {
+  .contacts h2 {
+    margin-bottom: 5%;
+    font-size: 30px;
+    text-align: center; }
+  .contacts__map {
+    width: 100%;
+    height: 100%; }
+  .contacts__google {
+    width: 100%;
+    height: 25	0px; }
+  .contacts__information {
+    margin-top: 5%;
+    text-align: center; } }
+
+@media (min-width: 768px) {
+  .contacts__information {
+    width: 50%;
+    margin: 5% auto 0%; } }
+
+@media (min-width: 1200px) {
+  .contacts h2 {
+    text-align: right;
+    font-size: 35px; }
+  .contacts__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .contacts__information {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    text-align: left;
+    font-size: 20px;
+    width: 30%; }
+  .contacts__map {
+    width: 50%; }
+  .contacts__google {
+    margin: 0;
+    padding: 0; } }

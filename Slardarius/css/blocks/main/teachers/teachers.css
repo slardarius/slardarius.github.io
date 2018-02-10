@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?iefix") format("eot"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#webfont") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?iefix") format("eot"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.svg#webfont") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?iefix") format("eot"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#webfont") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?iefix") format("eot"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#webfont") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?iefix") format("eot"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.svg#webfont") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?iefix") format("eot"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#webfont") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+.carusel {
+  width: 100%;
+  height: auto;
+  position: relative; }
+  .carusel__item {
+    width: 100%;
+    text-align: center; }
+  .carusel__Name {
+    font-size: 20px; }
+  .carusel img {
+    width: 15%;
+    height: auto; }
+  .carusel__image {
+    width: 14% !important;
+    margin: 0 auto;
+    height: auto; }
+
+@media (min-width: 319px) {
+  .carusel img {
+    width: 50%; }
+  .carusel__image {
+    width: 60% !important; }
+  .carusel__information {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 25%; }
+  .carusel .owl-nav {
+    top: 86%; }
+  .carusel .owl-nav .fa {
+    font-size: 60px;
+    position: absolute; }
+  .carusel .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 87%; }
+  .carusel .owl-nav .fa {
+    font-size: 60px;
+    position: absolute; }
+  .carusel .owl-nav .fa-angle-right {
+    right: 0%; }
+  .carusel .owl-nav .fa-angle-right:hover {
+    color: #d80b4a;
+    -webkit-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out; }
+  .carusel .owl-nav .fa-angle-left:hover {
+    color: #d80b4a;
+    -webkit-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out; }
+  .carusel .owl-next {
+    right: 0;
+    position: absolute; } }
+
+@media (min-width: 768px) {
+  .carusel img {
+    width: 25%;
+    height: auto; }
+  .carusel__image {
+    margin-top: 5%;
+    width: 30% !important; } }
+
+@media (min-width: 1200px) {
+  .carusel img {
+    width: 15% !important;
+    margin-top: 0; }
+  .carusel img {
+    width: 15%;
+    height: auto; }
+  .carusel__information {
+    margin: 0 auto;
+    width: 35%; }
+  .carusel .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 25%; }
+  .carusel .owl-nav .fa {
+    font-size: 60px;
+    position: absolute; }
+  .carusel .owl-nav .fa-angle-right {
+    right: 0%; }
+  .carusel .owl-nav .fa-angle-right:hover {
+    color: #d80b4a;
+    -webkit-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out; }
+  .carusel .owl-nav .fa-angle-left:hover {
+    color: #d80b4a;
+    -webkit-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out; }
+  .carusel .owl-next {
+    right: 0;
+    position: absolute; } }
+
+.teachers {
+  width: 100%;
+  height: auto;
+  background-color: #ddddd5;
+  background-image: url(../img/light.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  padding: 1% 10% 3% 10%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.75); }
+  .teachers h2 {
+    padding: 0;
+    font-size: 30px;
+    font-family: "RobotoBold"; }
+
+.carusel__Name {
+  font-family: "RobotoBold"; }
+
+.carusel__information {
+  font-family: "RobotoLight"; }
+
+@media (min-width: 319px) {
+  .teachers h2 {
+    text-align: center; } }
+
+@media (min-width: 768px) {
+  .teachers h2 {
+    text-align: left; } }
+
+@media (min-width: 1200px) {
+  .teachers {
+    height: 60vh;
+    background-position: top top;
+    -webkit-background-size: contain;
+            background-size: contain; }
+    .teachers h2 {
+      font-size: 35px; } }
