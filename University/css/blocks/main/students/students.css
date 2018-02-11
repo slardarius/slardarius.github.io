@@ -28,7 +28,8 @@
   width: 100%;
   height: auto;
   -webkit-box-shadow: inset 0px 10px 40px -15px rgba(0, 0, 0, 0.75);
-          box-shadow: inset 0px 10px 40px -15px rgba(0, 0, 0, 0.75); }
+          box-shadow: inset 0px 10px 40px -15px rgba(0, 0, 0, 0.75);
+  position: relative; }
   .students h2 {
     margin: 0;
     padding: 0;
@@ -49,21 +50,17 @@
     color: #d80b4a;
     -webkit-transition: color .5s ease-in-out;
     -o-transition: color .5s ease-in-out;
-    transition: color .5s ease-in-out; }
-  .students .owl-nav {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%; }
+    transition: color .5s ease-in-out;
+    cursor: pointer; }
+  .students .next-slide {
+    position: absolute; }
+  .students .prev-slide {
+    position: absolute; }
 
 @media (min-width: 319px) {
   .students {
-    background-position: center lefts; }
+    background-position: center lefts;
+    min-height: 400px; }
     .students h2 {
       margin: 2% 0% 5%;
       text-align: center;
@@ -80,11 +77,24 @@
     .students__line {
       margin-top: 5% !important;
       width: 60% !important;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+  .next-slide {
+    right: 20%;
+    bottom: 2%; }
+  .prev-slide {
+    left: 20%;
+    bottom: 2%; } }
+
+@media (min-width: 600px) {
+  .students__photo {
+    width: 30% !important; }
+  .students__line {
+    width: 20% !important; } }
 
 @media (min-width: 768px) {
   .students {
-    background-position: left bottom; }
+    background-position: left bottom;
+    min-height: 650px; }
     .students h2 {
       margin: 5% 0%;
       text-align: left;
@@ -98,20 +108,39 @@
       margin: 0 auto;
       text-align: center; }
     .students__line {
-      width: 35% !important; } }
+      width: 35% !important; }
+  .next-slide {
+    right: 20%;
+    bottom: 5%; }
+  .prev-slide {
+    left: 20%;
+    bottom: 5%; } }
 
 @media (min-width: 1200px) {
   .students {
     padding: 1% 10% 3%;
-    position: relative; }
+    position: relative;
+    min-height: 550px; }
+    .students__wrapper {
+      width: 950px !important;
+      margin: 0 auto; }
+    .students__items {
+      width: 400px;
+      margin: 0; }
     .students h2 {
       margin: 2% 0%; }
     .students__photo {
-      width: 17% !important; }
+      width: 200px !important; }
     .students__comments {
       width: 40%; }
     .students .owl-nav {
       position: absolute;
       top: 40%; }
     .students__line {
-      width: 28% !important; } }
+      width: 60% !important; }
+  .next-slide {
+    right: 22%;
+    top: 45%; }
+  .prev-slide {
+    left: 20%;
+    top: 45%; } }

@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?iefix") format("eot"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#webfont") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?iefix") format("eot"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.svg#webfont") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?iefix") format("eot"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#webfont") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+.owl-nav {
+  top: 86%; }
+
+.owl-nav .fa {
+  font-size: 60px;
+  position: absolute; }
+
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 40%; }
+
+.owl-nav .fa {
+  font-size: 60px;
+  position: absolute;
+  left: 27%; }
+
+.owl-nav .fa-angle-right {
+  right: 24% !important; }
+
+.owl-nav .fa-angle-right:hover {
+  color: #d80b4a;
+  -webkit-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out; }
+
+.owl-nav .fa-angle-left:hover {
+  color: #d80b4a;
+  -webkit-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out; }
+
+.owl-next {
+  right: 24%;
+  position: absolute; }
+
+.owl-prev {
+  left: 24%; }
+
+@media (min-width: 319px) {
+  .owl-nav {
+    top: 100%;
+    left: -3%; } }
+
+@media (min-width: 1200px) {
+  .owl-nav {
+    top: 40%; } }

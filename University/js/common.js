@@ -34,27 +34,35 @@
 
 (function () {
     $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-            items: 1,
-            center: true,
-            nav: true,
-            dots: false,
-            loop: true,
-            autoplay: true,
-            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-            autoplaySpeed: 2500
-        });
-    });
-})();
-
-(function () {
-    $(document).ready(function () {
-        $(".owl-carousel-two").owlCarousel({
-            items: 1,
+        $('.slide-one').owlCarousel({
             nav: false,
-            center: true,
             dots: false,
-            autoplaySpeed: 2500
+            loop: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                1200: {
+                    items: 2
+                }
+            },
+
+        });
+        $('.next-slide').click(function () {
+            $('.slide-one').trigger('next.owl.carousel');
+        });
+        // Go to the previous item
+        $('.prev-slide').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            $('.slide-one').trigger('prev.owl.carousel', [300]);
+        });
+
+        $('.slide-two').owlCarousel({
+            items: 1,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            nav: true,
+            loop: true
         });
     });
 })();
@@ -76,7 +84,7 @@
                     console.log('click');
                     for (var i = 0; i < acardeon.elements.length; i++) {
                         if (!acardeon.elements[i].classList.contains('acardeon')) {
-                           acardeon.elements[i].classList.add('acardeon');
+                            acardeon.elements[i].classList.add('acardeon');
                         }
                     }
                     item[index].children[0].classList.remove('acardeon');
@@ -101,4 +109,38 @@
         acardeon.closeElement(acardeon.blocks, i);
     }
 
+    var options = {
+        offset: 158
+    }
+    var header = new Headhesive('.header', options);
+})();
+
+(function () {
+    var elem = {
+        preloader: document.querySelector('.preloader'),
+        start: document.querySelector('.start'),
+        displayer: document.querySelector('.preloader__title')
+    };
+    var
+        images = document.images;
+    imageCount = images.length;
+    imageOnLoaded = 0;
+    for (var i = 0; i < imageCount; i++) {
+        image_clone = new Image();
+        image_clone.onload = image_loaded;
+        image_clone.onerror = image_loaded;
+        image_clone.src = images[i].src;
+    }
+
+    function image_loaded() {
+        imageOnLoaded++;
+        elem.displayer.innerHTML = (((100 / imageCount) * imageOnLoaded) << 0) + '%';
+        if (imageOnLoaded >= imageCount) {
+            setTimeout(() => {
+                elem.preloader.style.opacity = 0;
+                elem.start.style.display = 'block';
+                elem.start.style.opacity = 1;
+            }, 1500);
+        }
+    }
 })();
