@@ -1,5 +1,5 @@
 (function () {
-
+    // Burger
     var elements = {
         block: document.querySelector('.page-nav__burger'),
         list: document.querySelectorAll('.page-nav__item')
@@ -33,6 +33,7 @@
 })();
 
 (function () {
+    // Sliders
     $(document).ready(function () {
         $('.slide-one').owlCarousel({
             nav: false,
@@ -64,8 +65,8 @@
             nav: true,
             loop: false,
             responsive: {
-                1200 : {
-                    items : 3
+                1200: {
+                    items: 3
                 }
             }
         });
@@ -74,50 +75,38 @@
 
 
 (function () {
+    // Blocks
     var acardeon = {
-        blocks: document.querySelectorAll('.block-match__item'),
+        blocks: document.querySelectorAll('.block-match__desc'),
         elements: document.querySelectorAll('.block-match__inform'),
-        Echecked: 1,
-        closeElement: function (item, index, callback) {
-            if (item === undefined) {
-                for (var i = 0; i < acardeon.elements.length; i++) {
-                    acardeon.elements[i].classList.toggle('acardeon');
+        showItem : function(element,index) {
+            console.dir(element[index].childNodes.length);
+
+            element[index].addEventListener('click', (evnt) => {
+                for(var i = 0; i < element[index].childNodes.length;i++){
+                    if(!evnt.target.classList.contains('block-match__item'))
+                    element[index].children[i].classList.toggle('acardeon');
                 }
-            }
-            if (item !== undefined) {
-                item[index].addEventListener('click', function () {
-                    console.log('click');
-                    for (var i = 0; i < acardeon.elements.length; i++) {
-                        if (!acardeon.elements[i].classList.contains('acardeon')) {
-                            acardeon.elements[i].classList.add('acardeon');
-                        }
-                    }
-                    item[index].children[0].classList.remove('acardeon');
-                });
-            }
-        },
-        hidden: function (item, index) {
-            var actions = setInterval(() => {
-                acardeon.Echecked = acardeon.Echecked - 0.1;
-                item[index].style.opacity = this.Echecked;
-                console.log(this.Echecked);
-                if (acardeon.Echecked <= 0) {
-                    console.log('Display');
-                    item[index].style.display = 'none';
-                    clearInterval(actions);
-                }
-            }, 10);
+            });
         }
     };
-    acardeon.closeElement();
-    for (var i = 0; i < acardeon.blocks.length; i++) {
-        acardeon.closeElement(acardeon.blocks, i);
-    }
 
-    var options = {
-        offset: 158
+    for(var i= 0; i < acardeon.blocks.length;i++){
+        acardeon.showItem(acardeon.blocks,i);
     }
-    var header = new Headhesive('.header', options);
+    window.addEventListener('mousemove', (evt) => {
+        var ClienWidth = screen.width / 2;
+        if(evt.clientX >= ClienWidth){
+            for(var i = 0; i < acardeon.elements.length; i++){
+                acardeon.elements[i].style.left = -74 + '%';
+            }
+        }else {
+            for(var i = 0; i < acardeon.elements.length; i++){
+                acardeon.elements[i].style.left = 100 + '%';
+            }
+        }
+    });
+
 })();
 
 (function () {
@@ -128,8 +117,8 @@
     };
     var
         images = document.images;
-    imageCount = images.length;
-    imageOnLoaded = 0;
+        imageCount = images.length;
+        imageOnLoaded = 0;
     for (var i = 0; i < imageCount; i++) {
         image_clone = new Image();
         image_clone.onload = image_loaded;
