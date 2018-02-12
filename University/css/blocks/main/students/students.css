@@ -31,8 +31,6 @@
           box-shadow: inset 0px 10px 40px -15px rgba(0, 0, 0, 0.75);
   position: relative; }
   .students h2 {
-    margin: 0;
-    padding: 0;
     font-family: "RobotoBold"; }
   .students__name {
     font-family: "RobotoBold"; }

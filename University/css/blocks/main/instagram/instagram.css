@@ -55,7 +55,7 @@
 .owl-nav .fa {
   font-size: 60px;
   position: absolute;
-  left: 27%; }
+  left: 26%; }
 
 .owl-nav .fa-angle-right {
   right: 24% !important; }
@@ -86,7 +86,11 @@
 
 @media (min-width: 1200px) {
   .owl-nav {
-    top: 40%; } }
+    top: 40%; }
+  .owl-next {
+    right: 0%; }
+  .owl-nav .fa {
+    left: 4%; } }
 
 .instagram {
   padding: 40px 0px;
@@ -175,6 +179,9 @@
               flex-wrap: wrap; } }
 
 @media (min-width: 1200px) {
+  .instagram__wrapper {
+    width: 1200px !important;
+    margin: 0 auto; }
   .instagram__title {
     font-size: 45px; }
   .instagram h2 {

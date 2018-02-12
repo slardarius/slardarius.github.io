@@ -38,15 +38,15 @@
   .page-footer__item:hover {
     -webkit-transition: bacground .3s ease-in-out;
     -o-transition: bacground .3s ease-in-out;
-    transition: bacground .3s ease-in-out;
-    background-color: #c6c6b9;
-    -webkit-border-radius: 5px;
-            border-radius: 5px; }
+    transition: bacground .3s ease-in-out; }
   .page-footer__item a:hover {
     -webkit-transition: color .4s ease-in-out;
     -o-transition: color .4s ease-in-out;
     transition: color .4s ease-in-out;
     color: #d80b4a; }
+  .page-footer .fa {
+    font-size: 25px;
+    margin-right: 10px; }
 
 @media (min-width: 319px) {
   .page-footer__wrapepr {

@@ -62,7 +62,12 @@
             items: 1,
             navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
             nav: true,
-            loop: true
+            loop: false,
+            responsive: {
+                1200 : {
+                    items : 3
+                }
+            }
         });
     });
 })();

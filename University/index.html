@@ -63,12 +63,12 @@
 					<h2 class="page-header__descript">Кафедра</h2>
 					<h1 class="page-header__title">Інформаційних систем</h1>
 					<div class="page-header__information button-items">
-						<div class="button-items__learn-more">
+						<!-- <div class="button-items__learn-more">
 							<a href="#">Дізнатись більше</a>
 						</div>
 						<div class="button-items__open">
 							<a href="#">Кафедра</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -165,22 +165,34 @@
 						</div>
 					</div>
 					<div class="specialties__video our-video">
-						<h2 class="visually-hidden">Видео с лекциями</h2>
-						<h2 class="our-video__title">О нас</h2>
-						<iframe class = "our-video__youtube" width="560" height="315" src="https://www.youtube.com/embed/tGKlj-g6dWY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<h2 class="visually-hidden">Видео с лекциями и наши партнеры</h2>
+						<div class="specialties__video partners">
+							<h3 class = "partners__title">Наші партнери</h3>
+							<div class="partners__wrapper">
+								<div class="partners__item agilie">
+									<img src="img/logo-agilie.png" alt="partners-logo" class="partners__image">
+									<h3 class="agilie__title">Agilie</h3>
+								</div>
+								<div class="partners__item agilie">
+									<img src="img/logo-agilie.png" alt="partners-logo" class="partners__image">
+									<h3 class="agilie__title">Apriorit</h3>
+								</div>
+								<div class="partners__item agilie">
+									<img src="img/logo-agilie.png" alt="partners-logo" class="partners__image">
+									<h3 class="agilie__title">Apriorit</h3>
+								</div>
+							</div>
+						</div>
+						<div class="our-video__wrapper">
+							<h3 class="our-video__title">О нас</h3>
+							<iframe class = "our-video__youtube" width="560" height="315" src="https://www.youtube.com/embed/tGKlj-g6dWY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 			</section>
 
+
 			<section class="turn">
-				<!-- TEST -->
-				<div class="wave">
-					<div class="ellipse ellipse1"></div>
-					<div class="ellipse ellipse2"></div>
-					<div class="ellipse ellipse2"></div>
-					<div class="ellipse ellipse2"></div>
-				</div>
-				<!--  -->
 				<header class="turn__header">
 					<h2 class="turn__title wow fadeIn" data-wow-offset="100">Складно обрати спеціальність?</h2>
 					<h2 class="visually-hidden">Отличие специальностей на кафедре</h2>
@@ -209,177 +221,148 @@
 				</div>
 			</section>
 
-			<section class="teachers">
-				<header class="teachers__header">
-					<h2 class="teachers__title wow fadeIn" data-wow-offset="100">Наші викладачі</h2>
-					<h2 class="visually-hidden">Наши преподаватели</h2>
+			<section class="level">
+				<header class="level__header">
+					<h2 class="level__title wow fadeIn" data-wow-offset="100">Ми пропонуемо</h2>
+					<h2 class="visually-hidden">Возможности которые мы предоставлем</h2>
 				</header>
-				<div class="teachers__wrapper carusel">
-
-				<!-- <div class="carusel__item">
-					<img src="img/teachers-photo.png" alt="teacher-photo" class="carusel__image">
-					<div class="carusel__Name">Иван Иванович</div>
-					<article class="carusel__information">
-						Obcaecati tenetur facilis tempore.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, culpa.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Velit mollitia omnis accusamus saepe hic deserunt ratione libero numquam consequuntur optio.
-					</article>
+				<div class="level__wrapper">
+					<!-- ЗДЕСЬ БУДЕТ ВАША РЕКЛАМА -->
+					<div class="level__wrapper">
+						<div class="level__item level__item--animation">
+							<a target = "_blank" href="#">
+								<img width = "150px" height = "150px" class = "level__image" src="img/one-course.png" alt="First course">
+								<p class = "level_desc">Курс</p>
+							</a>
+						</div>
+						<div class="level__item level__item--animation">
+							<a target = "_blank" href="#">
+								<img width = "150px" height = "150px" class = "level__image" src="img/two-course.png" alt="Second course">
+								<p class = "level_desc">Курс</p>
+							</a>
+						</div>
+						<div class="level__item level__item--animation">
+							<a target = "_blank" href="#">
+								<img width = "150px" height = "150px" class = "level__image" src="img/three-course.png" alt="Third course">
+								<p class = "level__desc">Курс</p>
+							</a>
+						</div>
+					</div>
 				</div>
+			</section>
+			<section class="students">
+				<header class="sudents__header">
+					<h2 class="students__title wow fadeIn" data-wow-offset="100">Наші студенти</h2>
+					<h2 class="visually-hidden">Лучшие студенты кафедры</h2>
+				</header>
 
-				<div class="carusel__item">
-					<img src="img/teachers-photo.png" alt="teacher-photo" class="carusel__image">
-					<div class="carusel__Name">Иван Иванов</div>
-					<article class="carusel__information">
-						Obcaecati tenetur facilis tempore.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, culpa.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Velit mollitia omnis accusamus saepe hic deserunt ratione libero numquam consequuntur optio.
-					</article>
-				</div> -->
+				<div class="students__wrapper owl-carousel slide-one">
 
-			</div>
-		</section>
-		<div class="hero-gradient">
-			<div id="wave">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 193">
-					<path d="M1175 131.2c0 0-81-89.4-224.3-103.4S713 72 665 97c-86 46-148 63-271 7C221.7 25.5 56 104.5-4 197.4 -4 58.7-3.3 0.3-3.3 0.3L1175 0V131.2z"></path>
-				</svg>
-			</div>	
+					<div class="students__items">
+						<img src="img/first_student.png" alt="Вітрук Ігор" class="students__photo">
+						<div class="students__name">Вітрук Ігор</div>
+						<article class="students__comments">
+							Бакалавр.Випуск 2017 року.
+							<img class = "students__line" src="img/line-students.svg" alt="line-students">
+						</article>
+					</div>
+
+					<div class="students__items">
+						<img src="img/second_student.png" alt="Кравцов Констянтин" class="students__photo">
+						<div class="students__name">Кравцов Констянтин</div>
+						<article class="students__comments">
+							Магістр. Випуск 2018 року.
+							<img class = "students__line" src="img/line-students.svg" alt="line-students">
+						</article>
+					</div>
+
+					<div class="students__items">
+						<img src="img/second_student.png" alt="Кравцов Констянтин" class="students__photo">
+						<div class="students__name">Кравцов Констянтин</div>
+						<article class="students__comments">
+							Магістр. Випуск 2018 року.
+							<img class = "students__line" src="img/line-students.svg" alt="line-students">
+						</article>
+					</div>
+
+				</div>
+				<div class="next-slide">
+					<i class="fa fa-angle-right"></i>
+				</div>
+				<div class="prev-slide">
+					<i class="fa fa-angle-left"></i>
+				</div>
+			</section>
+
+			<section class="instagram">
+				<header class="instagram__header">
+					<h2 class = "instagram__title wow fadeIn"> ІС в Instagram</h2>
+					<h2 class = "visually hidden">Інстаграми акаунты наших студентов и преподавателей</h2>
+				</header>
+				<div class="instagram__wrapper owl-carousel slide-two">
+
+					<div class="instagram__item">
+						<div class="instagram__desc">Instagram</div>
+						<a target = "_blank" href="https://www.instagram.com/p/BbHqiStnpv3/?hl=ru&taken-by=mr.koksstyle" class = "instagram__link">
+							<img width = "100px" height = "100px" src= "img/instagram.jpg" alt="Инстаграм фото" class="instagram__photo">
+						</a>
+					</div>
+
+					<div class="instagram__item">
+						<div class="instagram__desc">Instagram</div>
+						<a target = "_blank" href="https://www.instagram.com/p/BbHqiStnpv3/?hl=ru&taken-by=mr.koksstyle" class = "instagram__link">
+							<img width = "100px" height = "100px" src= "img/instagram.jpg" alt="Инстаграм фото" class="instagram__photo">
+						</a>
+					</div>
+
+					<div class="instagram__item">
+						<div class="instagram__desc">Instagram</div>
+						<a target = "_blank" href="https://www.instagram.com/p/BbHqiStnpv3/?hl=ru&taken-by=mr.koksstyle" class = "instagram__link">
+							<img width = "100px" height = "100px" src= "img/instagram.jpg" alt="Инстаграм фото" class="instagram__photo">
+						</a>
+					</div>
+
+					<div class="instagram__item">
+						<div class="instagram__desc">Instagram</div>
+						<a target = "_blank" href="https://www.instagram.com/p/BbHqiStnpv3/?hl=ru&taken-by=mr.koksstyle" class = "instagram__link">
+							<img width = "100px" height = "100px" src= "img/instagram.jpg" alt="Инстаграм фото" class="instagram__photo">
+						</a>
+					</div>
+
+				</section>
+
+				<section class="contacts">
+					<header class="contacts__header">
+						<h2 class="contacts__title wow fadeIn" data-wow-offset="100">Ми знаходимось</h2>
+						<h2 class="visually-hidden">Мы находимся</h2>
+					</header>
+					<div class="contacts__wrapper">
+						<div class="contacts__map">
+							<iframe class = "contacts__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.7745799851787!2d35.0685634159132!3d48.441664537911024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfcd72a7d5cf7%3A0xcaec6d469c04e965!2z0KPQk9Cl0KLQoyDQnNC10YXQsNC90LjRh9C10YHQutC40Lkg0LrQvtGA0L_Rg9GB!5e0!3m2!1sru!2sua!4v1517426359368" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div class="contacts__information">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Deleniti explicabo autem obcaecati possimus, 
+							et excepturi accusantium vero delectus ab ex.
+						</div>
+					</div>
+				</section>
+
+			</main>
+			<footer class="page-footer">
+
+				<div class="page-footer__wrapper">
+					<ul class="page-footer__list">
+						<li class="page-footer__item"><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+						<li class="page-footer__item"><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+						<li class="page-footer__item"><a href="#"><i class="fa fa-youtube"></i> YouTube</a></li>
+					</ul>
+					<h3 class="page-footer__who-make">
+						Slardarius (c) 2018
+					</h3>
+				</div>
+			</footer> 
 		</div>
-		<section class="partners">
-			<header class="partners__header">
-				<h2 class="partners__title wow fadeIn" data-wow-offset="100">Наші партнери</h2>
-				<h2 class="visually-hidden">Партрнёры кафедры</h2>
-			</header>
-			<div class="partners__wrapper">
-				<div class="partners__agilie agilie">
-					<img src="img/logo-agilie.png" alt="partners-logo" class="agalie__image agalie__image--border-red">
-					<h3 class="agilie__title">Agilie</h3>
-				</div>
-
-				<div class="partners__agilie agilie">
-					<img src="img/logo-agilie.png" alt="partners-logo" class="agalie__image agalie__image--border-red">
-					<h3 class="agilie__title">Agilie</h3>
-				</div>
-			</div>
-
-		</section>
-
-		<section class="students">
-			<header class="sudents__header">
-				<h2 class="students__title wow fadeIn" data-wow-offset="100">Наші студенти</h2>
-				<h2 class="visually-hidden">Лучшие студенты кафедры</h2>
-			</header>
-
-			<div class="students__wrapper owl-carousel slide-one">
-
-				<div class="students__items">
-					<img src="img/first_student.png" alt="Вітрук Ігор" class="students__photo">
-					<div class="students__name">Вітрук Ігор</div>
-					<article class="students__comments">
-						Бакалавр.Випуск 2017 року.
-						<img class = "students__line" src="img/line-students.svg" alt="line-students">
-					</article>
-				</div>
-
-				<div class="students__items">
-					<img src="img/second_student.png" alt="Кравцов Констянтин" class="students__photo">
-					<div class="students__name">Кравцов Констянтин</div>
-					<article class="students__comments">
-						Магістр. Випуск 2018 року.
-						<img class = "students__line" src="img/line-students.svg" alt="line-students">
-					</article>
-				</div>
-
-				<div class="students__items">
-					<img src="img/second_student.png" alt="Кравцов Констянтин" class="students__photo">
-					<div class="students__name">Кравцов Констянтин</div>
-					<article class="students__comments">
-						Магістр. Випуск 2018 року.
-						<img class = "students__line" src="img/line-students.svg" alt="line-students">
-					</article>
-				</div>
-
-			</div>
-			<div class="next-slide">
-				<i class="fa fa-angle-right"></i>
-			</div>
-			<div class="prev-slide">
-				<i class="fa fa-angle-left"></i>
-			</div>
-		</section>
-
-		<section class="instagram">
-			<header class="instagram__header">
-				<h2 class = "instagram__title wow fadeIn"> ІС в Instagram</h2>
-				<h2 class = "visually hidden">Інстаграми акаунты наших студентов и преподавателей</h2>
-			</header>
-			<div class="instagram__wrapper owl-carousel slide-two">
-
-				<div class="instagram__item">
-					<div class="instagram__desc">Instagram</div>
-					<a target = "_blank" href="https://www.instagram.com/p/BbHqiStnpv3/?hl=ru&taken-by=mr.koksstyle" class = "instagram__link">
-						<img width = "100px" height = "100px" src= "img/instagram.jpg" alt="Инстаграм фото" class="instagram__photo">
-					</a>
-				</div>
-
-				<div class="instagram__item">
-					<div class="instagram__desc">Instagram</div>
-					<a target = "_blank" href="https://www.instagram.com/p/BbHqiStnpv3/?hl=ru&taken-by=mr.koksstyle" class = "instagram__link">
-						<img width = "100px" height = "100px" src= "img/instagram.jpg" alt="Инстаграм фото" class="instagram__photo">
-					</a>
-				</div>
-
-				<div class="instagram__item">
-					<div class="instagram__desc">Instagram</div>
-					<a target = "_blank" href="https://www.instagram.com/p/BbHqiStnpv3/?hl=ru&taken-by=mr.koksstyle" class = "instagram__link">
-						<img width = "100px" height = "100px" src= "img/instagram.jpg" alt="Инстаграм фото" class="instagram__photo">
-					</a>
-				</div>
-
-				<div class="instagram__item">
-					<div class="instagram__desc">Instagram</div>
-					<a target = "_blank" href="https://www.instagram.com/p/BbHqiStnpv3/?hl=ru&taken-by=mr.koksstyle" class = "instagram__link">
-						<img width = "100px" height = "100px" src= "img/instagram.jpg" alt="Инстаграм фото" class="instagram__photo">
-					</a>
-				</div>
-
-			</section>
-
-			<section class="contacts">
-				<header class="contacts__header">
-					<h2 class="contacts__title wow fadeIn" data-wow-offset="100">Ми знаходимось</h2>
-					<h2 class="visually-hidden">Мы находимся</h2>
-				</header>
-				<div class="contacts__wrapper">
-					<div class="contacts__map">
-						<iframe class = "contacts__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.7745799851787!2d35.0685634159132!3d48.441664537911024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfcd72a7d5cf7%3A0xcaec6d469c04e965!2z0KPQk9Cl0KLQoyDQnNC10YXQsNC90LjRh9C10YHQutC40Lkg0LrQvtGA0L_Rg9GB!5e0!3m2!1sru!2sua!4v1517426359368" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-					<div class="contacts__information">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Deleniti explicabo autem obcaecati possimus, 
-						et excepturi accusantium vero delectus ab ex.
-					</div>
-				</div>
-			</section>
-
-		</main>
-		<footer class="page-footer">
-
-			<div class="page-footer__wrapper">
-				<ul class="page-footer__list">
-					<li class="page-footer__item"><a href="#">Головна</a></li>
-					<li class="page-footer__item"><a href="#">Абітуріентам</a></li>
-					<li class="page-footer__item"><a href="#">батькам</a></li>
-					<li class="page-footer__item"><a href="#">фото галерея</a></li>
-				</ul>
-				<h3 class="page-footer__who-make">
-					Slardarius (c) 2018
-				</h3>
-			</div>
-		</footer> 
-	</div>
 
 	<!--[if lt IE 9]>
 			<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -389,7 +372,6 @@
 		<![endif]-->
 
 
-		
 		<link rel="stylesheet" href="libs/ovl/owl.carousel.min.css">
 		<link rel="stylesheet" href="libs/fontawesome/font-awesome.min.css">
 		<script type = 'text/javascript' src = "js/jquery.js"></script>

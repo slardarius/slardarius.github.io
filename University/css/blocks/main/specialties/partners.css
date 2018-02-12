@@ -19,54 +19,50 @@
   font-weight: 400;
   font-style: normal; }
 
-.owl-nav {
-  top: 86%; }
-
-.owl-nav .fa {
-  font-size: 60px;
-  position: absolute; }
-
-.owl-nav {
-  position: absolute;
-  width: 100%;
-  top: 40%; }
-
-.owl-nav .fa {
-  font-size: 60px;
-  position: absolute;
-  left: 26%; }
-
-.owl-nav .fa-angle-right {
-  right: 24% !important; }
-
-.owl-nav .fa-angle-right:hover {
-  color: #d80b4a;
-  -webkit-transition: color .5s ease-in-out;
-  -o-transition: color .5s ease-in-out;
-  transition: color .5s ease-in-out; }
-
-.owl-nav .fa-angle-left:hover {
-  color: #d80b4a;
-  -webkit-transition: color .5s ease-in-out;
-  -o-transition: color .5s ease-in-out;
-  transition: color .5s ease-in-out; }
-
-.owl-next {
-  right: 24%;
-  position: absolute; }
-
-.owl-prev {
-  left: 24%; }
+.partners__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 @media (min-width: 319px) {
-  .owl-nav {
-    top: 100%;
-    left: -3%; } }
+  .partners__title {
+    margin: 0;
+    padding: 0;
+    font-size: 30px; }
+  .partners__item {
+    margin-top: 20px; }
+    .partners__item h3 {
+      font-size: 20px; }
+  .partners__image {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    display: block; } }
+
+@media (min-width: 768px) {
+  .partners__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
 
 @media (min-width: 1200px) {
-  .owl-nav {
-    top: 40%; }
-  .owl-next {
-    right: 0%; }
-  .owl-nav .fa {
-    left: 4%; } }
+  .partners h3 {
+    text-align: center; }
+  .partners__wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 600px;
+    height: 400px; }
+  .partners__item {
+    width: 220px; } }
