@@ -52,10 +52,7 @@
         $('.next-slide').click(function () {
             $('.slide-one').trigger('next.owl.carousel');
         });
-        // Go to the previous item
         $('.prev-slide').click(function () {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
             $('.slide-one').trigger('prev.owl.carousel', [300]);
         });
 
@@ -76,34 +73,84 @@
 
 (function () {
     // Blocks
+
     var acardeon = {
         blocks: document.querySelectorAll('.block-match__desc'),
         elements: document.querySelectorAll('.block-match__inform'),
-        showItem : function(element,index) {
-            console.dir(element[index].childNodes.length);
+        showItem: function (element, index) {
+            // element[index].addEventListener('mouseleave', (evnt) => {
+            //     for (var i = 0; i < element[index].childNodes.length; i++) {
+            //         if (!evnt.target.classList.contains('block-match__item')) {
+            //             element[index].children[i].classList.toggle('acardeon');
+            //         }
+            //     }
 
+            // });
             element[index].addEventListener('click', (evnt) => {
-                for(var i = 0; i < element[index].childNodes.length;i++){
-                    if(!evnt.target.classList.contains('block-match__item'))
-                    element[index].children[i].classList.toggle('acardeon');
+                for (var i = 0; i < element[index].childNodes.length; i++) {
+                    if (!evnt.target.classList.contains('block-match__item')) {
+                        element[index].children[i].classList.toggle('acardeon');
+                    }
+
                 }
             });
         }
     };
 
-    for(var i= 0; i < acardeon.blocks.length;i++){
-        acardeon.showItem(acardeon.blocks,i);
+    for (var i = 0; i < acardeon.blocks.length; i++) {
+        acardeon.showItem(acardeon.blocks, i);
     }
     window.addEventListener('mousemove', (evt) => {
-        var ClienWidth = screen.width / 2;
-        if(evt.clientX >= ClienWidth){
-            for(var i = 0; i < acardeon.elements.length; i++){
-                acardeon.elements[i].style.left = -74 + '%';
+        var Bootstrap = {
+            mobMin: 320,
+            mobMax: 768,
+            tabMin: 769,
+            descTopMin: 1200,
+            descTopMax: 1510,
+            ClienWidth: screen.width,
+            ClienWidthX: screen.width / 2,
+            Persent: {
+                mob: -132,
+                desk: -90,
+                retina: -75,
+                CONST_PERSENT: 100
             }
-        }else {
-            for(var i = 0; i < acardeon.elements.length; i++){
-                acardeon.elements[i].style.left = 100 + '%';
+        };
+
+        var cahngePersent = function (persents, CONST_PERS) {
+            if (evt.clientX >= Bootstrap.ClienWidthX) {
+                for (var i = 0; i < acardeon.elements.length; i++) {
+                    acardeon.elements[i].style.position = 'absolute';
+                    acardeon.elements[i].style.width = 450 + 'px';
+                    acardeon.elements[i].style.height = 'auto';
+                    acardeon.elements[i].style.left = persents + '%';
+                }
+            } else {
+                for (var i = 0; i < acardeon.elements.length; i++) {
+                    acardeon.elements[i].style.left = CONST_PERS + '%';
+                }
             }
+        };
+        var changeMobilDevice = function () {
+            for (var i = 0; i < acardeon.elements.length; i++) {
+                acardeon.elements[i].style.position = 'absolute';
+                acardeon.elements[i].style.width = 450 + 'px';
+                acardeon.elements[i].style.height = 'auto';
+                acardeon.elements[i].style.position = 'static';
+                acardeon.elements[i].style.width = 270 + 'px';
+            }
+        };
+        if (Bootstrap.ClienWidth >= Bootstrap.mobMin && Bootstrap.ClienWidth <= Bootstrap.mobMax) {
+            changeMobilDevice();
+        }
+        if (Bootstrap.ClienWidth >= Bootstrap.tabMin && Bootstrap.ClienWidth <= Bootstrap.descTopMin) {
+            cahngePersent(Bootstrap.Persent.mob, Bootstrap.Persent.CONST_PERSENT);
+        }
+        if (Bootstrap.ClienWidth >= Bootstrap.descTopMin && Bootstrap.ClienWidth <= Bootstrap.descTopMax) {
+            cahngePersent(Bootstrap.Persent.desk, Bootstrap.Persent.CONST_PERSENT);
+        }
+        if (Bootstrap.ClienWidth >= Bootstrap.descTopMax) {
+            cahngePersent(Bootstrap.Persent.retina, Bootstrap.Persent.CONST_PERSENT);
         }
     });
 
@@ -117,8 +164,8 @@
     };
     var
         images = document.images;
-        imageCount = images.length;
-        imageOnLoaded = 0;
+    imageCount = images.length;
+    imageOnLoaded = 0;
     for (var i = 0; i < imageCount; i++) {
         image_clone = new Image();
         image_clone.onload = image_loaded;
