@@ -29,6 +29,10 @@
             }, 500);
         }
     });
+    var options = {
+        offset: 157
+      }
+      var header = new Headhesive('.header', options);
 
 })();
 
