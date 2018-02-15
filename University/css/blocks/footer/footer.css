@@ -1,23 +1,29 @@
 @font-face {
+  font-family: Source Serif;
   font-family: 'RobotoLight';
   src: url("../fonts/RobotoLight/RobotoLight.eot");
   src: url("../fonts/RobotoLight/RobotoLight.eot?iefix") format("eot"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#webfont") format("svg");
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
+  font-family: Source Serif;
   font-family: 'RobotoBold';
   src: url("../fonts/RobotoBold/RobotoBold.eot");
   src: url("../fonts/RobotoBold/RobotoBold.eot?iefix") format("eot"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.svg#webfont") format("svg");
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
+  font-family: Source Serif;
   font-family: 'RobotoRegular';
   src: url("../fonts/RobotoRegular/RobotoRegular.eot");
   src: url("../fonts/RobotoRegular/RobotoRegular.eot?iefix") format("eot"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#webfont") format("svg");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 .page-footer {
   margin: 0;
