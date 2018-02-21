@@ -107,87 +107,95 @@
 
 (function () {
     // Blocks https://jsbin.com/doguvozuxu/edit?html,js,console,output,
-
-    var Acardeon = function () {
-        var template = new Object();
-        var object = [];
-        var path = {
-            Melement : document.querySelectorAll('.block-match__desc')
-        };
-        var options = {
-            index : 0,
-            next : 1,
-            count : 0,
-            max : 400
-        };
-        Array.from(path.Melement).forEach(function (it, index) {
-            template = {
-                path : it,
-                length : (it.children.length),
-                translater : 0,
-                switcher : false
-            };
-            object.push(template);
-        });
-        var hide = function(obj){
-            obj.translater = 0;
-            obj.classList.remove('acardeon');
-            var interval = setInterval(function () {
-                obj.translater = obj.translater + 200;
-                obj.style.transform = 'translateY(-' + obj.translater + '%)';
-                if(obj.translater >= options.max){
-                    obj.style.display = 'none';
-                    options.next++;
-                    options.max = options.max + 100;
-                    changer(options.index,options.next);
-                    if(options.next >= object[options.index].length){
-                        options.max = 1200;
-                        options.next = 1;
-                    }
-                    clearInterval(interval);
-                }
-            },10);
-        };
-        var show = function(obj){
-            obj.translater = 100;
-            obj.style.display = 'block';
-            obj.classList.add('acardeon');
-            var interval = setInterval(function () {
-                obj.translater = obj.translater + 100;
-                obj.style.transform = 'translateY(' + obj.translater + '%)';
-                if(obj.translater >= 0){
-                    options.next++;
-                    obj.style.transform = 'translateY(' + 0 + '%)';
-                    changer(options.index,options.next);
-                    if(options.next >= object[options.index].length){
-                        options.next = 1;
-                    }
-                    clearInterval(interval);
-                }
-            },100);
-        };
-        var changer = function (index,slc) {
-            options.index = index;
-            Array.from(object[index].path.children).slice(slc,slc+1).filter(function (it) {
-                if(!it.classList.contains('acardeon')){
-                    return show(it);
+    var acardeon = {
+        blocks: document.querySelectorAll('.block-match__desc'),
+        elements: document.querySelectorAll('.block-match__inform'),
+        items: document.querySelectorAll('.block-match__item'),
+        showItem: function (element, index) {
+            element[index].addEventListener('click', (evnt) => {
+                Bblocks.Blength[index] = element[index].children.length - 1;
+                recursFunc(element[index].children,params.Istart[index],index);
+            });
+        }
+    };
+    var Bblocks = {
+        Bheight : [70,70,70,70],
+        Bopacity : [1,1,1,1],
+        Btarget : [],
+        Blength : [],
+    }
+    var IShow =  function (Ielement,index,current) {
+        Bblocks.Bheight[current]  = 0;
+        Bblocks.Bopacity[current] = 0;
+        Ielement[params.Istart[current]].style.display = 'block';
+        Ielement[params.Istart[current]].classList.add('acardeon');
+        var Iinterval = setInterval( function () {
+            Bblocks.Bheight[current]  = Bblocks.Bheight[current] + 4;
+            Bblocks.Bopacity[current] = Bblocks.Bopacity[current] + 0.030;
+            Ielement[params.Istart[current]].style.height = Bblocks.Bheight[current] + 'px';
+            Ielement[params.Istart[current]].style.opacity = Bblocks.Bopacity[current];
+            if(Bblocks.Bheight[current] >= 50){
+                Ielement[params.Istart[current]].style.opacity = 1;
+                Ielement[params.Istart[current]].style.height = 'auto';
+                params.Istart[current]++;
+                if(params.Istart[current] <= Bblocks.Blength[current]){
+                    recursFunc(Ielement,params.Istart[current],current);
                 }
                 else {
-                    return hide(it);
+                    params.Istart[current] = 1;
                 }
-            });
-        };
-        object.forEach(function(it,index){
-            it.path.addEventListener('click', function () {
-                changer(index,options.next);
-            });
-        });
-    }();
+                clearInterval(Iinterval);
+            }
+        }, params.fps);
+    };
+    var Ihidden =  function (Ielement,index,current) {
+        Bblocks.Bheight[current]  = 50;
+        Bblocks.Bopacity[current] = 1;
+        var Iinterval = setInterval( function () {
+            Bblocks.Bheight[current]  = Bblocks.Bheight[current] - 3;
+            Bblocks.Bopacity[current] = Bblocks.Bopacity[current] - 0.030;
+            Ielement[params.Istart[current]].style.height = Bblocks.Bheight[current] + 'px';
+            Ielement[params.Istart[current]].style.opacity = Bblocks.Bopacity[current];
+            if(Bblocks.Bheight[current] <= 30){
+                Ielement[params.Istart[current]].style.opacity = 0;
+                Ielement[params.Istart[current]].style.display = 'none';
+                Ielement[params.Istart[current]].classList.toggle('acardeon');
+                params.Istart[current]++;
+                if(params.Istart[current] <= Bblocks.Blength[current]){
+                    recursFunc(Ielement,params.Istart[current],current);
+                }
+                else {
+                    params.Istart[current] = 1;
+                }
+                clearInterval(Iinterval);
+            }
+        }, params.fps);
+    };
+    var recursFunc = function (e,t,p){
+        if(e[t].classList.contains('acardeon') == false){
+            IShow(e,t,p);
+        }else{
+            Ihidden(e,t,p);
+        }
+
+
+    }
+    var params = {
+        Istart : [1,1,1,1],
+        fps : 15,
+    };
+     for (var i = 0; i < acardeon.blocks.length; i++) {
+         Bblocks.Btarget[i] = acardeon.blocks[i];
+         Bblocks.Bheight[i] = 50;
+         Bblocks.Bopacity[i] = 1;
+         params.Istart[i] = 1;
+         acardeon.showItem(Bblocks.Btarget, i);
+     }
+
+
+
 
     window.addEventListener('mousemove', (evt) => {
-        var acardeon = {
-            elements: document.querySelectorAll('.block-match__inform')
-        };
         var Bootstrap = {
             mobMin: 320,
             mobMax: 768,

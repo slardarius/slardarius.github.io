@@ -28,6 +28,9 @@
 .contacts {
   padding: 3% 10% 5%;
   background-color: #262626; }
+  .contacts p {
+    margin: 0;
+    padding: 0; }
   .contacts h2 {
     margin: 0;
     padding: 0;
@@ -37,7 +40,12 @@
     border: 3px solid #d80b4a; }
   .contacts__information {
     color: #fff;
-    font-family: "RobotoRegular"; }
+    font-family: "RobotoRegular";
+    font-size: 11px; }
+    .contacts__information span {
+      color: #d80b4a;
+      font-size: 20px;
+      cursor: pointer; }
 
 @media (min-width: 319px) {
   .contacts h2 {
@@ -73,12 +81,16 @@
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .contacts__information {
+    margin-top: 0;
     -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
             align-self: flex-start;
+    -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+            align-content: flex-start;
     text-align: left;
-    font-size: 20px;
-    width: 30%; }
+    font-size: 16px;
+    width: 40%; }
   .contacts__map {
     width: 50%; }
   .contacts__google {
