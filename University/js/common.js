@@ -38,7 +38,6 @@
     var open = 'fa-align-justify';
     elements.block.addEventListener('click', function () {
         if (elements.block.children[0].classList.contains('' + open)) {
-            console.log('true');
             elements.block.children[0].classList.remove('' + open);
             elements.block.children[0].classList.add('' + exit);
             setTimeout(() => {
@@ -49,7 +48,6 @@
 
 
         } else {
-            console.log('false');
             elements.block.children[0].classList.remove('' + exit);
             elements.block.children[0].classList.add('' + open);
             setTimeout(() => {
@@ -106,24 +104,23 @@
 
 
 (function () {
-    // Blocks https://jsbin.com/doguvozuxu/edit?html,js,console,output,
-
     var Acardeon = function () {
+        var bln = true;
         var template = new Object();
         var object = [];
         var path = {
-            Melement : document.querySelectorAll('.block-match__desc')
+            Melement : document.querySelectorAll('.block-match__button')
         };
         var options = {
             index : 0,
-            next : 1,
+            next : 0,
             count : 0,
             max : 400
         };
         Array.from(path.Melement).forEach(function (it, index) {
             template = {
                 path : it,
-                length : (it.children.length),
+                length : (it.parentNode.childNodes.length - 1),
                 translater : 0,
                 switcher : false
             };
@@ -142,7 +139,7 @@
                     changer(options.index,options.next);
                     if(options.next >= object[options.index].length){
                         options.max = 1200;
-                        options.next = 1;
+                        options.next = 0;
                     }
                     clearInterval(interval);
                 }
@@ -160,7 +157,7 @@
                     obj.style.transform = 'translateY(' + 0 + '%)';
                     changer(options.index,options.next);
                     if(options.next >= object[options.index].length){
-                        options.next = 1;
+                        options.next = 0;
                     }
                     clearInterval(interval);
                 }
@@ -168,77 +165,95 @@
         };
         var changer = function (index,slc) {
             options.index = index;
-            Array.from(object[index].path.children).slice(slc,slc+1).filter(function (it) {
-                if(!it.classList.contains('acardeon')){
-                    return show(it);
+
+            Array.from(object[index].path.parentNode.children[1].children).slice(slc,slc+1).filter(function (it) {
+                if(bln) {
+                    if(!it.classList.contains('acardeon')){
+                        object[index].path.innerHTML = 'Приховати';
+                        return show(it);
+                    }
+                    else {
+                        return hide(it);
+                        object[index].path.innerHTML = 'Докладніше';
+                    }
                 }
-                else {
-                    return hide(it);
-                }
-            });
-        };
+            if(!bln){
+                object[index].path.innerHTML = 'Докладніше';
+                return hide(it);
+
+            }
+        });
+    };
         object.forEach(function(it,index){
             it.path.addEventListener('click', function () {
+                bln = true;
                 changer(index,options.next);
             });
         });
+        var blocMatch = document.querySelectorAll('.block-match');
+        blocMatch.forEach(function (it,index) {
+            it.addEventListener('mouseleave', function (e) {
+                if(screen.width >= 768){
+                bln = false;
+                changer(index,options.next);
+                }
+            });
+        });
+        window.addEventListener('mousemove', (evt) => {
+            var acardeon = {
+                elements: document.querySelectorAll('.block-match__inform')
+            };
+            var Bootstrap = {
+                MOBMIN: 320,
+                MOBMAX: 768,
+                TABMIN: 769,
+                DESCKTOP_MIN: 1200,
+                DESCKTOP_MAX: 1510,
+                ClienWidth: screen.width,
+                ClienWidthX: screen.width / 2,
+                Persent: {
+                    MOB: -132,
+                    DESK: -90,
+                    RETINA: -75,
+                    CONST_PERSENT: 100
+                }
+            };
+            var cahngePersent = function (persents, CONST_PERS) {
+                if (evt.clientX >= Bootstrap.ClienWidthX) {
+                    acardeon.elements.forEach(function (it) {
+                        it.style.position = 'absolute';
+                        it.style.width = 450 + 'px';
+                        it.style.height = 'auto';
+                        it.style.left = persents + '%';
+                    });
+                } else {
+                    acardeon.elements.forEach(function (it) {
+                        it.style.left = CONST_PERS + '%';
+                    });
+                }
+            };
+            var changeMOBilDevice = function () {
+                acardeon.element.forEach(function (it) {
+                    it.style.position = 'absolute';
+                    it.style.width = 450 + 'px';
+                    it.style.height = 'auto';
+                    it.style.position = 'static';
+                    it.style.width = 270 + 'px';
+                });
+            };
+            if (Bootstrap.ClienWidth >= Bootstrap.MOBMIN && Bootstrap.ClienWidth <= Bootstrap.MOBMAX) {
+                changeMOBilDevice();
+            }
+            if (Bootstrap.ClienWidth >= Bootstrap.TABMIN && Bootstrap.ClienWidth <= Bootstrap.DESCKTOP_MIN) {
+                cahngePersent(Bootstrap.Persent.MOB, Bootstrap.Persent.CONST_PERSENT);
+            }
+            if (Bootstrap.ClienWidth >= Bootstrap.DESCKTOP_MIN && Bootstrap.ClienWidth <= Bootstrap.DESCKTOP_MAX) {
+                cahngePersent(Bootstrap.Persent.DESK, Bootstrap.Persent.CONST_PERSENT);
+            }
+            if (Bootstrap.ClienWidth >= Bootstrap.DESCKTOP_MAX) {
+                cahngePersent(Bootstrap.Persent.RETINA, Bootstrap.Persent.CONST_PERSENT);
+            }
+        });
     }();
-
-    window.addEventListener('mousemove', (evt) => {
-        var acardeon = {
-            elements: document.querySelectorAll('.block-match__inform')
-        };
-        var Bootstrap = {
-            mobMin: 320,
-            mobMax: 768,
-            tabMin: 769,
-            descTopMin: 1200,
-            descTopMax: 1510,
-            ClienWidth: screen.width,
-            ClienWidthX: screen.width / 2,
-            Persent: {
-                mob: -132,
-                desk: -90,
-                retina: -75,
-                CONST_PERSENT: 100
-            }
-        };
-
-        var cahngePersent = function (persents, CONST_PERS) {
-            if (evt.clientX >= Bootstrap.ClienWidthX) {
-                for (var i = 0; i < acardeon.elements.length; i++) {
-                    acardeon.elements[i].style.position = 'absolute';
-                    acardeon.elements[i].style.width = 450 + 'px';
-                    acardeon.elements[i].style.height = 'auto';
-                    acardeon.elements[i].style.left = persents + '%';
-                }
-            } else {
-                for (var i = 0; i < acardeon.elements.length; i++) {
-                    acardeon.elements[i].style.left = CONST_PERS + '%';
-                }
-            }
-        };
-        var changeMobilDevice = function () {
-            for (var i = 0; i < acardeon.elements.length; i++) {
-                acardeon.elements[i].style.position = 'absolute';
-                acardeon.elements[i].style.width = 450 + 'px';
-                acardeon.elements[i].style.height = 'auto';
-                acardeon.elements[i].style.position = 'static';
-                acardeon.elements[i].style.width = 270 + 'px';
-            }
-        };
-        if (Bootstrap.ClienWidth >= Bootstrap.mobMin && Bootstrap.ClienWidth <= Bootstrap.mobMax) {
-            changeMobilDevice();
-        }
-        if (Bootstrap.ClienWidth >= Bootstrap.tabMin && Bootstrap.ClienWidth <= Bootstrap.descTopMin) {
-            cahngePersent(Bootstrap.Persent.mob, Bootstrap.Persent.CONST_PERSENT);
-        }
-        if (Bootstrap.ClienWidth >= Bootstrap.descTopMin && Bootstrap.ClienWidth <= Bootstrap.descTopMax) {
-            cahngePersent(Bootstrap.Persent.desk, Bootstrap.Persent.CONST_PERSENT);
-        }
-        if (Bootstrap.ClienWidth >= Bootstrap.descTopMax) {
-            cahngePersent(Bootstrap.Persent.retina, Bootstrap.Persent.CONST_PERSENT);
-        }
-    });
 
 })();

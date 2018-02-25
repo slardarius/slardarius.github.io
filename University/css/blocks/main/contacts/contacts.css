@@ -28,6 +28,8 @@
 .contacts {
   padding: 3% 10% 5%;
   background-color: #262626; }
+  .contacts--under-line {
+    text-decoration: underline; }
   .contacts p {
     margin: 0;
     padding: 0; }
@@ -43,6 +45,7 @@
     font-family: "RobotoRegular";
     font-size: 11px; }
     .contacts__information span {
+      margin-right: 10px;
       color: #d80b4a;
       font-size: 20px;
       cursor: pointer; }
