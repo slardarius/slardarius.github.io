@@ -1,0 +1,18 @@
+@-webkit-keyframes KeyMove {
+  0% {
+    margin-top: 40px; }
+  50% {
+    margin-top: 55px;
+    color: #ca0026; }
+  100% {
+    margin-top: 65px;
+    color: #e3002b; } }
+@keyframes KeyMove {
+  0% {
+    margin-top: 40px; }
+  50% {
+    margin-top: 55px;
+    color: #ca0026; }
+  100% {
+    margin-top: 65px;
+    color: #e3002b; } }

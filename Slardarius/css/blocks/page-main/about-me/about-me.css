@@ -1,0 +1,62 @@
+.about-me {
+  padding: 20px 0px;
+  -webkit-box-shadow: inset 0px 7px 21px -6px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 7px 21px -6px rgba(0, 0, 0, 0.75); }
+  .about-me h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'RobotoRegular';
+    text-transform: uppercase; }
+
+@media (min-width: 319px) {
+  .about-me h2 {
+    text-align: center;
+    padding: 20px 0px; }
+  .about-me__my-name {
+    text-align: center;
+    font-family: "RobotoRegular"; }
+  .about-me h3 {
+    font-family: "RobotoBold";
+    font-size: 20px;
+    text-align: center; }
+  .about-me__list {
+    padding: 0px 10px;
+    font-family: "RobotoRegular"; }
+  .about-me__item {
+    margin-top: 10px;
+    text-align: center;
+    list-style: none; }
+  .about-me__list-project {
+    padding: 0; }
+  .about-me__item-project {
+    text-align: center;
+    list-style: none;
+    font-family: "RobotoRegular"; } }
+
+@media (min-width: 768px) {
+  .about-me {
+    padding: 20px 50px; }
+    .about-me h2 {
+      font-size: 30px; }
+    .about-me__my-name {
+      text-align: left; }
+    .about-me h3 {
+      text-align: left; }
+    .about-me__item {
+      text-align: left; }
+    .about-me__item-project {
+      text-align: left; } }
+
+@media (min-width: 1200px) {
+  .about-me {
+    padding: 0 400px 20px 400px; }
+    .about-me h2 {
+      font-size: 45px; }
+    .about-me__my-name {
+      font-size: 22px; }
+    .about-me h3 {
+      font-size: 30px; }
+    .about-me__item {
+      font-size: 20px; }
+    .about-me__item-project {
+      font-size: 20px; } }
